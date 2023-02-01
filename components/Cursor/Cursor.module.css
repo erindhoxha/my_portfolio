@@ -1,9 +1,29 @@
 .cursor {
-  background-color: #111;
-  height: 32px;
-  width: 32px;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
+  border: 2px solid #171717;
   position: fixed;
   top: 0;
   left: 0;
+  transition: 0.1s ease;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.cursorWrapper {
+  z-index: 2;
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

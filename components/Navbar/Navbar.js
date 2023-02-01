@@ -12,8 +12,8 @@ const MENU_LIST = [
 const Navbar = () => {
   return (
     <header>
-      <nav className={navbarStyles.nav}>
-        <motion.div animate={{ x: 12 }}>
+      <nav className={`${navbarStyles.nav} container-fluid`}>
+        <motion.div animate={{ x: 36 }}>
           <Logo />
         </motion.div>
       </nav>

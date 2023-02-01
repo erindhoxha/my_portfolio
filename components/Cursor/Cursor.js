@@ -10,8 +10,8 @@ const Cursor = () => {
 
   const variants = {
     default: {
-      x: mousePosition.x,
-      y: mousePosition.y,
+      x: mousePosition.x - 16,
+      y: mousePosition.y - 16,
     },
   };
 
@@ -31,11 +31,13 @@ const Cursor = () => {
   }, []);
 
   return (
-    <motion.div
-      variants={variants}
-      animate="default"
-      className={styles.cursor}
-    ></motion.div>
+    <div className={styles.cursorWrapper}>
+      <motion.div
+        variants={variants}
+        animate="default"
+        className={styles.cursor}
+      ></motion.div>
+    </div>
   );
 };
 
