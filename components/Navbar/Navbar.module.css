@@ -1,7 +1,6 @@
-.main {
+.nav {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 24px 24px;
 }
