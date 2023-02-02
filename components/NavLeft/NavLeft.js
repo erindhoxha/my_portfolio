@@ -12,7 +12,7 @@ const NavLeft = () => {
         <a
           onMouseEnter={() => setCursorVariantFn('text')}
           onMouseLeave={() => setCursorVariantFn('default')}
-          href="https://twitter.com/waller_texas"
+          href="#"
           className={styles.navLeftLink}
         >
           github
@@ -24,7 +24,7 @@ const NavLeft = () => {
         <a
           onMouseEnter={() => setCursorVariantFn('text')}
           onMouseLeave={() => setCursorVariantFn('default')}
-          href="https://twitter.com/waller_texas"
+          href="#"
           className={styles.navLeftLink}
         >
           LI
@@ -34,7 +34,7 @@ const NavLeft = () => {
         <a
           onMouseEnter={() => setCursorVariantFn('text')}
           onMouseLeave={() => setCursorVariantFn('default')}
-          href="https://twitter.com/waller_texas"
+          href="#"
           className={styles.navLeftLink}
         >
           CP
