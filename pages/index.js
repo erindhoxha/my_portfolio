@@ -5,6 +5,8 @@ import SocialBar from '../components/SocialBar/SocialBar';
 import Projects from '../components/Projects/Projects';
 import YearDate from '../components/YearDate/YearDate';
 import NavLeft from '../components/NavLeft/NavLeft';
+import Name from '../components/Name/Name';
+import NavRight from '../components/NavRight/NavRight';
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} container-fluid`}>
         <NavLeft />
+        <Name />
+        <YearDate />
         {/* <SocialBar /> */}
         {/* <Projects /> */}
       </main>

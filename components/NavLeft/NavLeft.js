@@ -2,6 +2,7 @@ import { useCursorContext } from '../../pages/_app';
 import React from 'react';
 import styles from './NavLeft.module.css';
 import YearDate from '../YearDate/YearDate';
+import Email from '../Email/Email';
 
 const NavLeft = () => {
   const { setCursorVariantFn } = useCursorContext();
@@ -11,7 +12,19 @@ const NavLeft = () => {
         <a
           onMouseEnter={() => setCursorVariantFn('text')}
           onMouseLeave={() => setCursorVariantFn('default')}
-          href="https://www.linkedin.com/in/lauren-waller-46a95317/"
+          href="https://twitter.com/waller_texas"
+          className={styles.navLeftLink}
+        >
+          github
+        </a>
+      </div>
+
+      <div className={styles.navLine}></div>
+      <div className={styles.navLeftItem}>
+        <a
+          onMouseEnter={() => setCursorVariantFn('text')}
+          onMouseLeave={() => setCursorVariantFn('default')}
+          href="https://twitter.com/waller_texas"
           className={styles.navLeftLink}
         >
           LI
@@ -24,21 +37,10 @@ const NavLeft = () => {
           href="https://twitter.com/waller_texas"
           className={styles.navLeftLink}
         >
-          GH
+          CP
         </a>
       </div>
-      <div className={styles.navLeftItem}>
-        <a
-          onMouseEnter={() => setCursorVariantFn('text')}
-          onMouseLeave={() => setCursorVariantFn('default')}
-          href="https://dribbble.com/waller_texas"
-          className={styles.navLeftLink}
-        >
-          TW
-        </a>
-      </div>
-      <div className={styles.navLine}></div>
-      <YearDate />
+      <Email />
     </div>
   );
 };

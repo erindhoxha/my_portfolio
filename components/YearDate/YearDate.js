@@ -6,6 +6,7 @@ const YearDate = () => {
   const { setCursorVariantFn } = useCursorContext();
   return (
     <div orientation="left" className={styles.copyright}>
+      <div className={styles.navLine}></div>
       <div className={styles.copyrightInner}>©/2023</div>
     </div>
   );
