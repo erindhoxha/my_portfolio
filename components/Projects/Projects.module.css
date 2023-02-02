@@ -8,16 +8,16 @@
   left: 24px;
 }
 .textContainer h1 {
-  color: white;
+  color: rgb(var(--foreground-rgb));
   margin-top: 6px;
   font-size: 2.2rem;
 }
 .textContainer p {
-  color: white;
+  color: rgb(var(--foreground-rgb));
   margin-bottom: 0px;
 }
 .textContainer lead {
-  color: white;
+  color: rgb(var(--foreground-rgb));
   font-size: 1.6rem;
 }
 .img {

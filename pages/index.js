@@ -21,6 +21,7 @@ export default function Home() {
         <NavLeft />
         <Name />
         <YearDate />
+        <NavRight />
         {/* <SocialBar /> */}
         {/* <Projects /> */}
       </main>

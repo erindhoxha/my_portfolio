@@ -39,10 +39,10 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 }
-/* 
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    --foreground-rgb: 234, 234, 234;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
 
@@ -71,7 +71,7 @@
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
   }
-} */
+}
 
 * {
   box-sizing: border-box;
@@ -88,7 +88,6 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background-color: var(--background-end-rgb);
 }
 p {
   font-size: 13px;
@@ -101,7 +100,10 @@ h1 {
 }
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-end-rgb));
+  background-color: rgb(var(--foreground-rgb));
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='6.3' stroke-opacity='0.05' %3E%3Ccircle fill='%23000000' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23030303' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23060606' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23090909' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%230c0c0c' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%230f0f0f' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23111111' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23131313' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23151515' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23171717' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23181818' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%231a1a1a' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%231c1c1c' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%231d1d1d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%231f1f1f' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23212121' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23222222' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23242424' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 a {
@@ -143,8 +145,12 @@ a.link:hover::after {
   width: 100%;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-} */
+}
+
+.semibold {
+  font-weight: 500;
+}

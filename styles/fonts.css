@@ -1,5 +1,11 @@
 @font-face {
   font-family: gil;
+  src: url(./font/Gilroy-Light.woff);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: gil;
   src: url(./font/Gilroy-Regular.woff);
   font-weight: 400;
 }

@@ -45,16 +45,16 @@
   height: 200px;
   margin-top: 10px;
   margin-bottom: 12px;
-  background-color: #1a1818;
+  background-color: rgb(var(--foreground-rgb));
 }
 
 .navLeftLink {
   display: block;
-  border: 0px solid #000;
+  border: 0px solid rgb(var(--foreground-rgb));
   -webkit-transition: opacity 300ms ease;
   transition: opacity 300ms ease;
   font-family: Montserrat, sans-serif;
-  color: #1a1818;
+  color: rgb(var(--foreground-rgb));
   font-size: 10px;
   font-weight: 500;
   text-align: center;

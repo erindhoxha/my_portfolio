@@ -30,3 +30,15 @@
     left: 0%;
   }
 }
+.h1 {
+  margin-bottom: 12px;
+}
+.box {
+  display: flex;
+  gap: 48px;
+}
+
+.innerBox {
+  display: flex;
+  flex-direction: column;
+}

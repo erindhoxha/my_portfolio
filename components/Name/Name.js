@@ -6,22 +6,29 @@ const Name = () => {
     <div className={styles.nameContainer}>
       <div className="content">
         <div>
-          <h1>Erind Hoxha</h1>
+          <h1 className={styles.h1}>Erind Hoxha</h1>
         </div>
         <div>
-          <p className="description">Front-end developer</p>
-        </div>
-        <div>
-          <p className="description">
-            A problem solver with a strong desire to create exceptional
-            web-apps.
-          </p>
-          <p className="description">
-            Currently working as a Front-end developer at{' '}
-            <a className="link" href="https://kablamo.com.au">
-              Kablamo
-            </a>
-          </p>
+          <div className={styles.box}>
+            <div className={styles.innerBox}>
+              <p className="description">Front-end developer</p>
+              <p className="description">
+                Currently working at{' '}
+                <a className="link line-through semibold" href="#">
+                  Kablamo
+                </a>
+              </p>
+            </div>
+            <div className={styles.innerBox}>
+              <p className="description">Sydney, Australia</p>
+
+              <p className="description">
+                <a className="link line-through semibold" href="#">
+                  hello@erindhoxha.dev
+                </a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
