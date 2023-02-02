@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Projects() {
   return (
     <>
-      <main>I'm the project page</main>
+      <main>I&apos;m the project page</main>
     </>
   );
 }
