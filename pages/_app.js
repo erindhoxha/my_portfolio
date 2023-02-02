@@ -31,7 +31,6 @@ export default function App({ Component, pageProps }) {
       width: 70,
       x: mousePosition.x - 35,
       y: mousePosition.y - 35,
-      backgroundColor: 'white',
       mixBlendMode: 'difference',
     },
     textInImage: {

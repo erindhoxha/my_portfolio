@@ -3,6 +3,8 @@ import styles from '../styles/Home.module.css';
 import { useCursorContext } from './_app';
 import SocialBar from '../components/SocialBar/SocialBar';
 import Projects from '../components/Projects/Projects';
+import YearDate from '../components/YearDate/YearDate';
+import NavLeft from '../components/NavLeft/NavLeft';
 
 export default function Home() {
   return (
@@ -13,9 +15,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} container`}>
-        <SocialBar />
-        <Projects />
+      <main className={`${styles.main} container-fluid`}>
+        <NavLeft />
+        {/* <SocialBar /> */}
+        {/* <Projects /> */}
       </main>
     </>
   );

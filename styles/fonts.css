@@ -1,5 +1,23 @@
 @font-face {
   font-family: gil;
+  src: url(./font/Gilroy-Regular.woff);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: gil;
   src: url(./font/Gilroy-Semibold.woff);
-  font-weight: regular;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: gil;
+  src: url(./font/Gilroy-Bold.woff);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: gil;
+  src: url(./font/Gilroy-Extrabold.woff);
+  font-weight: 700;
 }
