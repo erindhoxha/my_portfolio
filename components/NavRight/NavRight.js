@@ -8,19 +8,19 @@ const NavRight = () => {
     <div className={styles.sectionRight}>
       <div className={styles.nav}>
         <div class="nav-item">
-          <a href="/work" class="nav-link">
+          <a href="/work" class="link link-dark">
             Work
           </a>
           <div class="nav-underline"></div>
         </div>
         <div class="nav-item">
-          <a href="/about" class="nav-link">
+          <a href="/about" class="link link-dark">
             About
           </a>
           <div class="nav-underline"></div>
         </div>
         <div class="nav-item">
-          <a href="/contact" class="nav-link">
+          <a href="/contact" class="link link-dark">
             Contact
           </a>
           <div class="nav-underline"></div>
