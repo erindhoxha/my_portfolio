@@ -2,15 +2,15 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from '@next/font/google';
 import styles from '../styles/Home.module.css';
-import Navbar from '@/components/Navbar/Navbar';
-import Cursor from '@/components/Cursor/Cursor';
+import Navbar from '../components/Navbar/Navbar';
+import Cursor from '../components/Cursor/Cursor';
 import Img from '../public/img.jpg';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-
-const inter = Inter({ subsets: ['latin'] });
+import { useCursorContext } from './_app';
 
 export default function Home() {
+  const { setCursorVariantFn } = useCursorContext();
   return (
     <>
       <Head>
@@ -30,7 +30,11 @@ export default function Home() {
               }}
               className="col-6"
             >
-              <Link href="#">
+              <Link
+                onMouseEnter={() => setCursorVariantFn('text')}
+                onMouseLeave={() => setCursorVariantFn('default')}
+                href="#"
+              >
                 <h1>Project</h1>
               </Link>
               <p>2023</p>
@@ -48,7 +52,11 @@ export default function Home() {
               }}
               className="col-6"
             >
-              <Link href="#">
+              <Link
+                href="#"
+                onMouseEnter={() => setCursorVariantFn('text')}
+                onMouseLeave={() => setCursorVariantFn('default')}
+              >
                 <h1>Other project</h1>
               </Link>
               <p>2023</p>
@@ -66,7 +74,11 @@ export default function Home() {
               }}
               className="col-6"
             >
-              <Link href="#">
+              <Link
+                href="#"
+                onMouseEnter={() => setCursorVariantFn('text')}
+                onMouseLeave={() => setCursorVariantFn('default')}
+              >
                 <h1>Other project</h1>
               </Link>
               <p>2023</p>
