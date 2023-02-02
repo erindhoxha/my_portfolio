@@ -1,16 +1,10 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { Inter } from '@next/font/google';
 import styles from '../styles/Home.module.css';
-import Navbar from '../components/Navbar/Navbar';
-import Cursor from '../components/Cursor/Cursor';
-import Img from '../public/img.jpg';
-import { motion } from 'framer-motion';
-import Link from 'next/link';
 import { useCursorContext } from './_app';
+import SocialBar from '../components/SocialBar/SocialBar';
+import Projects from '../components/Projects/Projects';
 
 export default function Home() {
-  const { setCursorVariantFn } = useCursorContext();
   return (
     <>
       <Head>
@@ -19,73 +13,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} container-fluid`}>
-        <div className="row">
-          <div className={styles.portfolioCenter}>
-            <motion.div
-              animate={{ y: -50 }}
-              transition={{
-                y: { duration: 0.4 },
-                default: { ease: 'easeInOut' },
-              }}
-              className="col-6"
-            >
-              <Link
-                onMouseEnter={() => setCursorVariantFn('text')}
-                onMouseLeave={() => setCursorVariantFn('default')}
-                href="#"
-              >
-                <h1>Project</h1>
-              </Link>
-              <p>2023</p>
-              <p>Project built for ___ with nextjs - redux - figma - ai</p>
-              <Image className={styles.img} alt="portfolio image" src={Img} />
-            </motion.div>
-          </div>
-
-          <div className={styles.portfolioCenter2}>
-            <motion.div
-              animate={{ y: -50 }}
-              transition={{
-                y: { duration: 0.4 },
-                default: { ease: 'easeInOut' },
-              }}
-              className="col-6"
-            >
-              <Link
-                href="#"
-                onMouseEnter={() => setCursorVariantFn('text')}
-                onMouseLeave={() => setCursorVariantFn('default')}
-              >
-                <h1>Other project</h1>
-              </Link>
-              <p>2023</p>
-              <p>Project built for ___ add stuff</p>
-              <Image className={styles.img} alt="portfolio image" src={Img} />
-            </motion.div>
-          </div>
-
-          <div className={styles.portfolioCenter2}>
-            <motion.div
-              animate={{ y: -50 }}
-              transition={{
-                y: { duration: 0.4 },
-                default: { ease: 'easeInOut' },
-              }}
-              className="col-6"
-            >
-              <Link
-                href="#"
-                onMouseEnter={() => setCursorVariantFn('text')}
-                onMouseLeave={() => setCursorVariantFn('default')}
-              >
-                <h1>Other project</h1>
-              </Link>
-              <p>2023</p>
-              <Image className={styles.img} alt="portfolio image" src={Img} />
-            </motion.div>
-          </div>
-        </div>
+      <main className={`${styles.main} container`}>
+        <SocialBar />
+        <Projects />
       </main>
     </>
   );

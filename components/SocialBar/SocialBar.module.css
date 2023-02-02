@@ -1,0 +1,48 @@
+.social {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 32px;
+  right: auto;
+  z-index: 10;
+  color: rgb(41, 41, 41);
+}
+
+.social ul {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.social ul a {
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: 0.2 ease;
+}
+
+.social ul::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: rgb(190, 190, 190);
+}
+
+.social li a svg {
+  width: 20px;
+  height: 20px;
+  transition: 0.2s ease;
+}
+
+.social li a svg:hover {
+  fill: rgb(200, 200, 200);
+}

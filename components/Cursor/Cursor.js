@@ -4,13 +4,11 @@ import { motion } from 'framer-motion';
 
 const Cursor = ({ variants, cursorVariant }) => {
   return (
-    <div className={styles.cursorWrapper}>
-      <motion.div
-        variants={variants}
-        animate={cursorVariant}
-        className={styles.cursor}
-      ></motion.div>
-    </div>
+    <motion.div
+      variants={variants}
+      animate={cursorVariant}
+      className={styles.cursor}
+    ></motion.div>
   );
 };
 

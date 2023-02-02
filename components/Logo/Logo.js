@@ -4,8 +4,8 @@ import styles from './Logo.module.css';
 
 const Logo = () => {
   return (
-    <Link href={'/'}>
-      <h1 className={styles.h1}>erindhoxha.dev_</h1>
+    <Link href={'/'} className="link">
+      <h1 className={`${styles.h1}`}>erindhoxha.dev_</h1>
       <p className={styles.p}>frontend & ui/ux</p>
     </Link>
   );

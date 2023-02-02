@@ -27,10 +27,18 @@ export default function App({ Component, pageProps }) {
       y: mousePosition.y - 16,
     },
     text: {
-      height: 150,
-      width: 150,
-      x: mousePosition.x - 75,
-      y: mousePosition.y - 75,
+      height: 70,
+      width: 70,
+      x: mousePosition.x - 35,
+      y: mousePosition.y - 35,
+      backgroundColor: 'white',
+      mixBlendMode: 'difference',
+    },
+    textInImage: {
+      height: 100,
+      width: 100,
+      x: mousePosition.x - 50,
+      y: mousePosition.y - 50,
     },
   };
   const mouseMove = (e) => {
