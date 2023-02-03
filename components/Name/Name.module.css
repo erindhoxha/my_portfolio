@@ -28,6 +28,8 @@
     gap: 24px !important;
     justify-content: start;
     align-items: start;
+    margin-top: auto;
+    padding-bottom: 60px;
   }
   .box {
     flex-direction: column;

@@ -40,7 +40,6 @@ const NavLeft = () => {
           CP
         </a>
       </div>
-      <Email />
     </div>
   );
 };
