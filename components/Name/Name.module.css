@@ -23,13 +23,14 @@
 @media screen and (max-width: 600px) {
   .nameContainer {
     position: unset;
-    left: 0%;
     padding-left: 48px;
+    padding-bottom: 60px;
+    padding-top: 0px;
     gap: 24px !important;
     justify-content: start;
     align-items: start;
-    margin-top: auto;
-    padding-bottom: 60px;
+    left: 0%;
+    order: 1;
   }
   .box {
     flex-direction: column;

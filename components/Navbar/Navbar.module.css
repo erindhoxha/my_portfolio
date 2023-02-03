@@ -4,3 +4,9 @@
   align-items: center;
   padding: 32px 12px 12px 0px;
 }
+
+@media screen and (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+}
