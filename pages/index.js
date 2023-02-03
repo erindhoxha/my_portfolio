@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} container-fluid`}>
-        <div className={`container-fluid p-0`}>
+        <div className={`container-fluid p-0 h-100`}>
           <YearDate />
           <NavLeft />
           <div className={styles.navAndNameContainer}>
