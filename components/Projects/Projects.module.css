@@ -28,7 +28,8 @@
 }
 
 .h1 {
-  font-size: 64px;
-  font-weight: 300;
+  font-size: 48px;
+  font-weight: 400;
   margin-bottom: 24px;
+  padding-left: 0px;
 }
