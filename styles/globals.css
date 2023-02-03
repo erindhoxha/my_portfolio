@@ -19,9 +19,7 @@
     rgba(255, 255, 255, 1),
     rgba(255, 255, 255, 0)
   );
-
   --foreground-rgb: 22, 22, 22;
-
   --tile-start-rgb: 239, 245, 249;
   --tile-end-rgb: 228, 232, 233;
   --tile-border: conic-gradient(
@@ -48,7 +46,6 @@
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
   --font-family: gil;
   --padding-left: 72px;
-  --background-end-rgb: rgb(4, 4, 4);
 }
 
 [data-theme='dark'] {
@@ -103,6 +100,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  color: rgb(var(--foreground-rgb));
 }
 p {
   font-size: 13px;
