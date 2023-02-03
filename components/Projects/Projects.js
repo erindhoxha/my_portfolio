@@ -8,13 +8,34 @@ import { useCursorContext } from '../../pages/_app';
 
 const Projects = () => {
   const { setCursorVariantFn } = useCursorContext();
+
+  let boxVariants = {};
+  let initial = {};
+  let initialCards = {};
+  let whileInViewCards = {};
+  if (typeof window !== 'undefined') {
+    const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
+    if (!isMobile) {
+      boxVariants = {
+        default: {
+          opacity: 1,
+          x: 0,
+        },
+      };
+      initial = { opacity: 0, x: -30 };
+      initialCards = { opacity: 0, y: 20 };
+      whileInViewCards = { opacity: 1, y: 0 };
+    } //if the width >= 768px, boxVariants will be empty, resulting in no animation
+    //you need to refresh the page, it doesn't work when you resize it!
+  }
+
   return (
-    <div className={`${styles.projectsContainer} container-fluid`}>
+    <div className={`${styles.projectsContainer} container-fluid`} id="work">
       <motion.div
-        transition={{ duration: 0.5 }}
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        variants={boxVariants}
+        animate="default"
+        transition={{ duration: 0.5, delay: 0.5 }}
+        initial={initial}
       >
         <h1 className={styles.h1}>
           /work <p className="lead">recent_</p>
@@ -27,7 +48,7 @@ const Projects = () => {
         >
           <motion.div
             transition={{ duration: 0.5, delay: 0 }}
-            initial={{ opacity: 0, y: 20 }}
+            initial={initialCards}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
@@ -59,8 +80,8 @@ const Projects = () => {
         >
           <motion.div
             transition={{ duration: 0.5, delay: 0.3 }}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={initialCards}
+            whileInView={whileInViewCards}
             viewport={{ once: true }}
           >
             <div className={styles.imgCover}>
@@ -91,7 +112,7 @@ const Projects = () => {
         >
           <motion.div
             transition={{ duration: 0.5, delay: 0.6 }}
-            initial={{ opacity: 0, y: 20 }}
+            initial={initialCards}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
@@ -123,7 +144,7 @@ const Projects = () => {
         >
           <motion.div
             transition={{ duration: 0.5, delay: 0.9 }}
-            initial={{ opacity: 0, y: 20 }}
+            initial={initialCards}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
@@ -155,7 +176,7 @@ const Projects = () => {
         >
           <motion.div
             transition={{ duration: 0.5, delay: 1.2 }}
-            initial={{ opacity: 0, y: 20 }}
+            initial={initialCards}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
@@ -187,7 +208,7 @@ const Projects = () => {
         >
           <motion.div
             transition={{ duration: 0.5, delay: 1.5 }}
-            initial={{ opacity: 0, y: 20 }}
+            initial={initialCards}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >

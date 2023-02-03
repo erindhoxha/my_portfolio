@@ -4,7 +4,6 @@ import '../styles/fonts.css';
 import Navbar from '../components/Navbar/Navbar';
 import Cursor from '../components/Cursor/Cursor';
 import { createContext, useContext, useEffect, useState } from 'react';
-import { motion, useScroll, useSpring } from 'framer-motion';
 
 export const CursorContext = createContext({
   mousePosition: {
@@ -73,13 +72,29 @@ export default function App({ Component, pageProps }) {
   //   restDelta: 0.001,
   // });
 
+  const [theme, setTheme] = useState('');
+  useEffect(() => {
+    console.log(localStorage.getItem('theme'));
+    if (
+      localStorage.getItem('theme') === 'light' ||
+      localStorage.getItem('theme') === '' ||
+      localStorage.getItem('theme') === null
+    ) {
+      document.documentElement.setAttribute('data-theme', 'light');
+      setTheme('light');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      setTheme('dark');
+    }
+  }, []);
+
   return (
     <>
       {/* <motion.div className="progress-bar" style={{ scaleX }} /> */}
       <CursorContext.Provider value={context}>
         <Navbar />
         <Cursor variants={variants} cursorVariant={cursorVariant} />
-        <Component {...pageProps} />
+        <Component data-theme={theme} {...pageProps} />
       </CursorContext.Provider>
     </>
   );

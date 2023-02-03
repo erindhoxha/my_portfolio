@@ -5,6 +5,31 @@
   padding: 32px 12px 12px 0px;
 }
 
+.sun {
+  position: absolute;
+  right: 36px;
+  top: 36px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.sun line {
+  stroke-dashoffset: 80;
+  stroke-dasharray: 80;
+}
+
+.line {
+  stroke-dasharray: 0 !important;
+}
+
+.sunDark {
+  stroke: #fff !important;
+}
+.sun:hover {
+  transform: scale(1.1);
+}
 @media screen and (max-width: 600px) {
   .nav {
     display: none;
