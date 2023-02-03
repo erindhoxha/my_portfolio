@@ -2,6 +2,8 @@ import { useCursorContext } from '../../pages/_app';
 import React from 'react';
 import styles from './NavRight.module.css';
 import { motion } from 'framer-motion';
+import arrow from '../../images/arrow.png';
+import Image from 'next/image';
 
 const NavRight = () => {
   const { setCursorVariantFn } = useCursorContext();
@@ -20,7 +22,14 @@ const NavRight = () => {
               href="/work"
               class="link link-dark"
             >
-              Work
+              <div className={styles.flexBox}>
+                Work{' '}
+                <Image
+                  alt="portfolio image"
+                  src={arrow}
+                  className={styles.arrow}
+                />
+              </div>
             </a>
             <div class="nav-underline"></div>
           </div>
@@ -38,7 +47,14 @@ const NavRight = () => {
               href="/about"
               class="link link-dark"
             >
-              Blog
+              <div className={styles.flexBox}>
+                Blog{' '}
+                <Image
+                  alt="portfolio image"
+                  src={arrow}
+                  className={styles.arrow}
+                />
+              </div>
             </a>
             <div class="nav-underline"></div>
           </div>
@@ -55,7 +71,14 @@ const NavRight = () => {
               href="/contact"
               class="link link-dark"
             >
-              Contact
+              <div className={styles.flexBox}>
+                Contact{' '}
+                <Image
+                  alt="portfolio image"
+                  src={arrow}
+                  className={styles.arrow}
+                />
+              </div>
             </a>
           </div>
         </motion.div>

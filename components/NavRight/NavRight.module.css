@@ -1,5 +1,5 @@
 .sectionRight {
-  font-size: 134px;
+  font-size: 6vw;
   font-weight: 400;
   line-height: 100%;
   padding-left: var(--padding-left);
@@ -17,4 +17,30 @@
     position: relative;
     order: 2;
   }
+}
+
+.arrow {
+  transform: rotate(180deg);
+  margin-left: 12px;
+  transition: 0.2s ease-in-out;
+  height: 4vw;
+  width: 100%;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .arrow {
+    height: 10vw;
+    width: 100%;
+    display: flex;
+  }
+}
+
+.flexBox {
+  display: flex;
+  align-items: center;
+}
+
+.flexBox:hover .arrow {
+  margin-left: 36px;
 }
