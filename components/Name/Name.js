@@ -9,7 +9,7 @@ const Name = () => {
     <div className={styles.nameContainer}>
       <div className="content">
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
+          initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 1 }}
         >
@@ -25,7 +25,7 @@ const Name = () => {
         <div>
           <div className={styles.box}>
             <motion.div
-              initial={{ opacity: 0, x: 100 }}
+              initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 1 }}
             >
@@ -45,7 +45,7 @@ const Name = () => {
               </div>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, x: 100 }}
+              initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 1 }}
             >
