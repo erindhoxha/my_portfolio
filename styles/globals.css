@@ -129,6 +129,17 @@ a.link-dark::after {
   transition: 0.3s ease;
 }
 
+a.link-dark-thin::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2px;
+  position: relative;
+  bottom: 0.2em;
+  background-color: rgb(var(--foreground-rgb));
+  transition: 0.3s ease;
+}
+
 a.link-light::after {
   content: '';
   display: block;
