@@ -1,7 +1,9 @@
 import React from 'react';
+import { useCursorContext } from '../../pages/_app';
 import styles from './Name.module.css';
 
 const Name = () => {
+  const { setCursorVariantFn } = useCursorContext();
   return (
     <div className={styles.nameContainer}>
       <div className="content">
@@ -14,7 +16,12 @@ const Name = () => {
               <p className="description">Front-end developer</p>
               <p className="description">
                 Currently working at{' '}
-                <a className="link line-through semibold" href="#">
+                <a
+                  className="link line-through semibold"
+                  href="#"
+                  onMouseEnter={() => setCursorVariantFn('text')}
+                  onMouseLeave={() => setCursorVariantFn('default')}
+                >
                   Kablamo
                 </a>
               </p>
@@ -23,7 +30,12 @@ const Name = () => {
               <p className="description">Sydney, Australia</p>
 
               <p className="description">
-                <a className="link line-through semibold" href="#">
+                <a
+                  className="link line-through semibold"
+                  href="#"
+                  onMouseEnter={() => setCursorVariantFn('text')}
+                  onMouseLeave={() => setCursorVariantFn('default')}
+                >
                   hello@erindhoxha.dev
                 </a>
               </p>
