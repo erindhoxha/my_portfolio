@@ -1,10 +1,8 @@
 .nameContainer {
-  position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 12px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -18,8 +16,8 @@
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  bottom: 14%;
-  left: 100px;
+  padding-left: var(--padding-left);
+  padding-top: 24px;
 }
 
 @media screen and (max-width: 600px) {

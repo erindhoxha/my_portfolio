@@ -1,6 +1,9 @@
 .portfolioContainer {
   max-height: 400px;
 }
+.projectsContainer {
+  padding: 112px var(--padding-left);
+}
 .textContainer {
   bottom: 24px;
   left: 24px;
@@ -26,4 +29,6 @@
 
 .h1 {
   font-size: 64px;
+  font-weight: 300;
+  margin-bottom: 24px;
 }

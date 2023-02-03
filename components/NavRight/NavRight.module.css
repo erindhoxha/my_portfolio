@@ -2,7 +2,8 @@
   font-size: 134px;
   font-weight: 300;
   line-height: 100%;
-  padding: 48px 92px;
+  padding-left: var(--padding-left);
+  padding-top: 48px;
 }
 
 @media screen and (max-width: 600px) {
@@ -10,7 +11,7 @@
     font-size: 48px;
     padding-left: 48px;
     line-height: 120%;
-    padding-top: 24px;
+    padding-top: 0px;
     padding-bottom: 0px;
     position: relative;
   }

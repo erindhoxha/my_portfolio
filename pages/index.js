@@ -18,11 +18,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} container-fluid`}>
-        <div className="container-fluid h-100 p-0">
-          <NavLeft />
-          <Name />
+        <div className={`${styles.mainContainer} container-fluid p-0`}>
           <YearDate />
+          <NavLeft />
           <NavRight />
+          <Name />
         </div>
 
         {/* <SocialBar /> */}

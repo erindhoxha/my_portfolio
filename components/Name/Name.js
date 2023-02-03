@@ -8,7 +8,7 @@ const Name = () => {
     <div className={styles.nameContainer}>
       <div className="content">
         <div>
-          <h1 className={styles.h1}>Erind Hoxha</h1>
+          <h1 className={styles.h1}>erind hoxha</h1>
         </div>
         <div>
           <div className={styles.box}>
