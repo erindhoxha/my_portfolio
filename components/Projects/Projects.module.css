@@ -1,12 +1,12 @@
 .portfolioContainer {
   max-height: 400px;
+  margin-top: 12px;
 }
 .projectsContainer {
   padding: 112px var(--padding-left);
 }
 .textContainer {
-  bottom: 24px;
-  left: 24px;
+  margin-top: 12px;
 }
 .textContainer h1 {
   color: rgb(var(--foreground-rgb));
@@ -39,8 +39,8 @@
 }
 
 .h1 {
-  font-size: 48px;
+  font-size: 72px;
   font-weight: 400;
-  margin-bottom: 24px;
+  margin-bottom: 0px;
   padding-left: 0px;
 }

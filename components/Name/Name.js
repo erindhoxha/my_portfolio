@@ -45,7 +45,7 @@ const Name = () => {
               transition={{ duration: 0.5, delay: 1 }}
             >
               <div className={styles.innerBox}>
-                <p className="description">Sydney, Australia</p>
+                <p className="description">Sydney, Australia 🇦🇺</p>
 
                 <p className="description mb-0">
                   <a

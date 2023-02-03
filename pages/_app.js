@@ -4,6 +4,7 @@ import '../styles/fonts.css';
 import Navbar from '../components/Navbar/Navbar';
 import Cursor from '../components/Cursor/Cursor';
 import { createContext, useContext, useEffect, useState } from 'react';
+import { motion, useScroll, useSpring } from 'framer-motion';
 
 export const CursorContext = createContext({
   mousePosition: {
@@ -64,8 +65,17 @@ export default function App({ Component, pageProps }) {
     variants,
   };
 
+  const { scrollYProgress } = useScroll();
+
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
   return (
     <>
+      <motion.div className="progress-bar" style={{ scaleX }} />
       <CursorContext.Provider value={context}>
         <Navbar />
         <Cursor variants={variants} cursorVariant={cursorVariant} />

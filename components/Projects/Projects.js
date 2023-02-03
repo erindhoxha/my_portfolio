@@ -10,19 +10,35 @@ const Projects = () => {
   const { setCursorVariantFn } = useCursorContext();
   return (
     <div className={`${styles.projectsContainer} container-fluid`}>
-      <h1 className={styles.h1}>Some things I&apos;ve built</h1>
-      <div className="row">
+      <motion.div
+        transition={{ duration: 0.5 }}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        <h1 className={styles.h1}>
+          work <p className="lead">recent_</p>
+        </h1>
+      </motion.div>
+
+      <div className="row p-0 m-0">
         <div
-          className={`col-12 col-md-6 col-lg-4 m-0 p-1 ${styles.portfolioContainer}`}
+          className={`col-12 col-md-6 col-lg-4 p-1 ${styles.portfolioContainer}`}
         >
           <motion.div
-            style={{ height: '100%' }}
-            animate={{ y: 0 }}
-            transition={{
-              y: { duration: 0.4 },
-              default: { ease: 'easeInOut' },
-            }}
+            transition={{ duration: 0.5, delay: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
           >
+            <div className={styles.imgCover}>
+              <Image
+                className={styles.img}
+                alt="portfolio image"
+                src={debugConImg}
+              />
+            </div>
+
             <div className={styles.textContainer}>
               <Link
                 onMouseEnter={() => setCursorVariantFn('textInImage')}
@@ -35,28 +51,26 @@ const Projects = () => {
                   debugCon <lead>auckland, nz</lead>
                 </h1>
               </Link>
-            </div>
-
-            <div className={styles.imgCover}>
-              <Image
-                className={styles.img}
-                alt="portfolio image"
-                src={debugConImg}
-              />
             </div>
           </motion.div>
         </div>
         <div
-          className={`col-12 col-md-6 col-lg-4 m-0 p-1 ${styles.portfolioContainer}`}
+          className={`col-12 col-md-6 col-lg-4 p-1 ${styles.portfolioContainer}`}
         >
           <motion.div
-            style={{ height: '100%' }}
-            animate={{ y: 0 }}
-            transition={{
-              y: { duration: 0.4 },
-              default: { ease: 'easeInOut' },
-            }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
           >
+            <div className={styles.imgCover}>
+              <Image
+                className={styles.img}
+                alt="portfolio image"
+                src={debugConImg}
+              />
+            </div>
+
             <div className={styles.textContainer}>
               <Link
                 onMouseEnter={() => setCursorVariantFn('textInImage')}
@@ -69,28 +83,26 @@ const Projects = () => {
                   debugCon <lead>auckland, nz</lead>
                 </h1>
               </Link>
-            </div>
-
-            <div className={styles.imgCover}>
-              <Image
-                className={styles.img}
-                alt="portfolio image"
-                src={debugConImg}
-              />
             </div>
           </motion.div>
         </div>
         <div
-          className={`col-12 col-md-6 col-lg-4 m-0 p-1 ${styles.portfolioContainer}`}
+          className={`col-12 col-md-6 col-lg-4 p-1 ${styles.portfolioContainer}`}
         >
           <motion.div
-            style={{ height: '100%' }}
-            animate={{ y: 0 }}
-            transition={{
-              y: { duration: 0.4 },
-              default: { ease: 'easeInOut' },
-            }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
           >
+            <div className={styles.imgCover}>
+              <Image
+                className={styles.img}
+                alt="portfolio image"
+                src={debugConImg}
+              />
+            </div>
+
             <div className={styles.textContainer}>
               <Link
                 onMouseEnter={() => setCursorVariantFn('textInImage')}
@@ -103,28 +115,26 @@ const Projects = () => {
                   debugCon <lead>auckland, nz</lead>
                 </h1>
               </Link>
-            </div>
-
-            <div className={styles.imgCover}>
-              <Image
-                className={styles.img}
-                alt="portfolio image"
-                src={debugConImg}
-              />
             </div>
           </motion.div>
         </div>
         <div
-          className={`col-12 col-md-6 col-lg-4 m-0 p-1 ${styles.portfolioContainer}`}
+          className={`col-12 col-md-6 col-lg-4 p-1 ${styles.portfolioContainer}`}
         >
           <motion.div
-            style={{ height: '100%' }}
-            animate={{ y: 0 }}
-            transition={{
-              y: { duration: 0.4 },
-              default: { ease: 'easeInOut' },
-            }}
+            transition={{ duration: 0.5, delay: 0.9 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
           >
+            <div className={styles.imgCover}>
+              <Image
+                className={styles.img}
+                alt="portfolio image"
+                src={debugConImg}
+              />
+            </div>
+
             <div className={styles.textContainer}>
               <Link
                 onMouseEnter={() => setCursorVariantFn('textInImage')}
@@ -137,28 +147,26 @@ const Projects = () => {
                   debugCon <lead>auckland, nz</lead>
                 </h1>
               </Link>
-            </div>
-
-            <div className={styles.imgCover}>
-              <Image
-                className={styles.img}
-                alt="portfolio image"
-                src={debugConImg}
-              />
             </div>
           </motion.div>
         </div>
         <div
-          className={`col-12 col-md-6 col-lg-4 m-0 p-1 ${styles.portfolioContainer}`}
+          className={`col-12 col-md-6 col-lg-4 p-1 ${styles.portfolioContainer}`}
         >
           <motion.div
-            style={{ height: '100%' }}
-            animate={{ y: 0 }}
-            transition={{
-              y: { duration: 0.4 },
-              default: { ease: 'easeInOut' },
-            }}
+            transition={{ duration: 0.5, delay: 1.2 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
           >
+            <div className={styles.imgCover}>
+              <Image
+                className={styles.img}
+                alt="portfolio image"
+                src={debugConImg}
+              />
+            </div>
+
             <div className={styles.textContainer}>
               <Link
                 onMouseEnter={() => setCursorVariantFn('textInImage')}
@@ -171,28 +179,26 @@ const Projects = () => {
                   debugCon <lead>auckland, nz</lead>
                 </h1>
               </Link>
-            </div>
-
-            <div className={styles.imgCover}>
-              <Image
-                className={styles.img}
-                alt="portfolio image"
-                src={debugConImg}
-              />
             </div>
           </motion.div>
         </div>
         <div
-          className={`col-12 col-md-6 col-lg-4 m-0 p-1 ${styles.portfolioContainer}`}
+          className={`col-12 col-md-6 col-lg-4 p-1 ${styles.portfolioContainer}`}
         >
           <motion.div
-            style={{ height: '100%' }}
-            animate={{ y: 0 }}
-            transition={{
-              y: { duration: 0.4 },
-              default: { ease: 'easeInOut' },
-            }}
+            transition={{ duration: 0.5, delay: 1.5 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
           >
+            <div className={styles.imgCover}>
+              <Image
+                className={styles.img}
+                alt="portfolio image"
+                src={debugConImg}
+              />
+            </div>
+
             <div className={styles.textContainer}>
               <Link
                 onMouseEnter={() => setCursorVariantFn('textInImage')}
@@ -205,14 +211,6 @@ const Projects = () => {
                   debugCon <lead>auckland, nz</lead>
                 </h1>
               </Link>
-            </div>
-
-            <div className={styles.imgCover}>
-              <Image
-                className={styles.img}
-                alt="portfolio image"
-                src={debugConImg}
-              />
             </div>
           </motion.div>
         </div>
