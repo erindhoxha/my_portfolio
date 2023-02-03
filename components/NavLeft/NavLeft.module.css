@@ -1,14 +1,14 @@
 .navLeft {
-  position: fixed;
+  position: absolute;
   z-index: 600;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 40px;
-  height: 80vh;
-  padding-top: 5%;
-  padding-bottom: 30px;
+  height: 80.5vh;
+  padding: 48px 0px;
+  padding-top: 74px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -31,10 +31,6 @@
   margin-bottom: 40px;
   padding-right: 15px;
   padding-left: 0px;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 auto;
-  -ms-flex: 0 auto;
-  flex: 0 auto;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
@@ -61,4 +57,10 @@
   letter-spacing: 5px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .navLeft {
+    padding-top: 20px;
+  }
 }

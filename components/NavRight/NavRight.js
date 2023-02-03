@@ -15,7 +15,7 @@ const NavRight = () => {
         </div>
         <div class="nav-item">
           <a href="/about" class="link link-dark">
-            About
+            Blog
           </a>
           <div class="nav-underline"></div>
         </div>
@@ -23,7 +23,6 @@ const NavRight = () => {
           <a href="/contact" class="link link-dark">
             Contact
           </a>
-          <div class="nav-underline"></div>
         </div>
       </div>
     </div>

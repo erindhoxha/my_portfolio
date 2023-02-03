@@ -1,9 +1,7 @@
 .portfolioContainer {
-  position: relative;
   max-height: 400px;
 }
 .textContainer {
-  position: absolute;
   bottom: 24px;
   left: 24px;
 }

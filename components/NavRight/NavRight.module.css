@@ -1,7 +1,17 @@
 .sectionRight {
-  position: absolute;
-  right: 20%;
-  top: 20%;
   font-size: 134px;
   font-weight: 300;
+  line-height: 100%;
+  padding: 48px 92px;
+}
+
+@media screen and (max-width: 600px) {
+  .sectionRight {
+    font-size: 48px;
+    padding-left: 48px;
+    line-height: 120%;
+    padding-top: 24px;
+    padding-bottom: 0px;
+    position: relative;
+  }
 }

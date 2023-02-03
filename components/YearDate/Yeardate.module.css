@@ -35,3 +35,9 @@
   transform: rotate(90deg);
   margin-right: 40px;
 }
+
+@media screen and (max-width: 600px) {
+  .copyright {
+    display: none;
+  }
+}
