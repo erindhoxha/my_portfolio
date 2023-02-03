@@ -6,7 +6,7 @@ const Logo = () => {
   return (
     <Link href={'/'} className="link">
       <h1 className={`${styles.h1}`}>erindhoxha.dev_</h1>
-      <p className={styles.p}>frontend & ui/ux</p>
+      <p className={styles.p}>front-end, ui/ux</p>
     </Link>
   );
 };

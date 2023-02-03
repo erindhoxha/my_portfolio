@@ -14,7 +14,12 @@ const Name = () => {
           transition={{ duration: 0.5, delay: 1 }}
         >
           <div>
-            <h1 className={styles.h1}>erind hoxha</h1>
+            <h1
+              className={styles.h1}
+              title="Did you know that Hoxha means 'mentor' in Albanian?"
+            >
+              erind hoxha
+            </h1>
           </div>
         </motion.div>
         <div>
@@ -25,7 +30,7 @@ const Name = () => {
               transition={{ duration: 0.5, delay: 1 }}
             >
               <div className={styles.innerBox}>
-                <p className="description">Front-end developer</p>
+                <p className="description">front-end, ui/ux</p>
                 <p className="description mb-0">
                   Currently working at{' '}
                   <a
