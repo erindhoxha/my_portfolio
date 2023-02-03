@@ -8,13 +8,13 @@ const Navbar = () => {
 
   useEffect(() => {
     if (
-      localStorage.getItem('theme') === 'light' ||
+      localStorage.getItem('theme') === 'dark' ||
       localStorage.getItem('theme') === '' ||
       localStorage.getItem('theme') === null
     ) {
-      setTheme('light');
-    } else {
       setTheme('dark');
+    } else {
+      setTheme('light');
     }
   }, []);
 
@@ -66,7 +66,7 @@ const Navbar = () => {
         />
         <circle cx="12" cy="12" r="4" />
         <line
-          className={theme === 'dark' ? navbarStyles.line : ''}
+          className={theme === 'light' ? navbarStyles.line : ''}
           x1="3"
           y1="3"
           x2="21"

@@ -76,15 +76,15 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     console.log(localStorage.getItem('theme'));
     if (
-      localStorage.getItem('theme') === 'light' ||
+      localStorage.getItem('theme') === 'dark' ||
       localStorage.getItem('theme') === '' ||
       localStorage.getItem('theme') === null
     ) {
-      document.documentElement.setAttribute('data-theme', 'light');
-      setTheme('light');
-    } else {
       document.documentElement.setAttribute('data-theme', 'dark');
       setTheme('dark');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      setTheme('light');
     }
   }, []);
 
@@ -94,7 +94,7 @@ export default function App({ Component, pageProps }) {
       <CursorContext.Provider value={context}>
         <Navbar />
         <Cursor variants={variants} cursorVariant={cursorVariant} />
-        <Component data-theme={theme} {...pageProps} />
+        <Component data-theme={theme || 'dark'} {...pageProps} />
       </CursorContext.Provider>
     </>
   );
