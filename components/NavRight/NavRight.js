@@ -2,8 +2,6 @@ import { useCursorContext } from '../../pages/_app';
 import React from 'react';
 import styles from './NavRight.module.css';
 import { motion } from 'framer-motion';
-import arrow from '../../images/arrow.png';
-import Image from 'next/image';
 
 const NavRight = () => {
   const { setCursorVariantFn } = useCursorContext();
@@ -11,32 +9,25 @@ const NavRight = () => {
     <div className={styles.sectionRight}>
       <div className={styles.nav}>
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0 }}
         >
-          <div class="nav-item">
+          <div class="nav-item" style={{ textAlign: 'left' }}>
             <a
               onMouseEnter={() => setCursorVariantFn('text')}
               onMouseLeave={() => setCursorVariantFn('default')}
               href="/work"
               class="link link-dark"
             >
-              <div className={styles.flexBox}>
-                Work{' '}
-                <Image
-                  alt="portfolio image"
-                  src={arrow}
-                  className={styles.arrow}
-                />
-              </div>
+              <div className={styles.flexBox}>Work</div>
             </a>
             <div class="nav-underline"></div>
           </div>
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: -75 }}
+          initial={{ opacity: 0, x: -25 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
@@ -47,20 +38,13 @@ const NavRight = () => {
               href="/about"
               class="link link-dark"
             >
-              <div className={styles.flexBox}>
-                Blog{' '}
-                <Image
-                  alt="portfolio image"
-                  src={arrow}
-                  className={styles.arrow}
-                />
-              </div>
+              <div className={styles.flexBox}>Blog </div>
             </a>
             <div class="nav-underline"></div>
           </div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: -75 }}
+          initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
@@ -71,14 +55,7 @@ const NavRight = () => {
               href="/contact"
               class="link link-dark"
             >
-              <div className={styles.flexBox}>
-                Contact{' '}
-                <Image
-                  alt="portfolio image"
-                  src={arrow}
-                  className={styles.arrow}
-                />
-              </div>
+              <div className={styles.flexBox}>Contact </div>
             </a>
           </div>
         </motion.div>
