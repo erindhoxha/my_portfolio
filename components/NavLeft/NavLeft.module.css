@@ -6,7 +6,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 40px;
-  height: 80.5%;
+  height: 81%;
   padding-top: 72px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -60,8 +60,8 @@
 
 @media screen and (max-width: 600px) {
   .navLeft {
-    padding-top: 24px;
+    padding-top: 56px;
     position: absolute;
-    height: calc(100% - 24px);
+    height: calc(100%);
   }
 }
