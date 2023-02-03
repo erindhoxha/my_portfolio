@@ -37,7 +37,12 @@
 }
 
 @media screen and (max-width: 600px) {
-  .copyright {
+  .navLine {
     display: none;
+  }
+  .copyright {
+    right: -12px;
+    bottom: 36px;
+    margin-bottom: 0px;
   }
 }
