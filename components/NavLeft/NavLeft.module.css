@@ -60,7 +60,8 @@
 
 @media screen and (max-width: 600px) {
   .navLeft {
-    padding-top: 20px;
+    padding-top: 24px;
     position: absolute;
+    height: calc(100% - 24px);
   }
 }

@@ -5,6 +5,12 @@
 .projectsContainer {
   padding: 112px var(--padding-left);
 }
+@media screen and (max-width: 600px) {
+  .projectsContainer {
+    padding: 24px;
+    margin-top: 128px;
+  }
+}
 .textContainer {
   margin-top: 12px;
 }

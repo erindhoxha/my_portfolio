@@ -42,8 +42,14 @@
 .box {
   display: flex;
   gap: 48px;
+  align-items: flex-end;
 }
-
+@media screen and (max-width: 600px) {
+  .box {
+    gap: 24px;
+    align-items: start;
+  }
+}
 .innerBox {
   display: flex;
   flex-direction: column;
