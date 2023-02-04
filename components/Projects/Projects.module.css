@@ -17,11 +17,9 @@
 .textContainer h1 {
   color: rgb(var(--foreground-rgb));
   margin-top: 4px;
-  font-size: 2.2rem;
 }
 .textContainer p {
   color: rgb(var(--foreground-rgb));
-  margin-bottom: 0px;
 }
 .textContainer lead {
   color: rgb(var(--foreground-rgb), 0.9);
@@ -55,8 +53,28 @@
 }
 
 .h1 {
-  font-size: 72px;
   font-weight: 400;
   margin-bottom: 0px;
   padding-left: 0px;
+  font-size:6rem;
+}
+
+
+
+@media screen and (orientation: landscape) and (max-width: 900px) {
+  .h1 {
+    font-size:6vw;
+  }
+  .projectsContainer {
+    padding-top:48px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .h1 {
+    font-size:9vw !important;
+  }
+  .projectsContainer {
+    padding-top:24px;
+  }
 }

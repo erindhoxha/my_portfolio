@@ -30,12 +30,12 @@ const Name = () => {
           initial={initial}
         >
           <div>
-            <h1
-              className={styles.h1}
+            <h2
+              className={styles.h2}
               title="Did you know that Hoxha means 'mentor' in Albanian?"
             >
               erind hoxha
-            </h1>
+            </h2>
           </div>
         </motion.div>
         <div>

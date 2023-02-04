@@ -96,13 +96,12 @@ const Blogs = () => {
                 </div>
 
                 <div className={styles.textContainer}>
-                  <p>
+                  <p className="mb-1">
                     <lead>
                       {project.date} / {project.frameworks}
                     </lead>
                   </p>
-
-                  <h1>{project.title}</h1>
+                  <h2>{project.title}</h2>
                 </div>
               </Link>
             </motion.div>

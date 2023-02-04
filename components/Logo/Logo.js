@@ -18,7 +18,7 @@ const Logo = () => {
         setCursorText("");
       }}
     >
-      <h1 className={`${styles.h1}`}>erindhoxha.dev_</h1>
+      <div className={`${styles.logo}`}>erindhoxha.dev_</div>
       <p className={styles.p}>front-end, ui/ux</p>
     </Link>
   );
