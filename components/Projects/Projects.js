@@ -153,7 +153,7 @@ const Projects = () => {
                   setCursorText("");
                 }}
                 href={project.href}
-                className="link link-dark-thin-container"
+                className="link link-dark-thin-container w-100"
               >
                 <div className={styles.imgCover}>
                   <Image
