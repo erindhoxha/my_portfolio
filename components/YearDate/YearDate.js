@@ -3,8 +3,8 @@ import styles from "./Yeardate.module.css";
 import { motion } from "framer-motion";
 
 const YearDate = () => {
-  initialLine = { height: "0px" };
-  boxVariants = {
+  let initialLine = { height: "0px" };
+  let boxVariants = {
     default: {
       height: "50px",
     },

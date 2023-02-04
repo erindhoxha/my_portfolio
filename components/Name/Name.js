@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 
 const Name = () => {
   const { setCursorVariantFn, setCursorText } = useCursorContext();
-  boxVariants = {
+  let boxVariants = {
     default: {
       opacity: 1,
       x: 0,
     },
   };
-  initial = { opacity: 0, x: -30 };
+  let initial = { opacity: 0, x: -30 };
   if (typeof window !== "undefined") {
     const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
     if (!isMobile) {
