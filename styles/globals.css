@@ -169,7 +169,12 @@ html body {
   background-size: 100% 38%;
   background-position: top left;
   background-repeat: no-repeat;
-  animation: bg 3s ease;
+}
+
+@media screen and (min-width:767px) {
+  html body {
+    animation: bg 3s ease;
+  }
 }
 
 @media screen and (max-width: 767px) {
