@@ -35,7 +35,7 @@ const projects = [
     date: 2023,
     frameworks: "js, ts, wp, ai, psd, sass",
     location: "auckland, nz",
-    image: ppanels,
+    image: wa,
     href: "#",
     id: 4,
   },
@@ -44,7 +44,7 @@ const projects = [
     date: 2023,
     frameworks: "js, ts, wp, ai, psd, sass",
     location: "auckland, nz",
-    image: sfg,
+    image: nzpg,
     href: "#",
     id: 1,
   },
@@ -53,7 +53,7 @@ const projects = [
     date: 2023,
     frameworks: "js, ts, wp, ai, psd, sass",
     location: "auckland, nz",
-    image: aw,
+    image: wa,
     href: "#",
     id: 5,
   },
@@ -62,7 +62,7 @@ const projects = [
     date: 2023,
     frameworks: "js, ts, wp, ai, psd, sass",
     location: "auckland, nz",
-    image: sfg,
+    image: nzpg,
     href: "#",
     id: 6,
   },
@@ -144,9 +144,10 @@ const Projects = () => {
                   setCursorText("");
                 }}
                 href={project.href}
-                className="link link-dark-thin-container w-100"
+                className={`${styles.link} link link-dark-thin-container w-100`}
               >
                 <div className={styles.imgCover}>
+                  <div className={styles.overlay}></div>
                   <Image
                     className={styles.img}
                     alt="portfolio image"

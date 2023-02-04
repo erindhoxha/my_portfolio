@@ -14,7 +14,7 @@ const blogs = [
     frameworks: "css, aspect-ratio / medium",
     image: blog1,
     href: "#",
-    id: 1,
+    id: 144,
   },
   {
     title: "Create animated icon on Adobe Illustrator for Web",
@@ -22,7 +22,7 @@ const blogs = [
     frameworks: "ai, svg, web / medium",
     image: blog2,
     href: "#",
-    id: 1,
+    id: 145,
   },
 ];
 
@@ -84,9 +84,10 @@ const Blogs = () => {
                   setCursorText("");
                 }}
                 href={project.href}
-                className="link link-dark-thin-container w-100"
+                className={`${styles.link} link link-dark-thin-container w-100`}
               >
                 <div className={styles.imgCover}>
+                  <div className={styles.overlay}></div>
                   <Image
                     className={styles.img}
                     alt="portfolio image"

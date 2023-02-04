@@ -34,7 +34,9 @@ const NavLeft = () => {
             setCursorVariantFn("default");
             setCursorText("");
           }}
-          href="#"
+          target="_blank"
+          href="https://github.com/erindhoxha"
+          rel="noreferrer"
           className={styles.navLeftLink}
         >
           github
@@ -58,7 +60,9 @@ const NavLeft = () => {
             setCursorVariantFn("default");
             setCursorText("");
           }}
-          href="#"
+          target="_blank"
+          rel="noreferrer"
+          href="https://linkedin.com/in/erindhoxha"
           className={styles.navLeftLink}
         >
           LI
@@ -74,10 +78,12 @@ const NavLeft = () => {
             setCursorVariantFn("default");
             setCursorText("");
           }}
-          href="#"
+          target="_blank"
+          rel="noreferrer"
+          href="https://medium.com/@erindhoxha"
           className={styles.navLeftLink}
         >
-          CP
+          MD
         </a>
       </div>
     </div>
