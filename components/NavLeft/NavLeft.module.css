@@ -65,3 +65,12 @@
     height: calc(100%);
   }
 }
+
+@media only screen and (orientation: landscape) {
+  .navLeft {
+    padding-top: 56px;
+    position: absolute;
+    height: calc(100%);
+  }
+}
+

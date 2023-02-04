@@ -28,3 +28,11 @@
     display: none;
   }
 }
+
+@media only screen and (orientation: landscape) {
+  .cursor {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+}

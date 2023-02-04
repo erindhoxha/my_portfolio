@@ -28,9 +28,6 @@
 
 .navLine {
   width: 1px;
-  height: 50px;
-  margin-top: 10px;
-  margin-bottom: 12px;
   background-color: rgb(var(--foreground-rgb));
   transform: rotate(90deg);
   margin-right: 40px;
