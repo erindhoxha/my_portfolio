@@ -9,7 +9,7 @@ import { useCursorContext } from "../../pages/_app";
 
 const blogs = [
   {
-    title: "New CSS Property: aspect-ratio",
+    title: "new css property: aspect-ratio",
     date: 2022,
     frameworks: "css, aspect-ratio / medium",
     image: blog1,
@@ -17,7 +17,7 @@ const blogs = [
     id: 144,
   },
   {
-    title: "Create animated icon on Adobe Illustrator for Web",
+    title: "create animated icon on ai for web",
     date: 2022,
     frameworks: "ai, svg, web / medium",
     image: blog2,
