@@ -4,9 +4,14 @@ import styles from "./NavRight.module.css";
 import { motion } from "framer-motion";
 
 const NavRight = () => {
-  let initialLeft = {};
-  let initialRight = {};
-  let boxVariants = {};
+  boxVariants = {
+    default: {
+      opacity: 1,
+      x: 0,
+    },
+  };
+  initialLeft = { opacity: 0, x: -40 };
+  initialRight = { opacity: 0, x: 40 };
   if (typeof window !== "undefined") {
     const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
     if (!isMobile) {

@@ -89,9 +89,9 @@ const projects = [
 const Projects = () => {
   const { setCursorVariantFn, setCursorText } = useCursorContext();
 
-  let boxVariants = {};
-  let initial = {};
-  let initialCards = {};
+  initial = { opacity: 0, x: -30 };
+  initialCards = { opacity: 0, y: 20 };
+  whileInViewCards = { opacity: 1, y: 0 };
   let whileInViewCards = {};
   if (typeof window !== "undefined") {
     const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)

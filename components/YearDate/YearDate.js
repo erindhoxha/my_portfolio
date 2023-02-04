@@ -3,8 +3,12 @@ import styles from "./Yeardate.module.css";
 import { motion } from "framer-motion";
 
 const YearDate = () => {
-  let boxVariants = {};
-  let initialLine = {};
+  initialLine = { height: "0px" };
+  boxVariants = {
+    default: {
+      height: "50px",
+    },
+  };
 
   if (typeof window !== "undefined") {
     const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
