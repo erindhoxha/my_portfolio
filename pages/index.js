@@ -1,11 +1,11 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-import Projects from '../components/Projects/Projects';
-import YearDate from '../components/YearDate/YearDate';
-import NavLeft from '../components/NavLeft/NavLeft';
-import Name from '../components/Name/Name';
-import NavRight from '../components/NavRight/NavRight';
-import { useEffect, useState } from 'react';
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import Projects from "../components/Projects/Projects";
+import YearDate from "../components/YearDate/YearDate";
+import NavLeft from "../components/NavLeft/NavLeft";
+import Name from "../components/Name/Name";
+import NavRight from "../components/NavRight/NavRight";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   return (
@@ -27,7 +27,6 @@ export default function Home() {
         </div>
 
         {/* <SocialBar /> */}
-        <Projects />
         <Projects />
       </main>
     </>

@@ -1,10 +1,99 @@
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import Link from 'next/link';
-import styles from './Projects.module.css';
-import Img from '../../public/img.jpg';
-import debugConImg from '../../images/debugCon.svg';
-import { useCursorContext } from '../../pages/_app';
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import styles from "./Projects.module.css";
+import Img from "../../public/img.jpg";
+import sfg from "../../images/sfg.png";
+import wa from "../../images/wa.png";
+import nzpg from "../../images/nzpg.png";
+import aw from "../../images/aw.png";
+import ppanels from "../../images/ppanels.png";
+import debugConImg from "../../images/debugCon.svg";
+import { useCursorContext } from "../../pages/_app";
+
+const projects = [
+  {
+    title: "wilsonart",
+    date: 2023,
+    frameworks: "js, ts, wp, ai, psd, sass",
+    location: "auckland, nz",
+    image: wa,
+    href: "#",
+    id: 2,
+  },
+  {
+    title: "nz panels group",
+    date: 2023,
+    frameworks: "js, ts, wp, ai, psd, sass",
+    location: "auckland, nz",
+    image: nzpg,
+    href: "#",
+    id: 3,
+  },
+  {
+    title: "primepanels",
+    date: 2023,
+    frameworks: "js, ts, wp, ai, psd, sass",
+    location: "auckland, nz",
+    image: ppanels,
+    href: "#",
+    id: 4,
+  },
+  {
+    title: "shares for good",
+    date: 2023,
+    frameworks: "js, ts, wp, ai, psd, sass",
+    location: "auckland, nz",
+    image: sfg,
+    href: "#",
+    id: 1,
+  },
+  {
+    title: "airways nz",
+    date: 2023,
+    frameworks: "js, ts, wp, ai, psd, sass",
+    location: "auckland, nz",
+    image: aw,
+    href: "#",
+    id: 5,
+  },
+  {
+    title: "flatmately",
+    date: 2023,
+    frameworks: "js, ts, wp, ai, psd, sass",
+    location: "auckland, nz",
+    image: sfg,
+    href: "#",
+    id: 6,
+  },
+  {
+    title: "linea del plata",
+    date: 2023,
+    frameworks: "js, ts, wp, ai, psd, sass",
+    location: "auckland, nz",
+    image: sfg,
+    href: "#",
+    id: 6,
+  },
+  {
+    title: "99urban",
+    date: 2023,
+    frameworks: "js, ts, wp, ai, psd, sass",
+    location: "auckland, nz",
+    image: wa,
+    href: "#",
+    id: 6,
+  },
+  {
+    title: "nz research information system | MBIE",
+    date: 2023,
+    frameworks: "js, ts, wp, ai, psd, sass",
+    location: "auckland, nz",
+    image: wa,
+    href: "#",
+    id: 6,
+  },
+];
 
 const Projects = () => {
   const { setCursorVariantFn } = useCursorContext();
@@ -13,7 +102,7 @@ const Projects = () => {
   let initial = {};
   let initialCards = {};
   let whileInViewCards = {};
-  if (typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
     const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
     if (!isMobile) {
       boxVariants = {
@@ -43,198 +132,43 @@ const Projects = () => {
       </motion.div>
 
       <div className="row p-0 m-0">
-        <div
-          className={`col-12 col-md-6 col-lg-4 p-1 ${styles.portfolioContainer}`}
-        >
-          <motion.div
-            transition={{ duration: 0.5, delay: 0 }}
-            initial={initialCards}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+        {projects.map((project) => (
+          <div
+            key={project.id}
+            className={`col-12 col-sm-6 col-md-4 col-lg-3 p-1 ${styles.portfolioContainer}`}
           >
-            <div className={styles.imgCover}>
-              <Image
-                className={styles.img}
-                alt="portfolio image"
-                src={debugConImg}
-              />
-            </div>
+            <motion.div
+              transition={{ duration: 0.5, delay: 0 }}
+              initial={initialCards}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <div className={styles.imgCover}>
+                <Image
+                  className={styles.img}
+                  alt="portfolio image"
+                  src={project.image}
+                />
+              </div>
 
-            <div className={styles.textContainer}>
-              <Link
-                onMouseEnter={() => setCursorVariantFn('textInImage')}
-                onMouseLeave={() => setCursorVariantFn('default')}
-                href="#"
-                className="link link-dark-thin"
-              >
-                <lead>2023 / reactjs, redux, figma, ai, typescript</lead>
-                <h1>
-                  debugCon <lead>auckland, nz</lead>
-                </h1>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-        <div
-          className={`col-12 col-md-6 col-lg-4 p-1 ${styles.portfolioContainer}`}
-        >
-          <motion.div
-            transition={{ duration: 0.5, delay: 0.3 }}
-            initial={initialCards}
-            whileInView={whileInViewCards}
-            viewport={{ once: true }}
-          >
-            <div className={styles.imgCover}>
-              <Image
-                className={styles.img}
-                alt="portfolio image"
-                src={debugConImg}
-              />
-            </div>
-
-            <div className={styles.textContainer}>
-              <Link
-                onMouseEnter={() => setCursorVariantFn('textInImage')}
-                onMouseLeave={() => setCursorVariantFn('default')}
-                href="#"
-                className="link link-dark-thin"
-              >
-                <lead>2023 / reactjs, redux, figma, ai, typescript</lead>
-                <h1>
-                  debugCon <lead>auckland, nz</lead>
-                </h1>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-        <div
-          className={`col-12 col-md-6 col-lg-4 p-1 ${styles.portfolioContainer}`}
-        >
-          <motion.div
-            transition={{ duration: 0.5, delay: 0.6 }}
-            initial={initialCards}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <div className={styles.imgCover}>
-              <Image
-                className={styles.img}
-                alt="portfolio image"
-                src={debugConImg}
-              />
-            </div>
-
-            <div className={styles.textContainer}>
-              <Link
-                onMouseEnter={() => setCursorVariantFn('textInImage')}
-                onMouseLeave={() => setCursorVariantFn('default')}
-                href="#"
-                className="link link-dark-thin"
-              >
-                <lead>2023 / reactjs, redux, figma, ai, typescript</lead>
-                <h1>
-                  debugCon <lead>auckland, nz</lead>
-                </h1>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-        <div
-          className={`col-12 col-md-6 col-lg-4 p-1 ${styles.portfolioContainer}`}
-        >
-          <motion.div
-            transition={{ duration: 0.5, delay: 0.9 }}
-            initial={initialCards}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <div className={styles.imgCover}>
-              <Image
-                className={styles.img}
-                alt="portfolio image"
-                src={debugConImg}
-              />
-            </div>
-
-            <div className={styles.textContainer}>
-              <Link
-                onMouseEnter={() => setCursorVariantFn('textInImage')}
-                onMouseLeave={() => setCursorVariantFn('default')}
-                href="#"
-                className="link link-dark-thin"
-              >
-                <lead>2023 / reactjs, redux, figma, ai, typescript</lead>
-                <h1>
-                  debugCon <lead>auckland, nz</lead>
-                </h1>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-        <div
-          className={`col-12 col-md-6 col-lg-4 p-1 ${styles.portfolioContainer}`}
-        >
-          <motion.div
-            transition={{ duration: 0.5, delay: 1.2 }}
-            initial={initialCards}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <div className={styles.imgCover}>
-              <Image
-                className={styles.img}
-                alt="portfolio image"
-                src={debugConImg}
-              />
-            </div>
-
-            <div className={styles.textContainer}>
-              <Link
-                onMouseEnter={() => setCursorVariantFn('textInImage')}
-                onMouseLeave={() => setCursorVariantFn('default')}
-                href="#"
-                className="link link-dark-thin"
-              >
-                <lead>2023 / reactjs, redux, figma, ai, typescript</lead>
-                <h1>
-                  debugCon <lead>auckland, nz</lead>
-                </h1>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-        <div
-          className={`col-12 col-md-6 col-lg-4 p-1 ${styles.portfolioContainer}`}
-        >
-          <motion.div
-            transition={{ duration: 0.5, delay: 1.5 }}
-            initial={initialCards}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <div className={styles.imgCover}>
-              <Image
-                className={styles.img}
-                alt="portfolio image"
-                src={debugConImg}
-              />
-            </div>
-
-            <div className={styles.textContainer}>
-              <Link
-                onMouseEnter={() => setCursorVariantFn('textInImage')}
-                onMouseLeave={() => setCursorVariantFn('default')}
-                href="#"
-                className="link link-dark-thin"
-              >
-                <lead>2023 / reactjs, redux, figma, ai, typescript</lead>
-                <h1>
-                  debugCon <lead>auckland, nz</lead>
-                </h1>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
+              <div className={styles.textContainer}>
+                <p>
+                  <lead>
+                    {project.date} / {project.frameworks} / {project.location}
+                  </lead>
+                </p>
+                <Link
+                  onMouseEnter={() => setCursorVariantFn("textInImage")}
+                  onMouseLeave={() => setCursorVariantFn("default")}
+                  href={project.href}
+                  className="link link-dark-thin"
+                >
+                  <h1>{project.title}</h1>
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+        ))}
       </div>
     </div>
   );
