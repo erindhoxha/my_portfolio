@@ -59,14 +59,12 @@
   font-size:6rem;
 }
 
-
-
 @media screen and (orientation: landscape) and (max-width: 900px) {
   .h1 {
     font-size:6vw;
   }
   .projectsContainer {
-    padding-top:48px;
+    padding-top:24px;
   }
 }
 
