@@ -6,8 +6,13 @@ import { motion } from "framer-motion";
 const NavLeft = () => {
   const { setCursorVariantFn, setCursorText } = useCursorContext();
 
-  let boxVariants = {};
-  let initialLine = {};
+  let boxVariants = {
+    default: {
+      height: "100%",
+      opacity: 1,
+    },
+  };
+  let initialLine = { height: "0%", opacity: 0.2 };
 
   if (typeof window !== "undefined") {
     const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
