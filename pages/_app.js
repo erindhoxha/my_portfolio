@@ -33,6 +33,7 @@ export default function App({ Component, pageProps }) {
       x: mousePosition.x - 35,
       y: mousePosition.y - 35,
       fontSize: "15px",
+      backgroundColor: "var(--text-hex)",
     },
     test: {
       height: 70,

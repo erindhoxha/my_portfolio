@@ -43,25 +43,8 @@ const Navbar = () => {
         </nav>
       </header>
       <svg
-        onMouseEnter={async () => {
-          if (theme === "dark") {
-            setCursorText("on");
-          } else {
-            setCursorText("off");
-          }
-          setCursorVariantFn("text");
-        }}
-        onClick={async () => {
-          if (theme === "dark") {
-            setCursorText("off");
-          } else {
-            setCursorText("on");
-          }
+        onClick={() => {
           switchTheme();
-        }}
-        onMouseLeave={() => {
-          setCursorVariantFn("default");
-          setCursorText("");
         }}
         className={`${navbarStyles.sun} ${
           theme === "dark" ? navbarStyles.sunDark : ""
