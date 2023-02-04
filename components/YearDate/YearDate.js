@@ -1,4 +1,3 @@
-import { useCursorContext } from "../../pages/_app";
 import React from "react";
 import styles from "./Yeardate.module.css";
 import { motion } from "framer-motion";

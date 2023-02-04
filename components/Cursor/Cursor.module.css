@@ -19,6 +19,7 @@
   font-size:14px !important;
   color:rgb(var(--background-start-rgb));
   white-space:nowrap;
+  background-color:var(--text-hex);
 }
 
 @media screen and (max-width: 767px) {

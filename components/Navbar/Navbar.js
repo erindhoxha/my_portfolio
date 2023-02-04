@@ -43,10 +43,21 @@ const Navbar = () => {
         </nav>
       </header>
       <svg
-        onClick={() => switchTheme()}
         onMouseEnter={async () => {
-          await setCursorText("🔦");
+          if (theme === "dark") {
+            setCursorText("on");
+          } else {
+            setCursorText("off");
+          }
           setCursorVariantFn("text");
+        }}
+        onClick={async () => {
+          if (theme === "dark") {
+            setCursorText("off");
+          } else {
+            setCursorText("on");
+          }
+          switchTheme();
         }}
         onMouseLeave={() => {
           setCursorVariantFn("default");

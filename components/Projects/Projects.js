@@ -152,6 +152,7 @@ const Projects = () => {
                     className={styles.img}
                     alt="portfolio image"
                     src={project.image}
+                    priority={project.image === nzpg}
                   />
                 </div>
 

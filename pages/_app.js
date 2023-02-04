@@ -32,7 +32,6 @@ export default function App({ Component, pageProps }) {
       width: 70,
       x: mousePosition.x - 35,
       y: mousePosition.y - 35,
-      backgroundColor: "rgb(var(--text-rgb))",
       fontSize: "15px",
     },
     test: {
