@@ -1,16 +1,16 @@
-import 'bootstrap/dist/css/bootstrap-grid.min.css';
-import '../styles/globals.css';
-import '../styles/fonts.css';
-import Navbar from '../components/Navbar/Navbar';
-import Cursor from '../components/Cursor/Cursor';
-import { createContext, useContext, useEffect, useState } from 'react';
+import "bootstrap/dist/css/bootstrap-grid.min.css";
+import "../styles/globals.css";
+import "../styles/fonts.css";
+import Navbar from "../components/Navbar/Navbar";
+import Cursor from "../components/Cursor/Cursor";
+import { createContext, useContext, useEffect, useState } from "react";
 
 export const CursorContext = createContext({
   mousePosition: {
     x: undefined,
     y: undefined,
   },
-  cursorVariant: '',
+  cursorVariant: "",
   setCursorVariant: () => null,
   variants: {},
 });
@@ -20,13 +20,22 @@ export default function App({ Component, pageProps }) {
     x: 0,
     y: 0,
   });
-  const [cursorVariant, setCursorVariant] = useState('default');
+  const [cursorVariant, setCursorVariant] = useState("default");
+  const [cursorText, setCursorText] = useState("");
   const variants = {
     default: {
       x: mousePosition.x - 16,
       y: mousePosition.y - 16,
     },
     text: {
+      height: 70,
+      width: 70,
+      x: mousePosition.x - 35,
+      y: mousePosition.y - 35,
+      backgroundColor: "rgb(var(--text-rgb))",
+      fontSize: "15px",
+    },
+    test: {
       height: 70,
       width: 70,
       x: mousePosition.x - 35,
@@ -46,10 +55,10 @@ export default function App({ Component, pageProps }) {
     });
   };
   useEffect(() => {
-    window.addEventListener('mousemove', mouseMove);
+    window.addEventListener("mousemove", mouseMove);
 
     return () => {
-      window.removeEventListener('mousemove', mouseMove);
+      window.removeEventListener("mousemove", mouseMove);
     };
   }, []);
 
@@ -61,6 +70,8 @@ export default function App({ Component, pageProps }) {
     mousePosition,
     cursorVariant,
     setCursorVariantFn,
+    setCursorText,
+    cursorText,
     variants,
   };
 
@@ -72,19 +83,18 @@ export default function App({ Component, pageProps }) {
   //   restDelta: 0.001,
   // });
 
-  const [theme, setTheme] = useState('');
+  const [theme, setTheme] = useState("");
   useEffect(() => {
-    console.log(localStorage.getItem('theme'));
     if (
-      localStorage.getItem('theme') === 'dark' ||
-      localStorage.getItem('theme') === '' ||
-      localStorage.getItem('theme') === null
+      localStorage.getItem("theme") === "dark" ||
+      localStorage.getItem("theme") === "" ||
+      localStorage.getItem("theme") === null
     ) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      setTheme('dark');
+      document.documentElement.setAttribute("data-theme", "dark");
+      setTheme("dark");
     } else {
-      document.documentElement.setAttribute('data-theme', 'light');
-      setTheme('light');
+      document.documentElement.setAttribute("data-theme", "light");
+      setTheme("light");
     }
   }, []);
 
@@ -93,8 +103,12 @@ export default function App({ Component, pageProps }) {
       {/* <motion.div className="progress-bar" style={{ scaleX }} /> */}
       <CursorContext.Provider value={context}>
         <Navbar />
-        <Cursor variants={variants} cursorVariant={cursorVariant} />
-        <Component data-theme={theme || 'dark'} {...pageProps} />
+        <Cursor
+          cursorText={cursorText}
+          variants={variants}
+          cursorVariant={cursorVariant}
+        />
+        <Component data-theme={theme || "dark"} {...pageProps} />
       </CursorContext.Provider>
     </>
   );

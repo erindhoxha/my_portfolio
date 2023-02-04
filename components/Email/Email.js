@@ -1,16 +1,22 @@
-import { useCursorContext } from '../../pages/_app';
-import React from 'react';
-import styles from './Email.module.css';
+import { useCursorContext } from "../../pages/_app";
+import React from "react";
+import styles from "./Email.module.css";
 
 const Email = () => {
-  const { setCursorVariantFn } = useCursorContext();
+  const { setCursorVariantFn, setCursorText } = useCursorContext();
   return (
     <div orientation="left" className={styles.copyright}>
       <a
         className="line-through"
         href="mailto:hello@erindhoxha.dev"
-        onMouseEnter={() => setCursorVariantFn('text')}
-        onMouseLeave={() => setCursorVariantFn('default')}
+        onMouseEnter={() => {
+          setCursorVariantFn("text");
+          setCursorText("go →");
+        }}
+        onMouseLeave={() => {
+          setCursorVariantFn("default");
+          setCursorText("");
+        }}
       >
         <div className={styles.copyrightInner}>hello@erind.dev</div>
       </a>

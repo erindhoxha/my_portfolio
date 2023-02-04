@@ -10,7 +10,7 @@
   padding-bottom: 12px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .navAndNameContainer {
     justify-content: start;
     padding-top: 32px;

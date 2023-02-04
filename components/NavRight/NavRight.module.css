@@ -9,7 +9,7 @@
   letter-spacing: -3px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .sectionRight {
     font-size: 15vw;
     font-weight: 400;
@@ -32,7 +32,7 @@
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .arrow {
     height: 10vw;
     width: 100%;

@@ -73,7 +73,7 @@ const projects = [
     location: "auckland, nz",
     image: sfg,
     href: "#",
-    id: 6,
+    id: 7,
   },
   {
     title: "99urban",
@@ -82,7 +82,7 @@ const projects = [
     location: "auckland, nz",
     image: wa,
     href: "#",
-    id: 6,
+    id: 8,
   },
   {
     title: "nz research information system | MBIE",
@@ -91,12 +91,12 @@ const projects = [
     location: "auckland, nz",
     image: wa,
     href: "#",
-    id: 6,
+    id: 9,
   },
 ];
 
 const Projects = () => {
-  const { setCursorVariantFn } = useCursorContext();
+  const { setCursorVariantFn, setCursorText } = useCursorContext();
 
   let boxVariants = {};
   let initial = {};
@@ -143,29 +143,36 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <div className={styles.imgCover}>
-                <Image
-                  className={styles.img}
-                  alt="portfolio image"
-                  src={project.image}
-                />
-              </div>
+              <Link
+                onMouseEnter={() => {
+                  setCursorVariantFn("text");
+                  setCursorText("view →");
+                }}
+                onMouseLeave={() => {
+                  setCursorVariantFn("default");
+                  setCursorText("");
+                }}
+                href={project.href}
+                className="link link-dark-thin-container"
+              >
+                <div className={styles.imgCover}>
+                  <Image
+                    className={styles.img}
+                    alt="portfolio image"
+                    src={project.image}
+                  />
+                </div>
 
-              <div className={styles.textContainer}>
-                <p>
-                  <lead>
-                    {project.date} / {project.frameworks} / {project.location}
-                  </lead>
-                </p>
-                <Link
-                  onMouseEnter={() => setCursorVariantFn("textInImage")}
-                  onMouseLeave={() => setCursorVariantFn("default")}
-                  href={project.href}
-                  className="link link-dark-thin"
-                >
+                <div className={styles.textContainer}>
+                  <p>
+                    <lead>
+                      {project.date} / {project.frameworks} / {project.location}
+                    </lead>
+                  </p>
+
                   <h1>{project.title}</h1>
-                </Link>
-              </div>
+                </div>
+              </Link>
             </motion.div>
           </div>
         ))}

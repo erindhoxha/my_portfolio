@@ -1,21 +1,21 @@
-import { useCursorContext } from '../../pages/_app';
-import React from 'react';
-import styles from './NavLeft.module.css';
-import { motion } from 'framer-motion';
+import { useCursorContext } from "../../pages/_app";
+import React from "react";
+import styles from "./NavLeft.module.css";
+import { motion } from "framer-motion";
 
 const NavLeft = () => {
-  const { setCursorVariantFn } = useCursorContext();
+  const { setCursorVariantFn, setCursorText } = useCursorContext();
 
   let boxVariants = {};
   let initialLine = {};
 
-  if (typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
     const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
     if (!isMobile) {
-      initialLine = { height: '0%', opacity: 0.2 };
+      initialLine = { height: "0%", opacity: 0.2 };
       boxVariants = {
         default: {
-          height: '100%',
+          height: "100%",
           opacity: 1,
         },
       };
@@ -26,8 +26,14 @@ const NavLeft = () => {
     <div className={styles.navLeft}>
       <div className={styles.navLeftItem}>
         <a
-          onMouseEnter={() => setCursorVariantFn('text')}
-          onMouseLeave={() => setCursorVariantFn('default')}
+          onMouseEnter={() => {
+            setCursorVariantFn("text");
+            setCursorText("github →");
+          }}
+          onMouseLeave={() => {
+            setCursorVariantFn("default");
+            setCursorText("");
+          }}
           href="#"
           className={styles.navLeftLink}
         >
@@ -44,8 +50,14 @@ const NavLeft = () => {
       ></motion.div>
       <div className={styles.navLeftItem}>
         <a
-          onMouseEnter={() => setCursorVariantFn('text')}
-          onMouseLeave={() => setCursorVariantFn('default')}
+          onMouseEnter={() => {
+            setCursorVariantFn("text");
+            setCursorText("go →");
+          }}
+          onMouseLeave={() => {
+            setCursorVariantFn("default");
+            setCursorText("");
+          }}
           href="#"
           className={styles.navLeftLink}
         >
@@ -54,8 +66,14 @@ const NavLeft = () => {
       </div>
       <div className={styles.navLeftItem}>
         <a
-          onMouseEnter={() => setCursorVariantFn('text')}
-          onMouseLeave={() => setCursorVariantFn('default')}
+          onMouseEnter={() => {
+            setCursorVariantFn("text");
+            setCursorText("go →");
+          }}
+          onMouseLeave={() => {
+            setCursorVariantFn("default");
+            setCursorText("");
+          }}
           href="#"
           className={styles.navLeftLink}
         >

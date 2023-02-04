@@ -1,13 +1,13 @@
-import { useCursorContext } from '../../pages/_app';
-import React from 'react';
-import styles from './NavRight.module.css';
-import { motion } from 'framer-motion';
+import { useCursorContext } from "../../pages/_app";
+import React from "react";
+import styles from "./NavRight.module.css";
+import { motion } from "framer-motion";
 
 const NavRight = () => {
   let initialLeft = {};
   let initialRight = {};
   let boxVariants = {};
-  if (typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
     const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
     if (!isMobile) {
       boxVariants = {
@@ -22,7 +22,7 @@ const NavRight = () => {
     //you need to refresh the page, it doesn't work when you resize it!
   }
 
-  const { setCursorVariantFn } = useCursorContext();
+  const { setCursorVariantFn, setCursorText } = useCursorContext();
   return (
     <div className={styles.sectionRight}>
       <div className={styles.nav}>
@@ -32,16 +32,22 @@ const NavRight = () => {
           transition={{ duration: 0.5, delay: 0 }}
           initial={initialLeft}
         >
-          <div class="nav-item" style={{ textAlign: 'left' }}>
+          <div className="nav-item" style={{ textAlign: "left" }}>
             <a
-              onMouseEnter={() => setCursorVariantFn('text')}
-              onMouseLeave={() => setCursorVariantFn('default')}
+              onMouseEnter={() => {
+                setCursorVariantFn("text");
+                setCursorText("work ↓");
+              }}
+              onMouseLeave={() => {
+                setCursorVariantFn("default");
+                setCursorText("");
+              }}
               href="#work"
-              class="link link-dark"
+              className="link link-dark"
             >
               <div className={styles.flexBox}>Work</div>
             </a>
-            <div class="nav-underline"></div>
+            <div className="nav-underline"></div>
           </div>
         </motion.div>
 
@@ -51,16 +57,22 @@ const NavRight = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
           initial={initialRight}
         >
-          <div class="nav-item">
+          <div className="nav-item">
             <a
-              onMouseEnter={() => setCursorVariantFn('text')}
-              onMouseLeave={() => setCursorVariantFn('default')}
+              onMouseEnter={() => {
+                setCursorVariantFn("text");
+                setCursorText("blog ↓");
+              }}
+              onMouseLeave={() => {
+                setCursorVariantFn("default");
+                setCursorText("");
+              }}
               href="#blog"
-              class="link link-dark"
+              className="link link-dark"
             >
               <div className={styles.flexBox}>Blog </div>
             </a>
-            <div class="nav-underline"></div>
+            <div className="nav-underline"></div>
           </div>
         </motion.div>
         <motion.div
@@ -69,12 +81,18 @@ const NavRight = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
           initial={initialRight}
         >
-          <div class="nav-item">
+          <div className="nav-item">
             <a
-              onMouseEnter={() => setCursorVariantFn('text')}
-              onMouseLeave={() => setCursorVariantFn('default')}
+              onMouseEnter={() => {
+                setCursorVariantFn("text");
+                setCursorText("dm ↓");
+              }}
+              onMouseLeave={() => {
+                setCursorVariantFn("default");
+                setCursorText("");
+              }}
               href="#contact"
-              class="link link-dark"
+              className="link link-dark"
             >
               <div className={styles.flexBox}>Contact </div>
             </a>

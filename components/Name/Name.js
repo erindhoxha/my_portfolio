@@ -1,13 +1,13 @@
-import React from 'react';
-import { useCursorContext } from '../../pages/_app';
-import styles from './Name.module.css';
-import { motion } from 'framer-motion';
+import React from "react";
+import { useCursorContext } from "../../pages/_app";
+import styles from "./Name.module.css";
+import { motion } from "framer-motion";
 
 const Name = () => {
-  const { setCursorVariantFn } = useCursorContext();
+  const { setCursorVariantFn, setCursorText } = useCursorContext();
   let boxVariants = {};
   let initial = {};
-  if (typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
     const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
     if (!isMobile) {
       boxVariants = {
@@ -49,12 +49,18 @@ const Name = () => {
               <div className={styles.innerBox}>
                 <p className="description">front-end, ui/ux</p>
                 <p className="description mb-0">
-                  Currently working at{' '}
+                  Currently working at{" "}
                   <a
                     className="link line-through semibold"
                     href="#"
-                    onMouseEnter={() => setCursorVariantFn('text')}
-                    onMouseLeave={() => setCursorVariantFn('default')}
+                    onMouseEnter={() => {
+                      setCursorVariantFn("text");
+                      setCursorText("go →");
+                    }}
+                    onMouseLeave={() => {
+                      setCursorVariantFn("default");
+                      setCursorText("");
+                    }}
                   >
                     Kablamo
                   </a>
@@ -74,8 +80,14 @@ const Name = () => {
                   <a
                     className="link line-through semibold"
                     href="#"
-                    onMouseEnter={() => setCursorVariantFn('text')}
-                    onMouseLeave={() => setCursorVariantFn('default')}
+                    onMouseEnter={() => {
+                      setCursorVariantFn("text");
+                      setCursorText("email →");
+                    }}
+                    onMouseLeave={() => {
+                      setCursorVariantFn("default");
+                      setCursorText("");
+                    }}
                   >
                     hello@erindhoxha.dev
                   </a>

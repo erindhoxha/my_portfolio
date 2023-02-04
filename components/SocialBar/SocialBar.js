@@ -1,6 +1,6 @@
-import { useCursorContext } from '../../pages/_app';
-import React from 'react';
-import styles from './SocialBar.module.css';
+import { useCursorContext } from "../../pages/_app";
+import React from "react";
+import styles from "./SocialBar.module.css";
 
 const SocialBar = () => {
   const { setCursorVariantFn } = useCursorContext();
@@ -13,8 +13,8 @@ const SocialBar = () => {
             aria-label="GitHub"
             target="_blank"
             rel="noreferrer"
-            onMouseEnter={() => setCursorVariantFn('text')}
-            onMouseLeave={() => setCursorVariantFn('default')}
+            onMouseEnter={() => setCursorVariantFn("text")}
+            onMouseLeave={() => setCursorVariantFn("default")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -22,9 +22,9 @@ const SocialBar = () => {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="feather feather-github"
             >
               <title>GitHub</title>
@@ -38,8 +38,8 @@ const SocialBar = () => {
             aria-label="Instagram"
             target="_blank"
             rel="noreferrer"
-            onMouseEnter={() => setCursorVariantFn('text')}
-            onMouseLeave={() => setCursorVariantFn('default')}
+            onMouseEnter={() => setCursorVariantFn("text")}
+            onMouseLeave={() => setCursorVariantFn("default")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -47,9 +47,9 @@ const SocialBar = () => {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="feather feather-instagram"
             >
               <title>Instagram</title>
@@ -65,8 +65,8 @@ const SocialBar = () => {
             aria-label="Twitter"
             target="_blank"
             rel="noreferrer"
-            onMouseEnter={() => setCursorVariantFn('text')}
-            onMouseLeave={() => setCursorVariantFn('default')}
+            onMouseEnter={() => setCursorVariantFn("text")}
+            onMouseLeave={() => setCursorVariantFn("default")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -74,9 +74,9 @@ const SocialBar = () => {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="feather feather-twitter"
             >
               <title>Twitter</title>
@@ -90,8 +90,8 @@ const SocialBar = () => {
             aria-label="Linkedin"
             target="_blank"
             rel="noreferrer"
-            onMouseEnter={() => setCursorVariantFn('text')}
-            onMouseLeave={() => setCursorVariantFn('default')}
+            onMouseEnter={() => setCursorVariantFn("text")}
+            onMouseLeave={() => setCursorVariantFn("default")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -99,9 +99,9 @@ const SocialBar = () => {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="feather feather-linkedin"
             >
               <title>LinkedIn</title>
@@ -117,8 +117,8 @@ const SocialBar = () => {
             aria-label="Codepen"
             target="_blank"
             rel="noreferrer"
-            onMouseEnter={() => setCursorVariantFn('text')}
-            onMouseLeave={() => setCursorVariantFn('default')}
+            onMouseEnter={() => setCursorVariantFn("text")}
+            onMouseLeave={() => setCursorVariantFn("default")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -126,9 +126,9 @@ const SocialBar = () => {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="feather feather-codepen"
             >
               <title>CodePen</title>

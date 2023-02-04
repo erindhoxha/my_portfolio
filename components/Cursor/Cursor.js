@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import styles from './Cursor.module.css';
-import { motion } from 'framer-motion';
+import React, { useEffect, useState } from "react";
+import styles from "./Cursor.module.css";
+import { motion } from "framer-motion";
 
-const Cursor = ({ variants, cursorVariant }) => {
+const Cursor = ({ variants, cursorVariant, cursorText }) => {
   return (
     <motion.div
       variants={variants}
       animate={cursorVariant}
       className={styles.cursor}
-    ></motion.div>
+    >
+      {cursorText}
+    </motion.div>
   );
 };
 
