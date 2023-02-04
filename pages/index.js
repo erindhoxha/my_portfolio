@@ -6,6 +6,7 @@ import NavLeft from "../components/NavLeft/NavLeft";
 import Name from "../components/Name/Name";
 import NavRight from "../components/NavRight/NavRight";
 import { useEffect, useState } from "react";
+import Blogs from "../components/Blogs/Blogs";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
 
         {/* <SocialBar /> */}
         <Projects />
+        <Blogs />
       </main>
     </>
   );

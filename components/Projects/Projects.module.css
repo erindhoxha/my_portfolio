@@ -24,7 +24,7 @@
   margin-bottom: 0px;
 }
 .textContainer lead {
-  color: rgb(var(--foreground-rgb));
+  color: rgb(var(--foreground-rgb), 0.9);
 }
 .imgCover {
   display: flex;
@@ -37,7 +37,8 @@
 .img {
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 16/9;
+  height:100%;
 }
 
 .h1 {

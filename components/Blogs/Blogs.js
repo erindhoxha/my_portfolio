@@ -1,92 +1,32 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./Projects.module.css";
-import Img from "../../public/img.jpg";
-import sfg from "../../images/sfg.png";
-import wa from "../../images/wa.png";
-import nzpg from "../../images/nzpg.png";
-import aw from "../../images/aw.png";
-import ppanels from "../../images/ppanels.png";
+import styles from "./Blogs.module.css";
+import blog1 from "../../images/blog1.webp";
+import blog2 from "../../images/blog2.gif";
 import debugConImg from "../../images/debugCon.svg";
 import { useCursorContext } from "../../pages/_app";
 
-const projects = [
+const blogs = [
   {
-    title: "wilsonart",
-    date: 2023,
-    frameworks: "js, ts, wp, ai, psd, sass",
-    location: "auckland, nz",
-    image: wa,
-    href: "#",
-    id: 2,
-  },
-  {
-    title: "nz panels group",
-    date: 2023,
-    frameworks: "js, ts, wp, ai, psd, sass",
-    location: "auckland, nz",
-    image: nzpg,
-    href: "#",
-    id: 3,
-  },
-  {
-    title: "primepanels",
-    date: 2023,
-    frameworks: "js, ts, wp, ai, psd, sass",
-    location: "auckland, nz",
-    image: ppanels,
-    href: "#",
-    id: 4,
-  },
-  {
-    title: "shares for good",
-    date: 2023,
-    frameworks: "js, ts, wp, ai, psd, sass",
-    location: "auckland, nz",
-    image: sfg,
+    title: "New CSS Property: aspect-ratio",
+    date: 2022,
+    frameworks: "css, aspect-ratio / medium",
+    image: blog1,
     href: "#",
     id: 1,
   },
   {
-    title: "airways nz",
-    date: 2023,
-    frameworks: "js, ts, wp, ai, psd, sass",
-    location: "auckland, nz",
-    image: aw,
+    title: "Create animated icon on Adobe Illustrator for Web",
+    date: 2022,
+    frameworks: "ai, svg, web / medium",
+    image: blog2,
     href: "#",
-    id: 5,
-  },
-  {
-    title: "flatmately",
-    date: 2023,
-    frameworks: "js, ts, wp, ai, psd, sass",
-    location: "auckland, nz",
-    image: sfg,
-    href: "#",
-    id: 6,
-  },
-  {
-    title: "99urban",
-    date: 2023,
-    frameworks: "js, ts, wp, ai, psd, sass",
-    location: "auckland, nz",
-    image: wa,
-    href: "#",
-    id: 8,
-  },
-  {
-    title: "nz research information system | MBIE",
-    date: 2023,
-    frameworks: "js, ts, wp, ai, psd, sass",
-    location: "auckland, nz",
-    image: wa,
-    href: "#",
-    id: 9,
+    id: 1,
   },
 ];
 
-const Projects = () => {
+const Blogs = () => {
   const { setCursorVariantFn, setCursorText } = useCursorContext();
 
   let boxVariants = {};
@@ -110,7 +50,7 @@ const Projects = () => {
   }
 
   return (
-    <div className={`${styles.projectsContainer} container-fluid`} id="work">
+    <div className={`${styles.projectsContainer} container-fluid`} id="blog">
       <motion.div
         variants={boxVariants}
         animate="default"
@@ -118,15 +58,15 @@ const Projects = () => {
         initial={initial}
       >
         <h1 className={styles.h1}>
-          /work <p className="lead">recent_</p>
+          /blog <p className="lead">recent_</p>
         </h1>
       </motion.div>
 
       <div className="row p-0 m-0">
-        {projects.map((project) => (
+        {blogs.map((project) => (
           <div
             key={project.id}
-            className={`col-12 col-sm-6 col-md-4 col-lg-3 p-1 ${styles.portfolioContainer}`}
+            className={`col-12 col-sm-6 col-md-6 col-lg-3 p-1 ${styles.portfolioContainer}`}
           >
             <motion.div
               transition={{ duration: 0.5, delay: 0 }}
@@ -157,7 +97,7 @@ const Projects = () => {
                 <div className={styles.textContainer}>
                   <p>
                     <lead>
-                      {project.date} / {project.frameworks} / {project.location}
+                      {project.date} / {project.frameworks}
                     </lead>
                   </p>
 
@@ -172,4 +112,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Blogs;

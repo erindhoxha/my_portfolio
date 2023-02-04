@@ -47,8 +47,8 @@ const Name = () => {
               initial={initial}
             >
               <div className={styles.innerBox}>
-                <p className="description">front-end, ui/ux</p>
-                <p className="description mb-0">
+                <p>front-end, ui/ux</p>
+                <p className="mb-0">
                   Currently working at{" "}
                   <a
                     className="link line-through semibold"
@@ -74,9 +74,9 @@ const Name = () => {
               initial={initial}
             >
               <div className={styles.innerBox}>
-                <p className="description">Sydney, Australia 🇦🇺</p>
+                <p>Sydney, Australia 🇦🇺</p>
 
-                <p className="description mb-0">
+                <p className="mb-0">
                   <a
                     className="link line-through semibold"
                     href="#"
