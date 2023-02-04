@@ -70,7 +70,7 @@ const NavRight = () => {
               href="#blog"
               className="link link-dark"
             >
-              <div className={styles.flexBox}>Blog </div>
+              <div className={`${styles.flexBox}`}>Blog </div>
             </a>
             <div className="nav-underline"></div>
           </div>

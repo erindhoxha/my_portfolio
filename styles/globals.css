@@ -243,3 +243,7 @@ a.link:hover::after {
 .w-100 {
   width:100%;
 }
+
+.primary {
+  color:rgb(21, 38, 226);
+}
