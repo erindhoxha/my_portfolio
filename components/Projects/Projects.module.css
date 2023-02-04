@@ -5,12 +5,7 @@
   padding: 112px var(--padding-left);
   padding-top: 24px;
 }
-@media screen and (max-width: 767px) {
-  .projectsContainer {
-    padding: 24px;
-    padding-top: 0px;
-  }
-}
+
 .textContainer {
   margin-top: 12px;
 }
@@ -68,11 +63,14 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .projectsContainer {
+    padding: 24px;
+  }
+}
+
 @media screen and (max-width:600px) {
   .h1 {
     font-size:9vw !important;
-  }
-  .projectsContainer {
-    padding-top:24px;
   }
 }
