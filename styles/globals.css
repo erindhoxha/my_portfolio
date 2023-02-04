@@ -105,6 +105,17 @@ body {
   color: rgb(var(--background-start-rgb));
   background-color: rgb(7, 7, 7);
 }
+
+::-moz-selection { /* Code for Firefox */
+  color: rgb(var(--background-start-rgb));
+  background-color:rgb(var(--foreground-rgb));
+}
+
+::selection {
+  color: rgb(var(--background-start-rgb));
+  background-color:rgb(var(--foreground-rgb));
+}
+
 p {
   font-size: 13px;
   font-weight: 400;
