@@ -29,7 +29,7 @@
   }
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-width:767px) {
   .cursor {
     width: 0;
     height: 0;

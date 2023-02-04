@@ -66,7 +66,7 @@
   }
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-width:767px) {
   .navLeft {
     padding-top: 56px;
     position: absolute;
