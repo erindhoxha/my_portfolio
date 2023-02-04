@@ -30,10 +30,10 @@
   }
 }
 
-@media only screen and (orientation: landscape) and (max-width:767px) {
+@media only screen and (orientation: landscape) and (max-width:900px) {
   .cursor {
     width: 0;
     height: 0;
-    display: none;
+    display: none !important;
   }
 }
