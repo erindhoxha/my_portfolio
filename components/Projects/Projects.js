@@ -118,7 +118,7 @@ const Projects = () => {
         initial={initial}
       >
         <h1 className={styles.h1}>
-          /work <p className="lead">recent_</p>
+          /work <p className="lead mb-0">recent_</p>
         </h1>
       </motion.div>
 

@@ -58,7 +58,7 @@ const Blogs = () => {
         initial={initial}
       >
         <h1 className={styles.h1}>
-          /blog <p className="lead">recent_</p>
+          /blog <p className="lead mb-0">recent_</p>
         </h1>
       </motion.div>
 

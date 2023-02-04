@@ -16,7 +16,7 @@
   }
   .textContainer h1 {
     color: rgb(var(--foreground-rgb));
-    margin-top: 6px;
+    margin-top: 4px;
     font-size: 2.2rem;
   }
   .textContainer p {
