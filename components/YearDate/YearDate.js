@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Yeardate.module.css";
 import { motion } from "framer-motion";
 
-const YearDate = () => {
+const YearDate = ({ year }) => {
   let initialLine = { height: "0px" };
   let boxVariants = {
     default: {
@@ -31,7 +31,7 @@ const YearDate = () => {
         className={styles.navLine}
         variants={boxVariants}
       ></motion.div>
-      <div className={styles.copyrightInner}>©/2023</div>
+      <div className={styles.copyrightInner}>©/{year || 2023}</div>
     </div>
   );
 };

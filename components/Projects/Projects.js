@@ -18,7 +18,7 @@ const projects = [
     frameworks: "js, ts, wp, ai, psd, sass",
     location: "auckland, nz",
     image: wa,
-    href: "#",
+    href: "/work/wilsonart",
     id: 2,
   },
   {
@@ -140,6 +140,10 @@ const Projects = () => {
                   setCursorText("view →");
                 }}
                 onMouseLeave={() => {
+                  setCursorVariantFn("default");
+                  setCursorText("");
+                }}
+                onClick={() => {
                   setCursorVariantFn("default");
                   setCursorText("");
                 }}

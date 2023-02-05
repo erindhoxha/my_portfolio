@@ -24,8 +24,8 @@ export default function App({ Component, pageProps }) {
   const [cursorText, setCursorText] = useState("");
   const variants = {
     default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
+      x: mousePosition.x - 25,
+      y: mousePosition.y - 25,
     },
     text: {
       height: 70,

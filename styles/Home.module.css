@@ -5,7 +5,7 @@
 .navAndNameContainer {
   display: flex;
   flex-direction: column;
-  min-height: 80vh;
+  min-height: 83.8vh;
   justify-content: space-between;
   padding-bottom: 12px;
 }

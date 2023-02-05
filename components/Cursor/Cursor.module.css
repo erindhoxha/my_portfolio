@@ -1,12 +1,12 @@
 .cursor {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   border: 2px solid rgb(var(--foreground-rgb));
   position: fixed;
   top: 0;
   left: 0;
-  transition: 0.1s ease;
+  transition: 0.07s ease;
   pointer-events: none;
   -webkit-user-select: none;
   -moz-user-select: none;
