@@ -30,6 +30,7 @@
   }
 }
 
+
 @media only screen and (orientation: landscape) and (max-width:900px) {
   .sectionRight {
     font-size: 7vw;

@@ -1,24 +1,38 @@
 .nameContainer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  display:flex;
+  justify-content: space-between;
   padding-left: var(--padding-left);
+  padding-right: var(--padding-left);
   padding-top: 24px;
+  align-items:flex-end;
 }
+
+
+.qotd lead {
+  display:block;
+  margin-bottom:6px;
+  font-weight:500;
+  font-size:1.2rem;
+  margin-top:12px;
+}
+.qotd {
+  letter-spacing:0px;
+  max-width:320px;
+  margin-left:auto;
+  line-height:120%;
+  text-align:left;
+  margin-top:auto;
+  opacity:0.3;
+  font-size:1rem;
+  margin-bottom:0px;
+}
+
+@media screen and (max-width: 1280px) {
+  .qotd {
+    display:none;
+  }
+}
+
 
 
 @media screen and (max-width: 767px) {

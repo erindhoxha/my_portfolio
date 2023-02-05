@@ -2,6 +2,7 @@ import React from "react";
 import { useCursorContext } from "../../pages/_app";
 import styles from "./Name.module.css";
 import { motion } from "framer-motion";
+import YearDate from "../YearDate/YearDate";
 
 const Name = () => {
   const { setCursorVariantFn, setCursorText } = useCursorContext();
@@ -96,6 +97,36 @@ const Name = () => {
             </motion.div>
           </div>
         </div>
+      </div>
+      <div className={styles.box}>
+        <p className={styles.qotd}>
+          available for freelance work
+          <lead>social_</lead>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/erindhoxha"
+          >
+            twitter
+          </a>{" "}
+          /{" "}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://instagram.com/erindhox"
+          >
+            insta
+          </a>{" "}
+          /{" "}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://facebook.com/hoxhaerind"
+          >
+            fb
+          </a>{" "}
+        </p>
+        <YearDate />
       </div>
     </div>
   );

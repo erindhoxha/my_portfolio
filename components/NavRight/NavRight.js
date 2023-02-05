@@ -50,7 +50,6 @@ const NavRight = () => {
             <div className="nav-underline"></div>
           </div>
         </motion.div>
-
         <motion.div
           variants={boxVariants}
           animate="default"

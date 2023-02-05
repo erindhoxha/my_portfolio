@@ -1,8 +1,4 @@
 .copyright {
-  position: absolute;
-  right: 0%;
-  top: auto;
-  bottom: 10vh;
   margin-bottom: 40px;
   padding-right: 15px;
   padding-left: 20px;
@@ -39,6 +35,7 @@
     display: none;
   }
   .copyright {
+    position:absolute;
     right: -12px;
     bottom: 34px;
     margin-bottom: 0px;
