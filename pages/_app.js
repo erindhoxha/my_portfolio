@@ -4,6 +4,7 @@ import "../styles/fonts.css";
 import Navbar from "../components/Navbar/Navbar";
 import Cursor from "../components/Cursor/Cursor";
 import { createContext, useContext, useEffect, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 export const CursorContext = createContext({
   mousePosition: {
@@ -108,6 +109,7 @@ export default function App({ Component, pageProps }) {
           variants={variants}
           cursorVariant={cursorVariant}
         />
+        <Analytics />
         <Component data-theme={theme || "dark"} {...pageProps} />
       </CursorContext.Provider>
     </>
