@@ -27,7 +27,7 @@ const projects = [
     frameworks: "js, ts, wp, ai, psd, sass",
     location: "auckland, nz",
     image: nzpg,
-    href: "#",
+    href: "/work/nzpanelsgroup",
     id: 3,
   },
   {

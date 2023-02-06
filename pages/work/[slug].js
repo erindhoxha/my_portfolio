@@ -35,10 +35,10 @@ export default function Post({ post, morePosts, preview }) {
 
   return (
     <>
-      <div className="slug">
+      <div className="slug container-fluid">
         <Navbar />
         <div className={styles.slug}>
-          <div className={`${styles.slugContainer} bg container-fluid`}>
+          <div className={`${styles.slugContainer} bg`}>
             <div className={styles.navMobile}>
               <Navbar />
             </div>
