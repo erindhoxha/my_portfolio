@@ -62,23 +62,33 @@ export default function Post({ post, morePosts, preview }) {
               <motion.div
                 variants={boxVariants}
                 animate="default"
-                transition={{ duration: 0.5, delay: 0.5 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
                 initial={initialRight}
               >
-                <h1>{post.title}</h1>
                 <p className={styles.fadedP}>showcase_</p>
+                <h1>{post.title}</h1>
               </motion.div>
 
               <motion.div
                 variants={boxVariants}
                 animate="default"
-                transition={{ duration: 0.5, delay: 0.7 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
                 initial={initialRight}
               >
                 <h2 className={`mt-5`}>tools used</h2>
                 <p className={styles.fadedP}>
                   ts, react, redux, figma, ai, contentful
                 </p>
+              </motion.div>
+
+              <motion.div
+                variants={boxVariants}
+                animate="default"
+                transition={{ duration: 0.5, delay: 0.8 }}
+                initial={initialRight}
+              >
+                <h2 className={`mt-5`}>year</h2>
+                <p className={styles.fadedP}>2022</p>
               </motion.div>
 
               <div className={styles.nameContainer}>
