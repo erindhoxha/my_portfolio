@@ -18,13 +18,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} container-fluid home`}>
-        <Navbar />
-        <div className={`container-fluid p-0 h-100`}>
-          <NavLeft />
-          <div className={styles.navAndNameContainer}>
-            <NavRight />
-            <Name />
+      <main className={`${styles.main} container-fluid`}>
+        <div className="home">
+          <Navbar />
+          <div className={`container-fluid p-0 h-100`}>
+            <NavLeft />
+            <div className={styles.navAndNameContainer}>
+              <NavRight />
+              <Name />
+            </div>
           </div>
         </div>
 

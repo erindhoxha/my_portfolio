@@ -35,13 +35,14 @@ export default function Post({ post, morePosts, preview }) {
 
   return (
     <>
-      <Navbar />
-      <div className={styles.slug}>
-        <div className={`${styles.slugContainer} bg container-fluid`}>
-          <div className={styles.navMobile}>
-            <Navbar />
-          </div>
-          {/* <motion.div
+      <div className="slug">
+        <Navbar />
+        <div className={styles.slug}>
+          <div className={`${styles.slugContainer} bg container-fluid`}>
+            <div className={styles.navMobile}>
+              <Navbar />
+            </div>
+            {/* <motion.div
             variants={boxVariants}
             animate="default"
             transition={{ duration: 1, delay: 0 }}
@@ -56,38 +57,39 @@ export default function Post({ post, morePosts, preview }) {
             className={styles.loader2}
           ></motion.div> */}
 
-          <NavLeft />
-          <div className={styles.slugContainerInner}>
-            <motion.div
-              variants={boxVariants}
-              animate="default"
-              transition={{ duration: 0.5, delay: 0.5 }}
-              initial={initialRight}
-            >
-              <h1>{post.title}</h1>
-              <p className={styles.fadedP}>showcase_</p>
-            </motion.div>
+            <NavLeft />
+            <div className={styles.slugContainerInner}>
+              <motion.div
+                variants={boxVariants}
+                animate="default"
+                transition={{ duration: 0.5, delay: 0.5 }}
+                initial={initialRight}
+              >
+                <h1>{post.title}</h1>
+                <p className={styles.fadedP}>showcase_</p>
+              </motion.div>
 
-            <motion.div
-              variants={boxVariants}
-              animate="default"
-              transition={{ duration: 0.5, delay: 0.7 }}
-              initial={initialRight}
-            >
-              <h2 className={`mt-5`}>tools used</h2>
-              <p className={styles.fadedP}>
-                ts, react, redux, figma, ai, contentful
-              </p>
-            </motion.div>
+              <motion.div
+                variants={boxVariants}
+                animate="default"
+                transition={{ duration: 0.5, delay: 0.7 }}
+                initial={initialRight}
+              >
+                <h2 className={`mt-5`}>tools used</h2>
+                <p className={styles.fadedP}>
+                  ts, react, redux, figma, ai, contentful
+                </p>
+              </motion.div>
 
-            <div className={styles.nameContainer}>
-              <PortfolioLeftDescription
-                title=""
-                role="front-end, ui/ux"
-                link="wilsonart.co.nz"
-                href="https://wilsonart.co.nz"
-                location="auckland, nz"
-              />
+              <div className={styles.nameContainer}>
+                <PortfolioLeftDescription
+                  title=""
+                  role="front-end, ui/ux"
+                  link="wilsonart.co.nz"
+                  href="https://wilsonart.co.nz"
+                  location="auckland, nz"
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -37,7 +37,7 @@ const Navbar = () => {
     <>
       <header>
         <nav className={`${navbarStyles.nav} container-fluid`}>
-          <motion.div animate={{ x: 24 }}>
+          <motion.div initial={{ x: 24 }}>
             <Logo />
           </motion.div>
         </nav>
