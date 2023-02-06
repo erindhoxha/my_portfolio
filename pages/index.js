@@ -39,8 +39,8 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#070707" />
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
-      <main className={`${styles.main} container-fluid`}>
-        <div className="home">
+      <main className={`${styles.main}`}>
+        <div className="home container-fluid">
           <Navbar />
           <div className={`container-fluid p-0 h-100`}>
             <NavLeft />
