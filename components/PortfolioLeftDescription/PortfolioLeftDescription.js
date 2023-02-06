@@ -45,7 +45,6 @@ const PortfolioLeftDescription = ({ title, role, link, href, location }) => {
               <div className={styles.innerBox}>
                 <p>{role}</p>
                 <p className="mb-0">
-                  view project at{" "}
                   <a
                     className="link line-through semibold"
                     href={href}
@@ -75,10 +74,12 @@ const PortfolioLeftDescription = ({ title, role, link, href, location }) => {
                 <p className="mb-0">
                   <a
                     className="link line-through semibold"
-                    href="#"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="mailto:hello@erindhoxha.dev"
                     onMouseEnter={() => {
                       setCursorVariantFn("text");
-                      setCursorText("email →");
+                      setCursorText("email me");
                     }}
                     onMouseLeave={() => {
                       setCursorVariantFn("default");

@@ -42,7 +42,7 @@ const NavLeft = () => {
           target="_blank"
           href="https://github.com/erindhoxha"
           rel="noreferrer"
-          className={styles.navLeftLink}
+          className={`${styles.navLeftLink} noselect`}
         >
           github
         </a>
@@ -68,7 +68,7 @@ const NavLeft = () => {
           target="_blank"
           rel="noreferrer"
           href="https://linkedin.com/in/erindhoxha"
-          className={styles.navLeftLink}
+          className={`${styles.navLeftLink} noselect`}
         >
           LI
         </a>
@@ -86,7 +86,7 @@ const NavLeft = () => {
           target="_blank"
           rel="noreferrer"
           href="https://medium.com/@erindhoxha"
-          className={styles.navLeftLink}
+          className={`${styles.navLeftLink} noselect`}
         >
           MD
         </a>

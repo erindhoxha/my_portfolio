@@ -1,6 +1,6 @@
 .navLeft {
   position: fixed;
-  z-index: 600;
+  z-index: 2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

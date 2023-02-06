@@ -103,7 +103,6 @@ export default function App({ Component, pageProps }) {
     <>
       {/* <motion.div className="progress-bar" style={{ scaleX }} /> */}
       <CursorContext.Provider value={context}>
-        <Navbar />
         <Cursor
           cursorText={cursorText}
           variants={variants}

@@ -80,10 +80,12 @@ const Name = () => {
                 <p className="mb-0">
                   <a
                     className="link line-through semibold"
-                    href="#"
+                    href="mailto:hello@erindhoxha.dev"
+                    target="_blank"
+                    rel="noreferrer"
                     onMouseEnter={() => {
                       setCursorVariantFn("text");
-                      setCursorText("email →");
+                      setCursorText("email me");
                     }}
                     onMouseLeave={() => {
                       setCursorVariantFn("default");
