@@ -1,13 +1,13 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import Projects from "../components/Projects/Projects";
-import YearDate from "../components/YearDate/YearDate";
-import NavLeft from "../components/NavLeft/NavLeft";
-import Name from "../components/Name/Name";
-import NavRight from "../components/NavRight/NavRight";
-import { useEffect, useState } from "react";
-import Blogs from "../components/Blogs/Blogs";
-import Navbar from "../components/Navbar/Navbar";
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+import Projects from '../components/Projects/Projects';
+import YearDate from '../components/YearDate/YearDate';
+import NavLeft from '../components/NavLeft/NavLeft';
+import Name from '../components/Name/Name';
+import NavRight from '../components/NavRight/NavRight';
+import { useEffect, useState } from 'react';
+import Blogs from '../components/Blogs/Blogs';
+import Navbar from '../components/Navbar/Navbar';
 
 export default function Home() {
   return (
