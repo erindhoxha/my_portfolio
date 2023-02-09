@@ -1,36 +1,35 @@
-import React, { useEffect, useState } from "react";
-import Logo from "../Logo/Logo";
-import navbarStyles from "./Navbar.module.css";
-import { motion } from "framer-motion";
-import { useCursorContext } from "../../pages/_app";
+import React, { useEffect, useState } from 'react';
+import Logo from '../Logo/Logo';
+import navbarStyles from './Navbar.module.css';
+import { motion } from 'framer-motion';
+import { useCursorContext } from '../../pages/_app';
 
 const Navbar = () => {
-  const [theme, setTheme] = useState("");
-  const { setCursorVariantFn, setCursorText } = useCursorContext();
+  const [theme, setTheme] = useState('');
   useEffect(() => {
     if (
-      localStorage.getItem("theme") === "dark" ||
-      localStorage.getItem("theme") === "" ||
-      localStorage.getItem("theme") === null
+      localStorage.getItem('theme') === 'dark' ||
+      localStorage.getItem('theme') === '' ||
+      localStorage.getItem('theme') === null
     ) {
-      setTheme("dark");
+      setTheme('dark');
     } else {
-      setTheme("light");
+      setTheme('light');
     }
   }, []);
 
   const switchTheme = () => {
     if (
-      document.documentElement.attributes["data-theme"].value === "dark" ||
-      document.documentElement.attributes["data-theme"].value === ""
+      document.documentElement.attributes['data-theme'].value === 'dark' ||
+      document.documentElement.attributes['data-theme'].value === ''
     ) {
-      document.documentElement.setAttribute("data-theme", "light");
-      localStorage.setItem("theme", "light");
-      setTheme("light");
+      document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+      setTheme('light');
     } else {
-      document.documentElement.setAttribute("data-theme", "dark");
-      localStorage.setItem("theme", "dark");
-      setTheme("dark");
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+      setTheme('dark');
     }
   };
   return (
@@ -47,9 +46,8 @@ const Navbar = () => {
           switchTheme();
         }}
         className={`${navbarStyles.sun} ${
-          theme === "dark" ? navbarStyles.sunDark : ""
+          theme === 'dark' ? navbarStyles.sunDark : ''
         }`}
-        alt="sun"
         xmlns="http://www.w3.org/2000/svg"
         width="44"
         height="44"
@@ -68,7 +66,7 @@ const Navbar = () => {
         />
         <circle cx="12" cy="12" r="4" />
         <line
-          className={theme === "light" ? navbarStyles.line : ""}
+          className={theme === 'light' ? navbarStyles.line : ''}
           x1="3"
           y1="3"
           x2="21"

@@ -1,29 +1,29 @@
-import React from "react";
-import styles from "./Yeardate.module.css";
-import { motion } from "framer-motion";
+import React from 'react';
+import styles from './Yeardate.module.css';
+import { motion } from 'framer-motion';
 
 const YearDate = ({ year }) => {
-  let initialLine = { height: "0px" };
+  let initialLine = { height: '0px' };
   let boxVariants = {
     default: {
-      height: "50px",
+      height: '50px',
     },
   };
 
-  if (typeof window !== "undefined") {
+  if (typeof window !== 'undefined') {
     const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
     if (!isMobile) {
-      initialLine = { height: "0px" };
+      initialLine = { height: '0px' };
       boxVariants = {
         default: {
-          height: "50px",
+          height: '50px',
         },
       };
     } //if the width >= 768px, boxVariants will be empty, resulting in no animation
     //you need to refresh the page, it doesn't work when you resize it!
   }
   return (
-    <div orientation="left" className={styles.copyright}>
+    <div className={styles.copyright}>
       <motion.div
         initial={initialLine}
         transition={{ duration: 0.75, delay: 0.5 }}

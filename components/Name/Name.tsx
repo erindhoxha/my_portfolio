@@ -1,14 +1,14 @@
-import React from "react";
-import { useCursorContext } from "../../pages/_app";
-import styles from "./Name.module.css";
-import { motion } from "framer-motion";
-import YearDate from "../YearDate/YearDate";
+import React from 'react';
+import { useCursorContext } from '../../pages/_app';
+import styles from './Name.module.css';
+import { motion } from 'framer-motion';
+import YearDate from '../YearDate/YearDate';
 
 const Name = () => {
   const { setCursorVariantFn, setCursorText } = useCursorContext();
   let boxVariants = {};
   let initial = {};
-  if (typeof window !== "undefined") {
+  if (typeof window !== 'undefined') {
     const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
     if (!isMobile) {
       boxVariants = {
@@ -50,17 +50,17 @@ const Name = () => {
               <div className={styles.innerBox}>
                 <p>front-end, ui/ux</p>
                 <p className="mb-0">
-                  Currently working at{" "}
+                  Currently working at{' '}
                   <a
                     className="link line-through semibold"
                     href="#"
                     onMouseEnter={() => {
-                      setCursorVariantFn("text");
-                      setCursorText("go →");
+                      setCursorVariantFn('text');
+                      setCursorText('go →');
                     }}
                     onMouseLeave={() => {
-                      setCursorVariantFn("default");
-                      setCursorText("");
+                      setCursorVariantFn('default');
+                      setCursorText('');
                     }}
                   >
                     Kablamo
@@ -84,12 +84,12 @@ const Name = () => {
                     target="_blank"
                     rel="noreferrer"
                     onMouseEnter={() => {
-                      setCursorVariantFn("text");
-                      setCursorText("email me");
+                      setCursorVariantFn('text');
+                      setCursorText('email me');
                     }}
                     onMouseLeave={() => {
-                      setCursorVariantFn("default");
-                      setCursorText("");
+                      setCursorVariantFn('default');
+                      setCursorText('');
                     }}
                   >
                     hello@erindhoxha.dev
@@ -101,34 +101,34 @@ const Name = () => {
         </div>
       </div>
       <div className={styles.box}>
-        <p className={styles.qotd}>
+        <span className={styles.qotd}>
           available for freelance work
-          <lead>social_</lead>
+          <p className={styles.lead}>social_</p>
           <a
             target="_blank"
             rel="noreferrer"
             href="https://github.com/erindhoxha"
           >
             twitter
-          </a>{" "}
-          /{" "}
+          </a>{' '}
+          /{' '}
           <a
             target="_blank"
             rel="noreferrer"
             href="https://instagram.com/erindhox"
           >
             insta
-          </a>{" "}
-          /{" "}
+          </a>{' '}
+          /{' '}
           <a
             target="_blank"
             rel="noreferrer"
             href="https://facebook.com/hoxhaerind"
           >
             fb
-          </a>{" "}
-        </p>
-        <YearDate />
+          </a>{' '}
+        </span>
+        <YearDate year="2023" />
       </div>
     </div>
   );

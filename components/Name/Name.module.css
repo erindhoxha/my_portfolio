@@ -1,39 +1,44 @@
 .nameContainer {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   padding-left: var(--padding-left);
   padding-right: 0px;
   padding-top: 24px;
-  align-items:flex-end;
+  align-items: flex-end;
 }
 
+.lead {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 12px;
+}
 
 .qotd lead {
-  display:block;
-  margin-bottom:6px;
-  font-weight:500;
-  font-size:1.2rem;
-  margin-top:12px;
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 12px;
 }
 .qotd {
-  letter-spacing:0px;
-  max-width:320px;
-  margin-left:auto;
-  line-height:120%;
-  text-align:left;
-  margin-top:auto;
-  opacity:0.3;
-  font-size:1rem;
-  margin-bottom:0px;
+  letter-spacing: 0px;
+  max-width: 320px;
+  margin-left: auto;
+  line-height: 120%;
+  text-align: left;
+  margin-top: auto;
+  opacity: 0.3;
+  font-size: 1rem;
+  margin-bottom: 0px;
 }
 
 @media screen and (max-width: 1280px) {
   .qotd {
-    display:none;
+    display: none;
   }
 }
-
-
 
 @media screen and (max-width: 767px) {
   .nameContainer {

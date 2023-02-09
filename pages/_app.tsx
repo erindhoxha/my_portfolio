@@ -1,18 +1,18 @@
-import "bootstrap/dist/css/bootstrap-grid.min.css";
-import "../styles/globals.css";
-import "../styles/fonts.css";
-import Navbar from "../components/Navbar/Navbar";
-import Cursor from "../components/Cursor/Cursor";
-import { createContext, useContext, useEffect, useState } from "react";
-import { Analytics } from "@vercel/analytics/react";
+import 'bootstrap/dist/css/bootstrap-grid.min.css';
+import '../styles/globals.css';
+import '../styles/fonts.css';
+import Cursor from '../components/Cursor/Cursor';
+import { createContext, useContext, useEffect, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
 export const CursorContext = createContext({
   mousePosition: {
     x: undefined,
     y: undefined,
   },
-  cursorVariant: "",
-  setCursorVariant: () => null,
+  cursorVariant: '',
+  setCursorVariantFn: (s: string) => null,
+  setCursorText: (s: string) => null,
   variants: {},
 });
 
@@ -21,8 +21,8 @@ export default function App({ Component, pageProps }) {
     x: 0,
     y: 0,
   });
-  const [cursorVariant, setCursorVariant] = useState("default");
-  const [cursorText, setCursorText] = useState("");
+  const [cursorVariant, setCursorVariant] = useState('default');
+  const [cursorText, setCursorText] = useState('');
   const variants = {
     default: {
       x: mousePosition.x - 25,
@@ -33,8 +33,8 @@ export default function App({ Component, pageProps }) {
       width: 70,
       x: mousePosition.x - 35,
       y: mousePosition.y - 35,
-      fontSize: "15px",
-      backgroundColor: "var(--text-hex)",
+      fontSize: '15px',
+      backgroundColor: 'var(--text-hex)',
     },
     test: {
       height: 70,
@@ -55,11 +55,12 @@ export default function App({ Component, pageProps }) {
       y: e.clientY,
     });
   };
+
   useEffect(() => {
-    window.addEventListener("mousemove", mouseMove);
+    window.addEventListener('mousemove', mouseMove);
 
     return () => {
-      window.removeEventListener("mousemove", mouseMove);
+      window.removeEventListener('mousemove', mouseMove);
     };
   }, []);
 
@@ -84,18 +85,18 @@ export default function App({ Component, pageProps }) {
   //   restDelta: 0.001,
   // });
 
-  const [theme, setTheme] = useState("");
+  const [theme, setTheme] = useState('');
   useEffect(() => {
     if (
-      localStorage.getItem("theme") === "dark" ||
-      localStorage.getItem("theme") === "" ||
-      localStorage.getItem("theme") === null
+      localStorage.getItem('theme') === 'dark' ||
+      localStorage.getItem('theme') === '' ||
+      localStorage.getItem('theme') === null
     ) {
-      document.documentElement.setAttribute("data-theme", "dark");
-      setTheme("dark");
+      document.documentElement.setAttribute('data-theme', 'dark');
+      setTheme('dark');
     } else {
-      document.documentElement.setAttribute("data-theme", "light");
-      setTheme("light");
+      document.documentElement.setAttribute('data-theme', 'light');
+      setTheme('light');
     }
   }, []);
 
@@ -109,7 +110,7 @@ export default function App({ Component, pageProps }) {
           cursorVariant={cursorVariant}
         />
         <Analytics />
-        <Component data-theme={theme || "dark"} {...pageProps} />
+        <Component data-theme={theme || 'dark'} {...pageProps} />
       </CursorContext.Provider>
     </>
   );

@@ -1,27 +1,26 @@
-import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import styles from "./Blogs.module.css";
-import blog1 from "../../images/blog1.webp";
-import blog2 from "../../images/blog2.gif";
-import debugConImg from "../../images/debugCon.svg";
-import { useCursorContext } from "../../pages/_app";
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
+import styles from './Blogs.module.css';
+import blog1 from '../../images/blog1.webp';
+import blog2 from '../../images/blog2.gif';
+import { useCursorContext } from '../../pages/_app';
 
 const blogs = [
   {
-    title: "new css property: aspect-ratio",
+    title: 'new css property: aspect-ratio',
     date: 2022,
-    frameworks: "css, aspect-ratio / medium",
+    frameworks: 'css, aspect-ratio / medium',
     image: blog1,
-    href: "#",
+    href: '#',
     id: 144,
   },
   {
-    title: "create animated icon on ai for web",
+    title: 'create animated icon on ai for web',
     date: 2022,
-    frameworks: "ai, svg, web / medium",
+    frameworks: 'ai, svg, web / medium',
     image: blog2,
-    href: "#",
+    href: '#',
     id: 145,
   },
 ];
@@ -33,7 +32,7 @@ const Blogs = () => {
   let initial = {};
   let initialCards = {};
   let whileInViewCards = {};
-  if (typeof window !== "undefined") {
+  if (typeof window !== 'undefined') {
     const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
     if (!isMobile) {
       boxVariants = {
@@ -76,12 +75,12 @@ const Blogs = () => {
             >
               <Link
                 onMouseEnter={() => {
-                  setCursorVariantFn("text");
-                  setCursorText("view →");
+                  setCursorVariantFn('text');
+                  setCursorText('view →');
                 }}
                 onMouseLeave={() => {
-                  setCursorVariantFn("default");
-                  setCursorText("");
+                  setCursorVariantFn('default');
+                  setCursorText('');
                 }}
                 href={project.href}
                 className={`${styles.link} link link-dark-thin-container w-100`}
@@ -96,10 +95,8 @@ const Blogs = () => {
                 </div>
 
                 <div className={styles.textContainer}>
-                  <p className="mb-1">
-                    <lead>
-                      {project.date} / {project.frameworks}
-                    </lead>
+                  <p className={`${styles.lead} mb-1`}>
+                    {project.date} / {project.frameworks}
                   </p>
                   <h3 className={styles.h3}>{project.title}</h3>
                 </div>
