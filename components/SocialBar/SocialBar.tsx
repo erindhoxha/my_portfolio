@@ -5,7 +5,7 @@ import styles from "./SocialBar.module.css";
 const SocialBar = () => {
   const { setCursorVariantFn } = useCursorContext();
   return (
-    <div orientation="left" className={styles.social}>
+    <div className={styles.social}>
       <ul>
         <li>
           <a

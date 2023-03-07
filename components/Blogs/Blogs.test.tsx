@@ -1,6 +1,6 @@
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
-import Blogs from './Blogs';
+import { render, screen } from "@testing-library/react";
+import "@testing-library/jest-dom";
+import Blogs from "./Blogs";
 
 beforeEach(() => {
   // IntersectionObserver isn't available in test environment
@@ -13,8 +13,8 @@ beforeEach(() => {
   window.IntersectionObserver = mockIntersectionObserver;
 });
 
-describe('Home', () => {
-  it('renders blogs', () => {
+describe("Home", () => {
+  it("renders blogs", () => {
     render(<Blogs />);
     expect(
       screen.getByText(/ew css property: aspect-ratio/i)
