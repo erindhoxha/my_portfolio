@@ -17,7 +17,7 @@ describe("Home", () => {
   it("renders blogs", () => {
     render(<Blogs />);
     expect(
-      screen.getByText(/ew css property: aspect-ratio/i)
+      screen.getByText(/new css property: aspect-ratio/i)
     ).toBeInTheDocument();
 
     expect(
