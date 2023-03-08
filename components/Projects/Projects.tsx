@@ -11,7 +11,7 @@ import ppanels from '../../images/ppanels.png';
 import debugConImg from '../../images/debugCon.svg';
 import { useCursorContext } from '../../pages/_app';
 
-const projects = [
+export const projects = [
   {
     title: 'wilsonart',
     date: 2023,
