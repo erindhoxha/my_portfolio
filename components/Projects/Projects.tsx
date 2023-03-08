@@ -1,88 +1,44 @@
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import Link from 'next/link';
-import styles from './Projects.module.css';
-import Img from '../../public/img.jpg';
-import sfg from '../../images/sfg.png';
-import wa from '../../images/wa.png';
-import nzpg from '../../images/nzpg.png';
-import aw from '../../images/aw.png';
-import ppanels from '../../images/ppanels.png';
-import debugConImg from '../../images/debugCon.svg';
-import { useCursorContext } from '../../pages/_app';
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import styles from "./Projects.module.css";
+import Img from "../../public/img.jpg";
+import sfg from "../../images/sfg.png";
+import wa from "../../images/wa.png";
+import nzpg from "../../images/nzpg.png";
+import aw from "../../images/aw.png";
+import ppanels from "../../images/ppanels.png";
+import debugConImg from "../../images/debugCon.svg";
+import debugCon from "../../images/debugCon2.png";
+import { useCursorContext } from "../../pages/_app";
 
 export const projects = [
   {
-    title: 'wilsonart',
-    date: 2023,
-    frameworks: 'js, ts, wp, ai, psd, sass',
-    location: 'auckland, nz',
-    image: wa,
-    href: '/work/wilsonart',
-    id: 2,
-  },
-  {
-    title: 'nz panels group',
-    date: 2023,
-    frameworks: 'js, ts, wp, ai, psd, sass',
-    location: 'auckland, nz',
-    image: nzpg,
-    href: '/work/nzpanelsgroup',
-    id: 3,
-  },
-  {
-    title: 'primepanels',
-    date: 2023,
-    frameworks: 'js, ts, wp, ai, psd, sass',
-    location: 'auckland, nz',
-    image: wa,
-    href: '#',
-    id: 4,
-  },
-  {
-    title: 'shares for good',
-    date: 2023,
-    frameworks: 'js, ts, wp, ai, psd, sass',
-    location: 'auckland, nz',
-    image: nzpg,
-    href: '#',
+    title: "debugCon",
+    date: 2022,
+    frameworks: "js, ts, wp, ai, psd, sass, graphic",
+    location: "auckland, nz",
+    image: debugCon,
+    href: "/work/debugCon",
     id: 1,
   },
   {
-    title: 'airways nz',
+    title: "primepanels",
     date: 2023,
-    frameworks: 'js, ts, wp, ai, psd, sass',
-    location: 'auckland, nz',
+    frameworks: "js, ts, wp, ai, psd, sass",
+    location: "auckland, nz",
     image: wa,
-    href: '#',
-    id: 5,
+    href: "#",
+    id: 2,
   },
   {
-    title: 'flatmately',
+    title: "wilsonart",
     date: 2023,
-    frameworks: 'js, ts, wp, ai, psd, sass',
-    location: 'auckland, nz',
-    image: nzpg,
-    href: '#',
-    id: 6,
-  },
-  {
-    title: '99urban',
-    date: 2023,
-    frameworks: 'js, ts, wp, ai, psd, sass',
-    location: 'auckland, nz',
+    frameworks: "js, ts, wp, ai, psd, sass",
+    location: "auckland, nz",
     image: wa,
-    href: '#',
-    id: 8,
-  },
-  {
-    title: 'nz research information system | MBIE',
-    date: 2023,
-    frameworks: 'js, ts, wp, ai, psd, sass',
-    location: 'auckland, nz',
-    image: wa,
-    href: '#',
-    id: 9,
+    href: "/work/wilsonart",
+    id: 3,
   },
 ];
 
@@ -93,7 +49,7 @@ const Projects = () => {
   let initialCards = {};
   let whileInViewCards = {};
   let boxVariants = {};
-  if (typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
     const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
     if (!isMobile) {
       boxVariants = {
@@ -136,16 +92,16 @@ const Projects = () => {
             >
               <Link
                 onMouseEnter={() => {
-                  setCursorVariantFn('text');
-                  setCursorText('view →');
+                  setCursorVariantFn("text");
+                  setCursorText("view →");
                 }}
                 onMouseLeave={() => {
-                  setCursorVariantFn('default');
-                  setCursorText('');
+                  setCursorVariantFn("default");
+                  setCursorText("");
                 }}
                 onClick={() => {
-                  setCursorVariantFn('default');
-                  setCursorText('');
+                  setCursorVariantFn("default");
+                  setCursorText("");
                 }}
                 href={project.href}
                 className={`${styles.link} link link-dark-thin-container w-100`}
