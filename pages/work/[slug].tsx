@@ -74,16 +74,16 @@ export default function Post({ post, morePosts, preview }) {
                 initial={initialRight}
               >
                 <h2 className={`mt-5`}>year</h2>
-                <p className={styles.fadedP}>2022</p>
+                <p className={styles.fadedP}>{post.year}</p>
               </motion.div>
 
               <div className={styles.nameContainer}>
                 <PortfolioLeftDescription
                   title=""
                   role={post.role}
-                  link="wilsonart.co.nz"
-                  href="https://wilsonart.co.nz"
-                  location="auckland, nz"
+                  link={post.urlName}
+                  href={post.url}
+                  location={post.location}
                 />
               </div>
             </div>
@@ -103,7 +103,11 @@ export async function getStaticProps({ params }) {
     'title',
     'tools',
     'role',
+    'url',
+    'urlName',
     'date',
+    'year',
+    'location',
     'slug',
     'author',
     'content',

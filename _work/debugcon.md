@@ -2,14 +2,10 @@
 title: "debugCon"
 tools: "ts, contentful, ai, psd"
 role: "front-end, ui/ux"
-excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus."
-coverImage: "/wa-img.png"
-date: "2023-03-16T05:35:07.322Z"
-author:
-  name: Joe Haddad
-  picture: "/assets/blog/authors/joe.jpeg"
-ogImage:
-  url: "/assets/blog/preview/cover.jpg"
+year: "2022"
+url: "https://erindhoxha.github.io/debugCon"
+urlName: "Visit website"
+location: "auckland, nz"
 ---
 
 ### Software development conference
@@ -139,3 +135,9 @@ The idea was to put inside the UBT University and call for volunteers, and letti
 This is why I love working with real people, real data.
 
 The feedback from the people who attended was awesome, and we've developed it in a way that everyone could see the schedule.
+
+---
+
+[View website](https://erindhoxha.github.io/debugCon) | [Contact me](mailto:hello@erindhoxha.dev)
+
+

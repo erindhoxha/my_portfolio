@@ -48,6 +48,8 @@ const PortfolioLeftDescription = ({ title, role, link, href, location }) => {
                   <a
                     className="link line-through semibold"
                     href={href}
+                    target="_blank"
+                    rel="noreferrer"
                     onMouseEnter={() => {
                       setCursorVariantFn('text');
                       setCursorText('go →');
