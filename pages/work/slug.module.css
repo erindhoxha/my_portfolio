@@ -103,8 +103,20 @@
 .showcaseContainer {
   padding: 112px var(--padding-left);
   padding-top: 24px;
-  display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  width:100%;
+}
+
+.showcaseContainer p {
+  max-width:800px;
+}
+
+
+.showcaseContainer img {
+  width:100%;
+  max-width:600px;
+  margin-top:24px;
+  margin-bottom:24px;
 }
 
 .img {

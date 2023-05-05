@@ -125,6 +125,7 @@ p {
   font-size: 1.35rem;
   font-weight: 400;
   margin-bottom: 12px;
+  line-height:2rem;
 }
 h1 {
   font-size: 2.8rem;
@@ -155,7 +156,9 @@ h2 {
 h3 {
   font-size: 1.8rem;
   font-weight: 500;
+  margin-bottom:12px;
 }
+
 @media screen and (max-width: 767px) {
   h3 {
     font-size: 1.6rem;
@@ -374,4 +377,11 @@ html body .slug {
     background-position: top left;
     background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 26.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 356.8 356.8' style='enable-background:new 0 0 356.8 356.8;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23FFFFFF;stroke:%23FFFFFF;strokeWidth:2.4097;stroke-miterlimit:1.53;stroke-opacity:5.000000e-02;%7D .st1%7Bfill:%23FDFDFD;stroke:%23FFFFFF;strokeWidth:2.4097;stroke-miterlimit:1.53;stroke-opacity:5.000000e-02;%7D .st2%7Bfill:%23FAFAFA;stroke:%23FFFFFF;strokeWidth:2.4097;stroke-miterlimit:1.53;stroke-opacity:5.000000e-02;%7D .st3%7Bfill:%23F8F8F8;stroke:%23FFFFFF;strokeWidth:2.4097;stroke-miterlimit:1.53;stroke-opacity:5.000000e-02;%7D .st4%7Bfill:%23F6F6F6;stroke:%23FFFFFF;strokeWidth:2.4097;stroke-miterlimit:1.53;stroke-opacity:5.000000e-02;%7D .st5%7Bfill:%23F4F4F4;stroke:%23FFFFFF;strokeWidth:2.4097;stroke-miterlimit:1.53;stroke-opacity:5.000000e-02;%7D .st6%7Bfill:%23F1F1F1;stroke:%23FFFFFF;strokeWidth:2.4097;stroke-miterlimit:1.53;stroke-opacity:5.000000e-02;%7D .st7%7Bfill:%23EFEFEF;stroke:%23FFFFFF;strokeWidth:2.4097;stroke-miterlimit:1.53;stroke-opacity:5.000000e-02;%7D .st8%7Bfill:%23EDEDED;stroke:%23FFFFFF;strokeWidth:2.4097;stroke-miterlimit:1.53;stroke-opacity:5.000000e-02;%7D .st9%7Bfill:%23EBEBEB;stroke:%23FFFFFF;strokeWidth:2.4097;stroke-miterlimit:1.53;stroke-opacity:5.000000e-02;%7D .st10%7Bfill:%23E9E9E9;stroke:%23FFFFFF;strokeWidth:2.4097;stroke-miterlimit:1.53;stroke-opacity:5.000000e-02;%7D .st11%7Bfill:%23E6E6E6;stroke:%23FFFFFF;strokeWidth:2.4097;stroke-miterlimit:1.53;stroke-opacity:5.000000e-02;%7D .st12%7Bfill:%23E4E4E4;stroke:%23FFFFFF;strokeWidth:2.4097;stroke-miterlimit:1.53;stroke-opacity:5.000000e-02;%7D .st13%7Bfill:%23E2E2E2;stroke:%23FFFFFF;strokeWidth:2.4097;stroke-miterlimit:1.53;stroke-opacity:5.000000e-02;%7D .st14%7Bfill:%23E0E0E0;stroke:%23FFFFFF;strokeWidth:2.4097;stroke-miterlimit:1.53;stroke-opacity:5.000000e-02;%7D .st15%7Bfill:%23DDDDDD;stroke:%23FFFFFF;strokeWidth:2.4097;stroke-miterlimit:1.53;stroke-opacity:5.000000e-02;%7D .st16%7Bfill:%23DBDBDB;stroke:%23FFFFFF;strokeWidth:2.4097;stroke-miterlimit:1.53;stroke-opacity:5.000000e-02;%7D%0A%3C/style%3E%3Cg%3E%3Ccircle class='st0' cx='178.4' cy='178.4' r='177.2'/%3E%3Ccircle class='st1' cx='178.4' cy='178.4' r='157.5'/%3E%3Ccircle class='st2' cx='178.4' cy='178.4' r='147.7'/%3E%3Ccircle class='st3' cx='178.4' cy='178.4' r='137.8'/%3E%3Ccircle class='st4' cx='178.4' cy='178.4' r='128'/%3E%3Ccircle class='st5' cx='178.4' cy='178.4' r='118.1'/%3E%3Ccircle class='st6' cx='178.4' cy='178.4' r='108.3'/%3E%3Ccircle class='st7' cx='178.4' cy='178.4' r='98.4'/%3E%3Ccircle class='st8' cx='178.4' cy='178.4' r='88.6'/%3E%3Ccircle class='st9' cx='178.4' cy='178.4' r='78.8'/%3E%3Ccircle class='st10' cx='178.4' cy='178.4' r='68.9'/%3E%3Ccircle class='st11' cx='178.4' cy='178.4' r='59.1'/%3E%3Ccircle class='st12' cx='178.4' cy='178.4' r='49.2'/%3E%3Ccircle class='st13' cx='178.4' cy='178.4' r='39.4'/%3E%3Ccircle class='st14' cx='178.4' cy='178.4' r='29.5'/%3E%3Ccircle class='st15' cx='178.4' cy='178.4' r='19.7'/%3E%3Ccircle class='st16' cx='178.4' cy='178.4' r='9.8'/%3E%3C/g%3E%3C/svg%3E%0A");
   }
+}
+
+hr {
+  margin-top:24px;
+  margin-bottom:24px;
+  width:100%;
+  opacity:0.13;
 }
