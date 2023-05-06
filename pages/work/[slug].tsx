@@ -77,6 +77,25 @@ export default function Post({ post, morePosts, preview }) {
                 <p className={styles.fadedP}>{post.year}</p>
               </motion.div>
 
+              {post.cta && (
+                <motion.div
+                  variants={boxVariants}
+                  animate="default"
+                  transition={{ duration: 0.5, delay: 1 }}
+                  initial={initialRight}
+                  className="mt-4"
+                >
+                  <a
+                    href={post.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-outline rounded py-3 px-5"
+                  >
+                    {post.urlName}
+                  </a>
+                </motion.div>
+              )}
+
               <div className={styles.nameContainer}>
                 <PortfolioLeftDescription
                   title=""
@@ -90,7 +109,10 @@ export default function Post({ post, morePosts, preview }) {
           </div>
         </div>
       </div>
-      <div className={`${styles.showcaseContainer} container-fluid`}>
+      <div
+        id="scrollto"
+        className={`${styles.showcaseContainer} container-fluid`}
+      >
         <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
       </div>
       <Projects />
@@ -107,6 +129,7 @@ export async function getStaticProps({ params }) {
     'urlName',
     'date',
     'year',
+    'cta',
     'location',
     'slug',
     'author',

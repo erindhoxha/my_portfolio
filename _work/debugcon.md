@@ -1,10 +1,11 @@
 ---
 title: "debugCon"
 tools: "ts, contentful, ai, psd"
-role: "front-end, ui/ux"
+role: "front-end, ui/ux, branding, user research, prototyping"
 year: "2022"
 url: "https://erindhoxha.github.io/debugCon"
-urlName: "Visit website"
+urlName: "View project_"
+cta: true
 location: "auckland, nz"
 ---
 

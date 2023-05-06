@@ -47,8 +47,8 @@ const PortfolioLeftDescription = ({ title, role, link, href, location }) => {
                 <p className="mb-0">
                   <a
                     className="link line-through semibold"
-                    href={href}
-                    target="_blank"
+                    href={href ? href : '#scrollto'}
+                    target={`${link ? '_blank' : '_self'}`}
                     rel="noreferrer"
                     onMouseEnter={() => {
                       setCursorVariantFn('text');
@@ -59,7 +59,7 @@ const PortfolioLeftDescription = ({ title, role, link, href, location }) => {
                       setCursorText('');
                     }}
                   >
-                    {link}
+                    {link ? link : 'View project ↓'}
                   </a>
                 </p>
               </div>

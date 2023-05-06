@@ -13,6 +13,7 @@
   }
   .textContainer {
     margin-top: 12px;
+    padding-right:4px;
   }
   .textContainer h1 {
     color: rgb(var(--foreground-rgb));
@@ -20,6 +21,7 @@
   }
   .textContainer p {
     color: rgb(var(--foreground-rgb));
+    font-size:1.2rem;
   }
   .textContainer lead {
     color: rgb(var(--foreground-rgb), 0.9);

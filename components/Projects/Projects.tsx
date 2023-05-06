@@ -1,43 +1,43 @@
-import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import styles from "./Projects.module.css";
-import Img from "../../public/img.jpg";
-import sfg from "../../images/sfg.png";
-import wa from "../../images/wa.png";
-import nzpg from "../../images/nzpg.png";
-import aw from "../../images/aw.png";
-import ppanels from "../../images/ppanels.png";
-import debugConImg from "../../images/debugCon.svg";
-import debugCon from "../../images/debugCon2.png";
-import { useCursorContext } from "../../pages/_app";
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
+import styles from './Projects.module.css';
+import Img from '../../public/img.jpg';
+import sfg from '../../images/sfg.png';
+import wa from '../../images/wa.png';
+import airways from '../../images/airways.png';
+import nzpg from '../../images/nzpg.png';
+import aw from '../../images/aw.png';
+import ppanels from '../../images/ppanels.png';
+import debugCon from '../../images/debugCon.png';
+import { useCursorContext } from '../../pages/_app';
 
 export const projects = [
   {
-    title: "debugCon",
+    title: 'debugCon',
     date: 2022,
-    frameworks: "js, ts, wp, ai, psd, sass, graphic",
-    location: "auckland, nz",
+    frameworks: 'js, ts, wp, ai, psd, sass, graphic',
+    location: 'auckland, nz',
     image: debugCon,
-    href: "/work/debugCon",
+    href: '/work/debugCon',
     id: 1,
   },
   {
-    title: "primepanels",
-    date: 2023,
-    frameworks: "js, ts, wp, ai, psd, sass",
-    location: "auckland, nz",
+    title: 'wilsonart',
+    date: 2022,
+    frameworks: 'umbraco, js, html, sass, ai, psd',
+    location: 'auckland, nz',
     image: wa,
-    href: "#",
+    href: '/work/wilsonart',
     id: 2,
   },
   {
-    title: "wilsonart",
-    date: 2023,
-    frameworks: "js, ts, wp, ai, psd, sass",
-    location: "auckland, nz",
-    image: wa,
-    href: "/work/wilsonart",
+    title: 'airways nz',
+    date: 2021,
+    frameworks: 'js, html, css, axure',
+    location: 'auckland, nz',
+    image: airways,
+    href: '/work/airways',
     id: 3,
   },
 ];
@@ -49,7 +49,7 @@ const Projects = () => {
   let initialCards = {};
   let whileInViewCards = {};
   let boxVariants = {};
-  if (typeof window !== "undefined") {
+  if (typeof window !== 'undefined') {
     const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
     if (!isMobile) {
       boxVariants = {
@@ -82,7 +82,7 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className={`col-12 col-sm-6 col-md-4 col-lg-3 p-1 ${styles.portfolioContainer}`}
+            className={`col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 p-1 ${styles.portfolioContainer}`}
           >
             <motion.div
               transition={{ duration: 0.5, delay: 0 }}
@@ -90,41 +90,68 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <Link
-                onMouseEnter={() => {
-                  setCursorVariantFn("text");
-                  setCursorText("view →");
-                }}
-                onMouseLeave={() => {
-                  setCursorVariantFn("default");
-                  setCursorText("");
-                }}
-                onClick={() => {
-                  setCursorVariantFn("default");
-                  setCursorText("");
-                }}
-                href={project.href}
-                className={`${styles.link} link link-dark-thin-container w-100`}
-              >
-                <div className={styles.imgCover}>
-                  <div className={styles.overlay}></div>
-                  <Image
-                    className={styles.img}
-                    alt="portfolio image"
-                    src={project.image}
-                    priority={project.image === nzpg}
-                  />
-                </div>
+              {project.href ? (
+                <Link
+                  onMouseEnter={() => {
+                    setCursorVariantFn('text');
+                    setCursorText('view →');
+                  }}
+                  onMouseLeave={() => {
+                    setCursorVariantFn('default');
+                    setCursorText('');
+                  }}
+                  onClick={() => {
+                    setCursorVariantFn('default');
+                    setCursorText('');
+                  }}
+                  href={project.href}
+                  className={`${styles.link} link link-dark-thin-container w-100`}
+                >
+                  <div className={styles.imgCover}>
+                    <div className={styles.overlay}></div>
+                    <Image
+                      className={styles.img}
+                      alt="portfolio image"
+                      src={project.image}
+                      priority={project.image === nzpg}
+                      unoptimized
+                    />
+                  </div>
 
-                <div className={styles.textContainer}>
-                  <p className="mb-1">
-                    <span className={styles.lead}>
-                      {project.date} / {project.frameworks} / {project.location}
-                    </span>
-                  </p>
-                  <h3 className={styles.h2}>{project.title}</h3>
-                </div>
-              </Link>
+                  <div className={styles.textContainer}>
+                    <p className="mb-1">
+                      <span className={styles.lead}>
+                        {project.date} / {project.frameworks} /{' '}
+                        {project.location}
+                      </span>
+                    </p>
+                    <h3 className={styles.h2}>{project.title}</h3>
+                  </div>
+                </Link>
+              ) : (
+                <>
+                  <div className={styles.imgCover}>
+                    <div className={styles.overlay}></div>
+                    <Image
+                      className={styles.img}
+                      alt="portfolio image"
+                      src={project.image}
+                      priority={project.image === nzpg}
+                      unoptimized
+                    />
+                  </div>
+
+                  <div className={styles.textContainer}>
+                    <p className="mb-1">
+                      <span className={styles.lead}>
+                        {project.date} / {project.frameworks} /{' '}
+                        {project.location}
+                      </span>
+                    </p>
+                    <h3 className={styles.h2}>{project.title}</h3>
+                  </div>
+                </>
+              )}
             </motion.div>
           </div>
         ))}

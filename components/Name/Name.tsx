@@ -51,9 +51,8 @@ const Name = () => {
                 <p>front-end, ui/ux</p>
                 <p className="mb-0">
                   Currently working at{' '}
-                  <a
+                  {/* <p
                     className="link line-through semibold"
-                    href="#"
                     onMouseEnter={() => {
                       setCursorVariantFn('text');
                       setCursorText('go →');
@@ -62,9 +61,9 @@ const Name = () => {
                       setCursorVariantFn('default');
                       setCursorText('');
                     }}
-                  >
-                    Kablamo
-                  </a>
+                  > */}
+                  Kablamo
+                  {/* </p> */}
                 </p>
               </div>
             </motion.div>
@@ -75,7 +74,7 @@ const Name = () => {
               initial={initial}
             >
               <div className={styles.innerBox}>
-                <p>Sydney, Australia 🇦🇺</p>
+                <p>Sydney, Australia</p>
 
                 <p className="mb-0">
                   <a
