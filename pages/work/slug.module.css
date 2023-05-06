@@ -67,6 +67,14 @@
   z-index: 4;
 }
 
+.showcaseContainer {
+  padding: 112px var(--padding-left);
+  padding-top: 24px;
+  justify-content: flex-start;
+  width:100%;
+}
+
+
 @media screen and (orientation: landscape) and (max-width: 900px) {
   .showcaseContainer {
     padding-top: 24px;
@@ -100,12 +108,6 @@
   }
 }
 
-.showcaseContainer {
-  padding: 112px var(--padding-left);
-  padding-top: 24px;
-  justify-content: flex-start;
-  width:100%;
-}
 
 .showcaseContainer p {
   max-width:800px;

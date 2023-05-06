@@ -7,6 +7,7 @@ import sfg from '../../images/sfg.png';
 import wa from '../../images/wa.png';
 import airways from '../../images/airways.png';
 import nzpg from '../../images/nzpg.png';
+import nzris from '../../images/nzris.png';
 import aw from '../../images/aw.png';
 import ppanels from '../../images/ppanels.png';
 import debugCon from '../../images/debugCon.png';
@@ -39,6 +40,15 @@ export const projects = [
     image: airways,
     href: '/work/airways',
     id: 3,
+  },
+  {
+    title: 'nzris',
+    date: 2021,
+    frameworks: 'js, html, css, figma, ai, psd',
+    location: 'auckland, nz',
+    image: nzris,
+    href: '/work/nzris',
+    id: 4,
   },
 ];
 
