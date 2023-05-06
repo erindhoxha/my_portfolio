@@ -21,7 +21,7 @@ export const projects = [
     frameworks: 'js, ts, html, css, ai, psd, sass, branding',
     location: 'auckland, nz',
     image: debugCon,
-    href: '/work/debugCon',
+    href: '/work/debugcon',
     id: 1,
   },
   {
