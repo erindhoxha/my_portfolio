@@ -106,6 +106,9 @@
   .showcaseContainer {
     padding: 24px;
   }
+  .cta {
+    order:2;
+  }
 }
 
 

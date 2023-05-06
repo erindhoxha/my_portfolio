@@ -83,7 +83,7 @@ export default function Post({ post, morePosts, preview }) {
                   animate="default"
                   transition={{ duration: 0.5, delay: 1 }}
                   initial={initialRight}
-                  className="mt-4"
+                  className={`${styles.cta} mt-4`}
                 >
                   <a
                     href={post.url}
