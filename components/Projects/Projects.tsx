@@ -8,6 +8,7 @@ import wa from '../../images/wa.png';
 import airways from '../../images/airways.png';
 import nzpg from '../../images/nzpg.png';
 import nzris from '../../images/nzris.png';
+import atrax from '../../images/atrax.png';
 import aw from '../../images/aw.png';
 import ppanels from '../../images/ppanels.png';
 import debugCon from '../../images/debugCon.png';
@@ -17,7 +18,7 @@ export const projects = [
   {
     title: 'debugCon',
     date: 2022,
-    frameworks: 'js, ts, wp, ai, psd, sass, graphic',
+    frameworks: 'js, ts, html, css, ai, psd, sass, branding',
     location: 'auckland, nz',
     image: debugCon,
     href: '/work/debugCon',
@@ -48,6 +49,15 @@ export const projects = [
     location: 'auckland, nz',
     image: nzris,
     href: '/work/nzris',
+    id: 4,
+  },
+  {
+    title: 'scanatrax',
+    date: 2021,
+    frameworks: 'js, html, css, sass, bootstrap, figma, ai, psd',
+    location: 'auckland, nz',
+    image: atrax,
+    href: '/work/scanatrax',
     id: 4,
   },
 ];

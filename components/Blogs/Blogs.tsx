@@ -12,7 +12,7 @@ const blogs = [
     date: 2022,
     frameworks: 'css, aspect-ratio / medium',
     image: blog1,
-    href: '#',
+    href: 'https://medium.com/@erindhoxha/new-css-property-aspect-ratio-8ce62fea95d7',
     id: 144,
   },
   {
@@ -20,7 +20,7 @@ const blogs = [
     date: 2022,
     frameworks: 'ai, svg, web / medium',
     image: blog2,
-    href: '#',
+    href: 'https://medium.com/@erindhoxha/how-to-create-an-animated-icon-on-adobe-illustrator-for-web-29ebadcbe879',
     id: 145,
   },
 ];
@@ -83,6 +83,8 @@ const Blogs = () => {
                   setCursorText('');
                 }}
                 href={project.href}
+                target="_blank"
+                rel="noreferrer"
                 className={`${styles.link} link link-dark-thin-container w-100`}
               >
                 <div className={styles.imgCover}>
