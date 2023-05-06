@@ -33,8 +33,6 @@ export default function Post({ post, morePosts, preview }) {
     //you need to refresh the page, it doesn't work when you resize it!
   }
 
-  console.log(post);
-
   return (
     <>
       <div className="slug container-fluid">
@@ -100,6 +98,7 @@ export default function Post({ post, morePosts, preview }) {
                 <PortfolioLeftDescription
                   title=""
                   role={post.role}
+                  cta={post.cta}
                   link={post.urlName}
                   href={post.url}
                   location={post.location}
@@ -139,8 +138,6 @@ export async function getStaticProps({ params }) {
   ]);
 
   const content = await markdownToHtml(post.content || '');
-
-  console.log(content);
 
   return {
     props: {

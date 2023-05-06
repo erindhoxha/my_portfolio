@@ -4,7 +4,14 @@ import styles from './PortfolioLeftDescription.module.css';
 import { motion } from 'framer-motion';
 import YearDate from '../YearDate/YearDate';
 
-const PortfolioLeftDescription = ({ title, role, link, href, location }) => {
+const PortfolioLeftDescription = ({
+  title,
+  role,
+  link,
+  href,
+  location,
+  cta,
+}) => {
   const { setCursorVariantFn, setCursorText } = useCursorContext();
   let boxVariants = {};
   let initial = {};
@@ -35,7 +42,7 @@ const PortfolioLeftDescription = ({ title, role, link, href, location }) => {
           </div>
         </motion.div>
         <div>
-          <div className={styles.box}>
+          <div className={`${styles.box} ${cta && styles.hasCta}`}>
             <motion.div
               variants={boxVariants}
               animate="default"
@@ -44,7 +51,7 @@ const PortfolioLeftDescription = ({ title, role, link, href, location }) => {
             >
               <div className={styles.innerBox}>
                 <p>{role}</p>
-                <p className="mb-0">
+                <p className={`${cta && styles.hasCta} mb-0`}>
                   <a
                     className="link line-through semibold"
                     href={href ? href : '#scrollto'}

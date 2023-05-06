@@ -58,7 +58,7 @@ export const projects = [
     location: 'auckland, nz',
     image: atrax,
     href: '/work/scanatrax',
-    id: 4,
+    id: 5,
   },
 ];
 
