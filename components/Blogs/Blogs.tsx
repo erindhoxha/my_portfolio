@@ -65,7 +65,7 @@ const Blogs = () => {
         {blogs.map((project) => (
           <div
             key={project.id}
-            className={`col-12 col-sm-6 col-md-6 col-lg-3 p-1 ${styles.portfolioContainer}`}
+            className={`col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1 ${styles.portfolioContainer}`}
           >
             <motion.div
               transition={{ duration: 0.5, delay: 0 }}
