@@ -53,7 +53,10 @@ export default function Home() {
         <meta name="twitter:creator" content="@erindhoxha" />
         <meta name="twitter:title" content="Erind Hoxha | Frontend | UI/UX" />
         <meta name="twitter:description" content="Portfolio" />
-        <meta name="twitter:image" content="/og.jpg" />
+        <meta
+          name="twitter:image"
+          content="http://erindhoxha-portfolio.vercel.app/api/og"
+        />
       </Head>
       <main className={`${styles.main}`}>
         <div className="home container-fluid">
