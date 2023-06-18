@@ -38,7 +38,22 @@ export default function Home() {
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#070707" />
         <meta name="msapplication-TileColor" content="#070707" />
-        <meta name="theme-color" content="#ffffff"></meta>
+        <meta name="theme-color" content="#ffffff" />
+        <meta property="og:title" content="erindhoxha.dev" />
+        <meta property="og:site_name" content="erindhoxha.dev" />
+        <meta property="og:url" content="https://erindhoxha.dev" />
+        <meta
+          property="og:description"
+          content="Erind Hoxha | Frontend | UI/UX"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/og.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="https://erindhoxha.dev" />
+        <meta name="twitter:creator" content="@erindhoxha" />
+        <meta name="twitter:title" content="Erind Hoxha | Frontend | UI/UX" />
+        <meta name="twitter:description" content="Portfolio" />
+        <meta name="twitter:image" content="/og.jpg" />
       </Head>
       <main className={`${styles.main}`}>
         <div className="home container-fluid">
