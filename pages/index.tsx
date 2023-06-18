@@ -47,7 +47,10 @@ export default function Home() {
           content="Erind Hoxha | Frontend | UI/UX"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/og.jpg" />
+        <meta
+          property="og:image"
+          content="http://erindhoxha-portfolio.vercel.app/api/og"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="https://erindhoxha.dev" />
         <meta name="twitter:creator" content="@erindhoxha" />
