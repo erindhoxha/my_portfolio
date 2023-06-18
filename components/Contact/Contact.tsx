@@ -42,6 +42,14 @@ const Contact = () => {
             target="_blank"
             rel="noreferrer"
             className="lead mb-0 font-regular text-regular text-decoration-underline me-2"
+            onMouseEnter={() => {
+              setCursorVariantFn('text');
+              setCursorText('email me');
+            }}
+            onMouseLeave={() => {
+              setCursorVariantFn('default');
+              setCursorText('');
+            }}
           >
             <p className="text-decoration-underline">email</p>
           </a>
@@ -51,6 +59,14 @@ const Contact = () => {
             target="_blank"
             rel="noreferrer"
             className="lead mb-0 font-regular text-regular text-decoration-underline mx-2"
+            onMouseEnter={() => {
+              setCursorVariantFn('text');
+              setCursorText('linkedin');
+            }}
+            onMouseLeave={() => {
+              setCursorVariantFn('default');
+              setCursorText('');
+            }}
           >
             <p className="text-decoration-underline">linkedin</p>
           </a>

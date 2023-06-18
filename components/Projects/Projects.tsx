@@ -140,7 +140,7 @@ export const projects = [
     frameworks: 'js, html, tailwind, figma',
     location: 'auckland, nz',
     image: renkon,
-    id: 13,
+    id: 14,
   },
   {
     title: 'Yoga with Kassandra',
@@ -148,7 +148,7 @@ export const projects = [
     frameworks: 'js, html, tailwind, figma',
     location: 'auckland, nz',
     image: yogawithkassandra,
-    id: 13,
+    id: 15,
   },
   {
     title: 'nxtstep',
@@ -156,7 +156,7 @@ export const projects = [
     frameworks: 'js, html, tailwind, figma',
     location: 'auckland, nz',
     image: nxtstep,
-    id: 14,
+    id: 16,
   },
   {
     title: 'dotapopquiz',
@@ -164,7 +164,7 @@ export const projects = [
     frameworks: 'js, html, tailwind, figma',
     location: 'auckland, nz',
     image: dotapopquiz,
-    id: 15,
+    id: 17,
   },
   {
     title: 'vidapp',
@@ -172,7 +172,7 @@ export const projects = [
     frameworks: 'js, html, tailwind, figma',
     location: 'auckland, nz',
     image: vidapp,
-    id: 16,
+    id: 18,
   },
 ];
 

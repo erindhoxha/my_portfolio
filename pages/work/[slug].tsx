@@ -7,7 +7,6 @@ import styles from './slug.module.css';
 import { motion } from 'framer-motion';
 import Navbar from '../../components/Navbar/Navbar';
 import Projects from '../../components/Projects/Projects';
-import Image from 'next/image';
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter();
