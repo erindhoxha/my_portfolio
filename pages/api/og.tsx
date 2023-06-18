@@ -24,7 +24,6 @@ export default function () {
           x="0"
           y="0"
           enableBackground="new 0 0 1200 630"
-          backgroundColor="#000"
           version="1.1"
           viewBox="0 0 1200 630"
           xmlSpace="preserve"
@@ -37,7 +36,6 @@ export default function () {
         </svg>
       </div>
     ),
-
     {
       width: 1200,
       height: 600,
