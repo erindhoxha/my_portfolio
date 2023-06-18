@@ -25,31 +25,22 @@ import { useCursorContext } from '../../pages/_app';
 
 export const projects = [
   {
-    title: 'debugCon 1 & 2',
+    title: 'debugCon',
     date: 2022,
-    frameworks: 'js, ts, html, css, ai, psd, sass, branding',
+    frameworks: 'js, sass, html5, figma, ai, psd',
     location: 'auckland, nz',
     image: debugcon,
     href: '/work/debugcon',
     id: 1,
   },
   {
-    title: 'wilsonart',
-    date: 2022,
-    frameworks: 'umbraco, js, html, sass, ai, psd',
-    location: 'auckland, nz',
-    image: wa,
-    href: '/work/wilsonart',
-    id: 2,
-  },
-  {
     title: 'airways nz',
     date: 2021,
-    frameworks: 'js, html, css, axure',
+    frameworks: 'js, sass, html, axure rp7, ai, psd',
     location: 'auckland, nz',
     image: airways,
     href: '/work/airways',
-    id: 3,
+    id: 2,
   },
   {
     title: 'nzris',
@@ -58,6 +49,14 @@ export const projects = [
     location: 'auckland, nz',
     image: nzris,
     href: '/work/nzris',
+    id: 3,
+  },
+  {
+    title: 'wilsonart',
+    date: 2022,
+    frameworks: 'umbraco, js, html, sass, ai, psd',
+    location: 'auckland, nz',
+    image: wa,
     id: 4,
   },
   {
@@ -66,7 +65,6 @@ export const projects = [
     frameworks: 'js, html, css, sass, bootstrap, figma, ai, psd',
     location: 'auckland, nz',
     image: atrax,
-    href: '/work/scanatrax',
     id: 5,
   },
   {
@@ -75,7 +73,6 @@ export const projects = [
     frameworks: 'ts, node, html, tailwind, figma',
     location: 'sydney, au',
     image: mailfomo,
-    href: '/work/mailfomo',
     id: 6,
   },
   {

@@ -1,6 +1,6 @@
 ---
 title: "airways nz"
-tools: "js, html, css, axure"
+tools: "js, sass, html, axure rp7, ai, psd"
 role: "front-end, ui/ux"
 year: "2021"
 location: "auckland, nz"
@@ -35,6 +35,8 @@ Many Air Traffic Controllers were very familiar with the physical documentation 
 
 The team worked to a tight 7 week deadline to deliver a design solution which would then be tested and functional/usable by Airways.
 
+![Airways NZ plane](/airways/plane.jpeg)
+
 ---
 
 *Project*
@@ -49,6 +51,8 @@ The team then created a user journey, and three low fidelity concepts for feedba
 
 ### Usability testing and design / 3 weeks
 Reviewing all feedback, an initial prototype was created and tested with controllers using task cards, moderated by theta’s UX lead We outcome was then turned into a high fidelity design and prototype
+
+![Airways NZ plane](/airways/process.jpeg)
 
 ---
 
@@ -73,6 +77,8 @@ Wireframe document ​
 High fidelity prototype ​
 Design report / design guidelines and assets ​
 Project showcase for internal stakeholders
+
+![Airways NZ plane](/airways/solution.png)
 
 ---
 

@@ -1,13 +1,18 @@
 ---
 title: "debugCon"
-tools: "ts, contentful, ai, psd"
+tools: "js, sass, html5, figma, ai, psd"
 role: "front-end, ui/ux, branding, user research, prototyping"
+mockup: /debugcon/mockup.png
 year: "2022"
+cta: true
 url: "https://erindhoxha.github.io/debugCon"
 urlName: "View project_"
-cta: true
+cta2: true
+url2: "https://erindhoxha.github.io/debugCon"
+urlName2: "View prototype_"
 location: "auckland, nz"
 ---
+
 
 ### Software development conference
 
@@ -38,6 +43,8 @@ The reason behind this was to not re-invent the wheel, create something that is 
 The logo, design & the branding I got inspired from VS Code, the brackets and the colours palette which I've used for coding.
 
 The city's logo was "The queen on the throne" which when you searched on google about "Mbreteresha ne fron" it shows the symbol of the city, which we used for the main header / as part of the branding to symbolise peace, comfort for Prishtina's citizens.
+
+![Moodboard](/debugcon/moodboard.png)
 
 ---
 
@@ -91,6 +98,8 @@ The supporters were the guests who contributed / donated into the debugCon confe
 
 There were 24 speakers.
 
+![Badges](/debugcon/badges.png)
+
 ---
 
 *Advertisement*
@@ -117,6 +126,8 @@ Celonis - www.celonis.com
 
 Openresearch - www.openresearch.com
 
+![Banner with our sponsors](/debugcon/banner.png)
+
 ---
 
 *Design*
@@ -136,6 +147,9 @@ The idea was to put inside the UBT University and call for volunteers, and letti
 This is why I love working with real people, real data.
 
 The feedback from the people who attended was awesome, and we've developed it in a way that everyone could see the schedule.
+
+![Attendance of DebugCon](/debugcon/attendance.jpeg)
+![Speaker 1](/debugcon/speaker1.png)
 
 ---
 

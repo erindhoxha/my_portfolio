@@ -7,6 +7,7 @@ import styles from './slug.module.css';
 import { motion } from 'framer-motion';
 import Navbar from '../../components/Navbar/Navbar';
 import Projects from '../../components/Projects/Projects';
+import Image from 'next/image';
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter();
@@ -92,6 +93,25 @@ export default function Post({ post, morePosts, preview }) {
                   </a>
                 </motion.div>
               )}
+              {/* 
+              {post.cta2 && (
+                <motion.div
+                  variants={boxVariants}
+                  animate="default"
+                  transition={{ duration: 0.5, delay: 1 }}
+                  initial={initialRight}
+                  className={`${styles.cta} mt-4`}
+                >
+                  <a
+                    href={post.url2}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-underline rounded py-3 px-5"
+                  >
+                    {post.urlName2}
+                  </a>
+                </motion.div>
+              )} */}
 
               <div className={styles.nameContainer}>
                 <PortfolioLeftDescription
@@ -111,6 +131,22 @@ export default function Post({ post, morePosts, preview }) {
         id="scrollto"
         className={`${styles.showcaseContainer} container-fluid`}
       >
+        {post.mockup ? (
+          <div className="text-center pb-4 mb-4">
+            <Image
+              src={post.mockup}
+              alt={post.title}
+              width={1200}
+              height={1200}
+              style={{
+                width: '100% !important',
+                height: '100%',
+                maxWidth: '780px',
+                marginTop: '0px',
+              }}
+            />
+          </div>
+        ) : null}
         <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
       </div>
       <Projects />
@@ -123,11 +159,15 @@ export async function getStaticProps({ params }) {
     'title',
     'tools',
     'role',
+    'mockup',
+    'cta',
     'url',
     'urlName',
+    'cta2',
+    'url2',
+    'urlName2',
     'date',
     'year',
-    'cta',
     'location',
     'slug',
     'author',
