@@ -9,5 +9,9 @@ cta: true
 location: "auckland, nz"
 ---
 
+### Global leaders in high pressure decorative laminates
 
+Designed and developed the website for Wilsonart while I was working at Phosphor's Essence.
+
+---
 

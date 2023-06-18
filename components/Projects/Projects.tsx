@@ -2,25 +2,34 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Projects.module.css';
-import Img from '../../public/img.jpg';
-import sfg from '../../images/sfg.png';
-import wa from '../../images/wa.png';
-import airways from '../../images/airways.png';
+import wa from '../../images/wilsonart-100.jpg';
+import primepanels from '../../images/primepanels-100.jpg';
+import airways from '../../images/airways-100.jpg';
 import nzpg from '../../images/nzpg.png';
-import nzris from '../../images/nzris.png';
-import atrax from '../../images/atrax.png';
-import aw from '../../images/aw.png';
-import ppanels from '../../images/ppanels.png';
-import debugCon from '../../images/debugCon.png';
+import nzris from '../../images/nzris-100.jpg';
+import atrax from '../../images/atrax-100.jpg';
+import lineadelplata from '../../images/lineadelplata-100.jpg';
+import mailfomo from '../../images/mailfomo-100.jpg';
+import flatmately from '../../images/flatmately-100.jpg';
+import urban from '../../images/99urban-100.jpg';
+import tourism from '../../images/tourism-100.jpg';
+import lobster from '../../images/lobster-100.jpg';
+import daruma from '../../images/daruma-100.jpg';
+import renkon from '../../images/renkon-100.jpg';
+import yogawithkassandra from '../../images/yogawithkassandra-100.jpg';
+import nxtstep from '../../images/nxtstep-100.jpg';
+import dotapopquiz from '../../images/dotapopquiz-100.jpg';
+import vidapp from '../../images/vidapp-100.jpg';
+import debugcon from '../../images/debugcon-100.jpg';
 import { useCursorContext } from '../../pages/_app';
 
 export const projects = [
   {
-    title: 'debugCon',
+    title: 'debugCon 1 & 2',
     date: 2022,
     frameworks: 'js, ts, html, css, ai, psd, sass, branding',
     location: 'auckland, nz',
-    image: debugCon,
+    image: debugcon,
     href: '/work/debugcon',
     id: 1,
   },
@@ -59,6 +68,111 @@ export const projects = [
     image: atrax,
     href: '/work/scanatrax',
     id: 5,
+  },
+  {
+    title: 'mailfomo',
+    date: 2021,
+    frameworks: 'ts, node, html, tailwind, figma',
+    location: 'sydney, au',
+    image: mailfomo,
+    href: '/work/mailfomo',
+    id: 6,
+  },
+  {
+    title: 'primepanels',
+    date: 2021,
+    frameworks: 'js, html, tailwind, figma',
+    location: 'auckland, nz',
+    image: primepanels,
+    id: 7,
+  },
+  {
+    title: 'lineadelplata',
+    date: 2021,
+    frameworks: 'js, html, tailwind, figma',
+    location: 'auckland, nz',
+    image: lineadelplata,
+    id: 8,
+  },
+  {
+    title: 'flatmately',
+    date: 2021,
+    frameworks: 'js, html, tailwind, figma',
+    location: 'auckland, nz',
+    image: flatmately,
+    id: 9,
+  },
+  {
+    title: '99urban',
+    date: 2021,
+    frameworks: 'js, html, tailwind, figma',
+    location: 'auckland, nz',
+    image: urban,
+    id: 10,
+  },
+  {
+    title: 'tourism nz',
+    date: 2021,
+    frameworks: 'js, html, tailwind, figma',
+    location: 'auckland, nz',
+    image: tourism,
+    id: 11,
+  },
+  {
+    title: 'lobster&tap',
+    date: 2021,
+    frameworks: 'js, html, tailwind, figma',
+    location: 'auckland, nz',
+    image: lobster,
+    id: 12,
+  },
+  {
+    title: 'daruma',
+    date: 2021,
+    frameworks: 'js, html, tailwind, figma',
+    location: 'auckland, nz',
+    image: daruma,
+    id: 13,
+  },
+  {
+    title: 'renkon',
+    date: 2021,
+    frameworks: 'js, html, tailwind, figma',
+    location: 'auckland, nz',
+    image: renkon,
+    id: 13,
+  },
+  {
+    title: 'Yoga with Kassandra',
+    date: 2021,
+    frameworks: 'js, html, tailwind, figma',
+    location: 'auckland, nz',
+    image: yogawithkassandra,
+    id: 13,
+  },
+  {
+    title: 'nxtstep',
+    date: 2021,
+    frameworks: 'js, html, tailwind, figma',
+    location: 'auckland, nz',
+    image: nxtstep,
+    id: 14,
+  },
+  {
+    title: 'dotapopquiz',
+    date: 2021,
+    frameworks: 'js, html, tailwind, figma',
+    location: 'auckland, nz',
+    image: dotapopquiz,
+    id: 15,
+  },
+  {
+    title: 'vidapp',
+    date: 2021,
+    frameworks: 'js, html, tailwind, figma',
+    location: 'auckland, nz',
+    image: vidapp,
+    id: 16,
   },
 ];
 

@@ -1,0 +1,86 @@
+.portfolioContainer {
+    margin-top: 12px;
+  }
+  .projectsContainer {
+    padding: 112px var(--padding-left);
+    padding-top: 24px;
+  }
+  @media screen and (max-width: 767px) {
+    .projectsContainer {
+      padding: 24px;
+      padding-top: 0px;
+    }
+  }
+  .textContainer {
+    margin-top: 12px;
+    padding-right:4px;
+  }
+  .textContainer h1 {
+    color: rgb(var(--foreground-rgb));
+    margin-top: 4px;
+  }
+  .textContainer p {
+    color: rgb(var(--foreground-rgb));
+    font-size:1.2rem;
+  }
+  .textContainer lead {
+    color: rgb(var(--foreground-rgb), 0.9);
+  }
+  .imgCover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    margin-top: 6px;
+    position:relative;
+    box-shadow: 3px 19px 35px rgb(0 0 0 / 10%);
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.1);
+    position: absolute;
+    transition:0.5s ease;
+    left: 0;
+  }
+  
+  .link:hover .overlay:hover {
+    background:none;
+  }
+
+  .img {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 16/9;
+    height:100%;
+  }
+  
+  .h1 {
+    font-weight: 400;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    font-size:6rem;
+  }
+  .h3 {
+    font-weight:400;
+  }
+
+  @media screen and (orientation: landscape) and (max-width: 900px) {
+    .h1 {
+      font-size:6vw;
+    }
+    .projectsContainer {
+      margin-top:24px;
+    }
+  }
+  
+  @media screen and (max-width:600px) {
+    .projectsContainer {
+      padding-top:24px;
+    }
+    .h1 {
+      font-size:9vw !important;
+    }
+  }
+  
