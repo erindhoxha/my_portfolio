@@ -17,6 +17,7 @@
     "@testing-library/react": "^13.4.0",
     "@types/jest": "^29.4.0",
     "@vercel/analytics": "^0.1.8",
+    "@vercel/og": "^0.5.7",
     "bootstrap": "^5.2.3",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.5",
