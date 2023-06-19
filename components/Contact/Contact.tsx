@@ -28,7 +28,7 @@ const Contact = () => {
   }
 
   return (
-    <div className={`${styles.projectsContainer} container-fluid`} id="blog">
+    <div className={`${styles.projectsContainer} container-fluid`} id="contact">
       <motion.div
         variants={boxVariants}
         animate="default"
