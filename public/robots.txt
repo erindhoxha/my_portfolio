@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://erindhoxha.dev
+
+# Sitemaps
+Sitemap: https://erindhoxha.dev/sitemap.xml
