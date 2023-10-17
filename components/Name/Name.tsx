@@ -34,6 +34,7 @@ const Name = () => {
       <h2
        className={`${styles.h2} lowercase`}
        title="Did you know that Hoxha means 'mentor' in Albanian?"
+       aria-label="My name, Erind Hoxha, a Front-End developer based in Sydney, Australia."
       >
        Erind Hoxha
       </h2>
@@ -48,8 +49,13 @@ const Name = () => {
        initial={initial}
       >
        <div className={styles.innerBox}>
-        <p>front-end, ui/ux</p>
-        <p className="mb-0">
+        <p aria-label="What I do: Frontend Development and UI/UX.">
+         front-end, ui/ux
+        </p>
+        <p
+         className="mb-0"
+         aria-label="Currently working at Kablamo, a consultancy company based in Sydney."
+        >
          Currently working at{' '}
          {/* <p
                     className="link line-through semibold"
@@ -103,15 +109,30 @@ const Name = () => {
     <span className={styles.qotd}>
      available for freelance work
      <p className={styles.lead}>social_</p>
-     <a target="_blank" rel="noreferrer" href="https://github.com/erindhoxha">
+     <a
+      target="_blank"
+      rel="noreferrer"
+      href="https://github.com/erindhoxha"
+      aria-label="View my twitter profile"
+     >
       twitter
      </a>{' '}
      /{' '}
-     <a target="_blank" rel="noreferrer" href="https://instagram.com/erindhox">
+     <a
+      target="_blank"
+      rel="noreferrer"
+      href="https://instagram.com/erindhox"
+      aria-label="View my instagram profile"
+     >
       insta
      </a>{' '}
      /{' '}
-     <a target="_blank" rel="noreferrer" href="https://facebook.com/hoxhaerind">
+     <a
+      target="_blank"
+      rel="noreferrer"
+      href="https://facebook.com/hoxhaerind"
+      aria-label="View my facebook profile"
+     >
       fb
      </a>{' '}
     </span>

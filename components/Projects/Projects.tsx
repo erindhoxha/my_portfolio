@@ -204,16 +204,17 @@ const Projects = () => {
     transition={{ duration: 0.5, delay: 0.5 }}
     initial={initial}
    >
-    <h2 className={styles.h1}>
+    <h2 className={styles.h1} aria-label="View my work">
      /work <p className="lead mb-0">recent_</p>
     </h2>
    </motion.div>
 
    <div className="row p-0 m-0">
     {projects.map((project) => (
-     <div
+     <article
       key={project.id}
       className={`col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 p-1 ${styles.portfolioContainer}`}
+      aria-label={`Project about ${project.title} with tools used ${project.frameworks} at ${project.location}`}
      >
       <motion.div
        transition={{ duration: 0.5, delay: 0 }}
@@ -242,21 +243,24 @@ const Projects = () => {
           <div className={styles.overlay}></div>
           <Image
            className={styles.img}
-           alt="portfolio image"
+           alt={`${project.title} project image, click to view more details.`}
            src={project.image}
            priority={project.image === nzpg}
            unoptimized
           />
          </div>
 
-         <div className={styles.textContainer}>
-          <p className="mb-1">
+         <header className={styles.textContainer}>
+          <p
+           className="mb-1"
+           aria-label={`Project date is ${project.date} and tools used are ${project.frameworks} at ${project.location}`}
+          >
            <span className={styles.lead}>
             {project.date} / {project.frameworks} / {project.location}
            </span>
           </p>
           <h3 className={styles.h2}>{project.title}</h3>
-         </div>
+         </header>
         </Link>
        ) : (
         <>
@@ -264,7 +268,7 @@ const Projects = () => {
           <div className={styles.overlay}></div>
           <Image
            className={styles.img}
-           alt="portfolio image"
+           alt={`${project.title} project image, click to view more details.`}
            src={project.image}
            priority={project.image === nzpg}
            unoptimized
@@ -272,7 +276,10 @@ const Projects = () => {
          </div>
 
          <div className={styles.textContainer}>
-          <p className="mb-1">
+          <p
+           className="mb-1"
+           aria-label={`Project date is ${project.date} and tools used are ${project.frameworks} at ${project.location}`}
+          >
            <span className={styles.lead}>
             {project.date} / {project.frameworks} / {project.location}
            </span>
@@ -282,7 +289,7 @@ const Projects = () => {
         </>
        )}
       </motion.div>
-     </div>
+     </article>
     ))}
    </div>
   </div>

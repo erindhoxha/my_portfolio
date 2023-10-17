@@ -58,16 +58,17 @@ const Blogs = () => {
     transition={{ duration: 0.5, delay: 0.5 }}
     initial={initial}
    >
-    <h2 className={styles.h1}>
+    <h2 className={styles.h1} aria-label="View my blogs">
      /blog <p className="lead mb-0">recent_</p>
     </h2>
    </motion.div>
 
    <div className="row p-0 m-0">
     {blogs.map((project) => (
-     <div
+     <article
       key={project.id}
       className={`col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-1 ${styles.portfolioContainer}`}
+      aria-label={`Blog that I wrote about ${project.title}`}
      >
       <motion.div
        transition={{ duration: 0.5, delay: 0 }}
@@ -93,20 +94,20 @@ const Blogs = () => {
          <div className={styles.overlay}></div>
          <Image
           className={styles.img}
-          alt="portfolio image"
+          alt={`${project.title} image for the blog, click to view more details.`}
           src={project.image}
          />
         </div>
 
-        <div className={styles.textContainer}>
+        <header className={styles.textContainer}>
          <p className={`${styles.lead} mb-1`}>
           {project.date} / {project.frameworks}
          </p>
          <h3 className={styles.h3}>{project.title}</h3>
-        </div>
+        </header>
        </Link>
       </motion.div>
-     </div>
+     </article>
     ))}
    </div>
   </div>

@@ -35,13 +35,16 @@ const Contact = () => {
     transition={{ duration: 0.5, delay: 0.5 }}
     initial={initial}
    >
-    <h2 className={styles.h1}>/contact</h2>
+    <h2 className={styles.h1} aria-label="Contact me">
+     /contact
+    </h2>
     <div className="flex">
      <a
       href="mailto:hello@erindhoxha.dev"
       target="_blank"
       rel="noreferrer"
       className="lead mb-0 font-regular text-regular text-decoration-underline me-2"
+      aria-label="Email me at hello@erindhoxha.dev, or click here."
       onMouseEnter={() => {
        setCursorVariantFn('text');
        setCursorText('email me');
@@ -59,6 +62,7 @@ const Contact = () => {
       target="_blank"
       rel="noreferrer"
       className="lead mb-0 font-regular text-regular text-decoration-underline mx-2"
+      aria-label="Link to my LinkedIn profile."
       onMouseEnter={() => {
        setCursorVariantFn('text');
        setCursorText('linkedin');
