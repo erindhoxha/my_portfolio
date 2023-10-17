@@ -1,11 +1,10 @@
 ---
-title: "airways nz"
-tools: "js, sass, html, axure rp7, ai, psd"
-role: "front-end, ui/ux"
-year: "2021"
-location: "auckland, nz"
+title: 'airways nz'
+tools: 'js, sass, html, axure rp7, ai, psd'
+role: 'front-end, ui/ux'
+year: '2021'
+location: 'auckland, nz'
 ---
-
 
 ### Operational tool / ui/ux and development process
 
@@ -13,7 +12,7 @@ Creating a solution for Airways New Zealand new operation system converting thei
 
 ---
 
-*Getting started*
+_Getting started_
 
 ### How it all started?
 
@@ -25,7 +24,7 @@ We didn't limit ourselves to only Traffic Controllers manual, we took examples f
 
 ---
 
-*User experience*
+_User experience_
 
 ### Problems
 
@@ -39,38 +38,44 @@ The team worked to a tight 7 week deadline to deliver a design solution which wo
 
 ---
 
-*Project*
+_Project_
 
 ### Process
 
 ### Research phase / 2 weeks
+
 The UX Design lead conducted 26 interviews with Controllers who represented the 7 air traffic sectors in New Zealand and observational analysis inside the radar centres They also reviewed previous concepts and conducted competitive design research
 
 ### Concept phase / 2 weeks
+
 The team then created a user journey, and three low fidelity concepts for feedback and verification with a similar group of controllers/project stakeholders in order to facilitate design/solution preference
 
 ### Usability testing and design / 3 weeks
+
 Reviewing all feedback, an initial prototype was created and tested with controllers using task cards, moderated by theta’s UX lead We outcome was then turned into a high fidelity design and prototype
 
 ![Airways NZ plane](/airways/process.jpeg)
 
 ---
 
-*Solution*
+_Solution_
 
 ### Delivering
 
 ### Phase 1 (Research)
+
 Competitive design research report ​
 Observational analysis report ​
 Interview summary document ​
 
 ### Phase 2 (Concepts) ​
+
 User journey document​
-Concept prototypes (*3) ​
+Concept prototypes (\*3) ​
 User feedback summary /design recommendations​
 
 ### Phase 3 (Usability test and design) ​
+
 Medium fidelity prototype ​
 Usability testing plan / summary documents ​
 Wireframe document ​

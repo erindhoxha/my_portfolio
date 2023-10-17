@@ -1,18 +1,17 @@
 ---
-title: "debugCon"
-tools: "js, sass, html5, figma, ai, psd"
-role: "front-end, ui/ux, branding, user research, prototyping"
+title: 'debugCon'
+tools: 'js, sass, html5, figma, ai, psd'
+role: 'front-end, ui/ux, branding, user research, prototyping'
 mockup: /debugcon/mockup.png
-year: "2022"
+year: '2022'
 cta: true
-url: "https://erindhoxha.github.io/debugCon"
-urlName: "View project_"
+url: 'https://erindhoxha.github.io/debugCon'
+urlName: 'View project_'
 cta2: true
-url2: "https://erindhoxha.github.io/debugCon"
-urlName2: "View prototype_"
-location: "auckland, nz"
+url2: 'https://erindhoxha.github.io/debugCon'
+urlName2: 'View prototype_'
+location: 'auckland, nz'
 ---
-
 
 ### Software development conference
 
@@ -20,19 +19,19 @@ I've collaborated with debugCon to create a solution for good user experience & 
 
 ---
 
-*Getting started*
+_Getting started_
 
 ### How it all started?
 
 Client from overseas contacted me about a conference being held in Pristina, Kosovo. I've decided to take a look within this project because it seems interesting.
 
 I've went to do some research about conferences around the world and came up with a Sitemap.
- 
+
 We/I've didn't limit ourselves with just coding conferences, we took examples from medicine/engineering conferences too.
 
 ---
 
-*Design*
+_Design_
 
 ### Ideation
 
@@ -48,7 +47,7 @@ The city's logo was "The queen on the throne" which when you searched on google 
 
 ---
 
-*Ideas*
+_Ideas_
 
 ### Sketching ideas
 
@@ -60,7 +59,7 @@ I've started small with designing the logo, which I've tried many variations.
 
 ---
 
-*Branding*
+_Branding_
 
 ### Eureka!
 
@@ -72,7 +71,7 @@ Debugging is always a bad thing to encounter, but with these colours it will loo
 
 ---
 
-*Moodboard*
+_Moodboard_
 
 ### Queen on the throne & the color palette from the moodboard
 
@@ -86,7 +85,7 @@ SVG's were drawn into the website using JavaScript, drawing the path of the SVG 
 
 ---
 
-*Accessories*
+_Accessories_
 
 ### Badges, posters
 
@@ -102,7 +101,7 @@ There were 24 speakers.
 
 ---
 
-*Advertisement*
+_Advertisement_
 
 ### Sliding banner
 
@@ -130,7 +129,7 @@ Openresearch - www.openresearch.com
 
 ---
 
-*Design*
+_Design_
 
 ### Poster design
 
@@ -140,7 +139,7 @@ The idea was to put inside the UBT University and call for volunteers, and letti
 
 ---
 
-*Conference*
+_Conference_
 
 ### Attendance
 
@@ -154,5 +153,3 @@ The feedback from the people who attended was awesome, and we've developed it in
 ---
 
 [View website](https://erindhoxha.github.io/debugCon) | [Contact me](mailto:hello@erindhoxha.dev)
-
-

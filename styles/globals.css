@@ -136,6 +136,7 @@ p {
 em {
  color: var(--text-em-rgb);
  opacity: 0.6;
+ font-style: normal;
 }
 
 h1 {
