@@ -14,8 +14,13 @@ export default function Home() {
  return (
   <>
    <Head>
-    <title>erindhoxha.dev</title>
-    <meta name="description" content="Erind Hoxha | Frontend | UI/UX" />
+    <title>
+     Erind Hoxha | Front End Developer | UX/UI Designer | Portfolio
+    </title>
+    <meta
+     name="description"
+     content="Erind Hoxha | Front End Developer | UX/UI Designer | Portfolio"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -25,10 +30,13 @@ export default function Home() {
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#070707" />
     <meta name="msapplication-TileColor" content="#070707" />
     <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="erindhoxha.dev" />
+    <meta property="og:title" content="Erind Hoxha Portfolio" />
     <meta property="og:site_name" content="erindhoxha.dev" />
     <meta property="og:url" content="https://erindhoxha.dev" />
-    <meta property="og:description" content="Erind Hoxha | Frontend | UI/UX" />
+    <meta
+     property="og:description"
+     content="Front End Developer | UX/UI Designer"
+    />
     <meta property="og:type" content="website" />
     <meta
      property="og:image"
@@ -37,8 +45,11 @@ export default function Home() {
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="https://erindhoxha.dev" />
     <meta name="twitter:creator" content="@erindhoxha" />
-    <meta name="twitter:title" content="Erind Hoxha | Frontend | UI/UX" />
-    <meta name="twitter:description" content="Portfolio" />
+    <meta name="twitter:title" content="Erind Hoxha Portfolio" />
+    <meta
+     name="twitter:description"
+     content="Front End Developer | UX/UI Designer"
+    />
     <meta
      name="twitter:image"
      content="http://erindhoxha-portfolio.vercel.app/api/og"
