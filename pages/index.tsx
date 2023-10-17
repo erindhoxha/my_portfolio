@@ -14,13 +14,8 @@ export default function Home() {
  return (
   <>
    <Head>
-    <title>
-     Erind Hoxha | Front End Developer | UX/UI Designer | Portfolio
-    </title>
-    <meta
-     name="description"
-     content="Erind Hoxha | Front End Developer | UX/UI Designer | Portfolio"
-    />
+    <title>Erind Hoxha | Portfolio</title>
+    <meta name="description" content="Frontend Engineer | UX/UI | Portfolio" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -35,7 +30,7 @@ export default function Home() {
     <meta property="og:url" content="https://erindhoxha.dev" />
     <meta
      property="og:description"
-     content="Front End Developer | UX/UI Designer"
+     content="Frontend Engineer | UX/UI | Portfolio"
     />
     <meta property="og:type" content="website" />
     <meta
@@ -48,7 +43,7 @@ export default function Home() {
     <meta name="twitter:title" content="Erind Hoxha Portfolio" />
     <meta
      name="twitter:description"
-     content="Front End Developer | UX/UI Designer"
+     content="Frontend Engineer | UX/UI | Portfolio"
     />
     <meta
      name="twitter:image"
