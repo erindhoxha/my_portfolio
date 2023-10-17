@@ -32,10 +32,10 @@ const Name = () => {
     >
      <div>
       <h2
-       className={styles.h2}
+       className={`${styles.h2} lowercase`}
        title="Did you know that Hoxha means 'mentor' in Albanian?"
       >
-       erind hoxha
+       Erind Hoxha
       </h2>
      </div>
     </motion.div>
