@@ -22,9 +22,9 @@ export default function Home() {
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#050505" />
+    <meta name="theme-color" content="#050505" />
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#070707" />
-    <meta name="msapplication-TileColor" content="#070707" />
-    <meta name="theme-color" content="#ffffff" />
     <meta
      property="og:title"
      content="Erind Hoxha | Frontend Engineer | UI/UX | Portfolio"
