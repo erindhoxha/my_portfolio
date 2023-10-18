@@ -14,7 +14,7 @@ export default function Home() {
  return (
   <>
    <Head>
-    <title>Erind Hoxha | Portfolio</title>
+    <title>Erind Hoxha | Frontend Engineer | UI/UX | Portfolio</title>
     <meta name="description" content="Frontend Engineer | UX/UI | Portfolio" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.ico" />
@@ -25,7 +25,10 @@ export default function Home() {
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#070707" />
     <meta name="msapplication-TileColor" content="#070707" />
     <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="Erind Hoxha Portfolio" />
+    <meta
+     property="og:title"
+     content="Erind Hoxha | Frontend Engineer | UI/UX | Portfolio"
+    />
     <meta property="og:site_name" content="erindhoxha.dev" />
     <meta property="og:url" content="https://erindhoxha.dev" />
     <meta
