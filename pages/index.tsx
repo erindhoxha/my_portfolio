@@ -1,11 +1,9 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Projects from '../components/Projects/Projects';
-import YearDate from '../components/YearDate/YearDate';
 import NavLeft from '../components/NavLeft/NavLeft';
 import Name from '../components/Name/Name';
 import NavRight from '../components/NavRight/NavRight';
-import { useEffect, useState } from 'react';
 import Blogs from '../components/Blogs/Blogs';
 import Navbar from '../components/Navbar/Navbar';
 import Contact from '../components/Contact/Contact';
@@ -17,7 +15,7 @@ export default function Home() {
     <title>Erind Hoxha | Frontend Engineer | UI/UX | Portfolio</title>
     <meta name="description" content="Frontend Engineer | UX/UI | Portfolio" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
