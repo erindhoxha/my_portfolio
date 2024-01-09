@@ -17,7 +17,7 @@ Atrax build products used by 800+ airports, 100+ countries and for 25+ years and
 
 Removing hand measurement and guesswork makes it fast and easy to uncover the hidden profit in your business, adding directly to bottom line profit.
 
-### Over 800 airport sites across 150 countries use Atrax products and systems.
+Over 800 airport sites across 150 countries use Atrax products and systems.
 
 ---
 

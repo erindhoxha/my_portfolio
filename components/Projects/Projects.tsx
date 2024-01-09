@@ -83,6 +83,7 @@ export const projects = [
     date: 2021,
     frameworks: "js, html, tailwind, figma",
     location: "auckland, nz",
+    href: "/work/primepanels",
     image: primepanels,
     id: 7,
   },
