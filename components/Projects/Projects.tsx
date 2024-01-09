@@ -302,7 +302,7 @@ const Projects = () => {
                       </span>
                     </p>
                     <h3 className={styles.h2}>{project.title}</h3>
-                    <h4 className="pill-outline">Incoming</h4>
+                    <h4 className="pill-outline">Case study incoming</h4>
                   </div>
                 </>
               )}
