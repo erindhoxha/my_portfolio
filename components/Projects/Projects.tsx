@@ -45,7 +45,7 @@ export const projects = [
   {
     title: "nzris",
     date: 2021,
-    frameworks: "js, html, css, figma, ai, psd",
+    frameworks: "js, html, css, UXPin, ai, psd",
     location: "auckland, nz",
     image: nzris,
     href: "/work/nzris",
@@ -72,8 +72,9 @@ export const projects = [
   {
     title: "mailfomo",
     date: 2021,
-    frameworks: "ts, node, html, tailwind, figma",
+    frameworks: "typescript, react, node, contentful, ai, psd, figma",
     location: "sydney, au",
+    href: "/work/mailfomo",
     image: mailfomo,
     id: 6,
   },
