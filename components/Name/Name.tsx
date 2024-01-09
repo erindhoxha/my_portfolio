@@ -80,7 +80,7 @@ const Name = () => {
               initial={initial}
             >
               <div className={styles.innerBox}>
-                <p>Sydney, Australia</p>
+                <p>London, UK</p>
 
                 <p className="mb-0">
                   <a
@@ -107,7 +107,7 @@ const Name = () => {
       </div>
       <div className={styles.box}>
         <span className={styles.qotd}>
-          available for freelance work
+          Looking for an opportunity in the UK
           <p className={styles.lead}>social_</p>
           <a
             target="_blank"
