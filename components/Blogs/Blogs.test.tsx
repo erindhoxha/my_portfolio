@@ -17,11 +17,11 @@ describe("Home", () => {
   it("renders blogs", () => {
     render(<Blogs />);
     expect(
-      screen.getByText(/new css property: aspect-ratio/i)
+      screen.getByText(/new css property: aspect-ratio/i),
     ).toBeInTheDocument();
 
     expect(
-      screen.getByText(/create animated icon on ai for web/i)
+      screen.getByText(/create an animated icon on ai for web/i),
     ).toBeInTheDocument();
   });
 });

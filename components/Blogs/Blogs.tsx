@@ -16,7 +16,7 @@ const blogs = [
     id: 144,
   },
   {
-    title: "create animated icon on ai for web",
+    title: "create an animated icon on ai for web",
     date: 2022,
     frameworks: "ai, svg, web / medium",
     image: blog2,

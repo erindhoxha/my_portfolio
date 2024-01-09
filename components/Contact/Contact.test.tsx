@@ -1,7 +1,7 @@
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
-import Blogs from './Contact';
-import Contact from './Contact';
+import { render, screen } from "@testing-library/react";
+import "@testing-library/jest-dom";
+import Blogs from "./Contact";
+import Contact from "./Contact";
 
 beforeEach(() => {
   // IntersectionObserver isn't available in test environment
@@ -14,15 +14,15 @@ beforeEach(() => {
   window.IntersectionObserver = mockIntersectionObserver;
 });
 
-describe('Home', () => {
-  it('renders Contact', () => {
+describe("Home", () => {
+  it("renders Contact", () => {
     render(<Contact />);
     expect(
-      screen.getByText(/new css property: aspect-ratio/i)
+      screen.getByText(/new css property: aspect-ratio/i),
     ).toBeInTheDocument();
 
     expect(
-      screen.getByText(/create animated icon on ai for web/i)
+      screen.getByText(/create an animated icon on ai for web/i),
     ).toBeInTheDocument();
   });
 });
