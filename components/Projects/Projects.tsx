@@ -65,6 +65,7 @@ export const projects = [
     date: 2021,
     frameworks: "js, html, css, sass, bootstrap, figma, ai, psd",
     location: "auckland, nz",
+    href: "/work/scanatrax",
     image: atrax,
     id: 5,
   },
