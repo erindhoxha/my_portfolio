@@ -1,5 +1,5 @@
 ---
-title: "wilsonart"
+title: "Prime Panels"
 tools: "umbraco, javascript, html5, css3, sass, ai, psd, sketch"
 role: "front-end, ui/ux"
 year: "2022"
