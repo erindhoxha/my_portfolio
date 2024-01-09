@@ -21,9 +21,37 @@ import nxtstep from "../../images/nxtstep-100.jpg";
 import dotapopquiz from "../../images/dotapopquiz-100.jpg";
 import vidapp from "../../images/vidapp-100.jpg";
 import debugcon from "../../images/debugcon-100.jpg";
+import kablamo from "../../images/kablamo-100.jpg";
 import { useCursorContext } from "../../pages/_app";
 
 export const projects = [
+  {
+    title: "wilsonart",
+    date: 2022,
+    frameworks: "umbraco, js, html, sass, ai, psd",
+    location: "auckland, nz",
+    href: "/work/wilsonart",
+    image: wa,
+    id: 4,
+  },
+  {
+    title: "Kablamo",
+    date: 2024,
+    frameworks:
+      "Worked with React Native, Typescript, Jest, React Query and more.",
+    location: "sydney, au",
+    image: kablamo,
+    href: "/work/kablamo",
+    id: 1,
+  },
+  {
+    title: "lobster&tap",
+    date: 2022,
+    frameworks: "js, bootstrap, umbraco, figma, ai, psd",
+    location: "auckland, nz",
+    image: lobster,
+    id: 12,
+  },
   {
     title: "debugCon",
     date: 2022,
@@ -52,13 +80,12 @@ export const projects = [
     id: 3,
   },
   {
-    title: "wilsonart",
-    date: 2022,
-    frameworks: "umbraco, js, html, sass, ai, psd",
+    title: "99urban",
+    date: 2021,
+    frameworks: "js, html, tailwind, figma",
     location: "auckland, nz",
-    href: "/work/wilsonart",
-    image: wa,
-    id: 4,
+    image: urban,
+    id: 10,
   },
   {
     title: "scanatrax",
@@ -104,28 +131,12 @@ export const projects = [
     id: 9,
   },
   {
-    title: "99urban",
-    date: 2021,
-    frameworks: "js, html, tailwind, figma",
-    location: "auckland, nz",
-    image: urban,
-    id: 10,
-  },
-  {
     title: "tourism nz",
     date: 2021,
     frameworks: "js, html, tailwind, figma",
     location: "auckland, nz",
     image: tourism,
     id: 11,
-  },
-  {
-    title: "lobster&tap",
-    date: 2022,
-    frameworks: "js, bootstrap, umbraco, figma, ai, psd",
-    location: "auckland, nz",
-    image: lobster,
-    id: 12,
   },
   {
     title: "daruma",
@@ -291,6 +302,7 @@ const Projects = () => {
                       </span>
                     </p>
                     <h3 className={styles.h2}>{project.title}</h3>
+                    <h4 className="pill-outline">Incoming</h4>
                   </div>
                 </>
               )}
