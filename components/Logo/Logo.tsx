@@ -8,7 +8,7 @@ const Logo = () => {
   return (
     <Link
       href={"/"}
-      className="link"
+      className="link no-underline"
       onMouseEnter={() => {
         setCursorVariantFn("text");
         setCursorText("← Home");

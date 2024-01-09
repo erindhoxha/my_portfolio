@@ -84,7 +84,7 @@ const Name = () => {
 
                 <p className="mb-0">
                   <a
-                    className="link line-through semibold"
+                    className="link line-through semibold no-underline"
                     href="mailto:hello@erindhoxha.dev"
                     target="_blank"
                     rel="noreferrer"

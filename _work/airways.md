@@ -1,9 +1,10 @@
 ---
-title: 'airways nz'
-tools: 'js, sass, html, axure rp7, ai, psd'
-role: 'front-end, ui/ux'
-year: '2021'
-location: 'auckland, nz'
+title: "airways nz"
+tools: "js, sass, html, axure rp7, ai, psd"
+role: "front-end, ui/ux"
+# mockup: "/airways/solution.png"
+year: "2021"
+location: "auckland, nz"
 ---
 
 ### Operational tool / ui/ux and development process
@@ -82,8 +83,6 @@ Wireframe document ​
 High fidelity prototype ​
 Design report / design guidelines and assets ​
 Project showcase for internal stakeholders
-
-![Airways NZ plane](/airways/solution.png)
 
 ---
 

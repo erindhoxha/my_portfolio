@@ -1,8 +1,8 @@
-import React from 'react';
-import { useCursorContext } from '../../pages/_app';
-import styles from './PortfolioLeftDescription.module.css';
-import { motion } from 'framer-motion';
-import YearDate from '../YearDate/YearDate';
+import React from "react";
+import { useCursorContext } from "../../pages/_app";
+import styles from "./PortfolioLeftDescription.module.css";
+import { motion } from "framer-motion";
+import YearDate from "../YearDate/YearDate";
 
 const PortfolioLeftDescription = ({
   title,
@@ -15,7 +15,7 @@ const PortfolioLeftDescription = ({
   const { setCursorVariantFn, setCursorText } = useCursorContext();
   let boxVariants = {};
   let initial = {};
-  if (typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
     const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
     if (!isMobile) {
       boxVariants = {
@@ -53,20 +53,20 @@ const PortfolioLeftDescription = ({
                 <p>{role}</p>
                 <p className={`${cta && styles.hasCta} mb-0`}>
                   <a
-                    className="link line-through semibold"
-                    href={href ? href : '#scrollto'}
-                    target={`${link ? '_blank' : '_self'}`}
+                    className="link line-through semibold no-underline"
+                    href={href ? href : "#scrollto"}
+                    target={`${link ? "_blank" : "_self"}`}
                     rel="noreferrer"
                     onMouseEnter={() => {
-                      setCursorVariantFn('text');
-                      setCursorText('go →');
+                      setCursorVariantFn("text");
+                      setCursorText("go →");
                     }}
                     onMouseLeave={() => {
-                      setCursorVariantFn('default');
-                      setCursorText('');
+                      setCursorVariantFn("default");
+                      setCursorText("");
                     }}
                   >
-                    {link ? link : 'View project ↓'}
+                    {link ? link : "View project ↓"}
                   </a>
                 </p>
               </div>
@@ -82,17 +82,17 @@ const PortfolioLeftDescription = ({
 
                 <p className="mb-0">
                   <a
-                    className="link line-through semibold"
+                    className="link line-through semibold no-underline"
                     target="_blank"
                     rel="noreferrer"
                     href="mailto:hello@erindhoxha.dev"
                     onMouseEnter={() => {
-                      setCursorVariantFn('text');
-                      setCursorText('email me');
+                      setCursorVariantFn("text");
+                      setCursorText("email me");
                     }}
                     onMouseLeave={() => {
-                      setCursorVariantFn('default');
-                      setCursorText('');
+                      setCursorVariantFn("default");
+                      setCursorText("");
                     }}
                   >
                     hello@erindhoxha.dev
@@ -113,23 +113,23 @@ const PortfolioLeftDescription = ({
             href="https://github.com/erindhoxha"
           >
             twitter
-          </a>{' '}
-          /{' '}
+          </a>{" "}
+          /{" "}
           <a
             target="_blank"
             rel="noreferrer"
             href="https://instagram.com/erindhox"
           >
             insta
-          </a>{' '}
-          /{' '}
+          </a>{" "}
+          /{" "}
           <a
             target="_blank"
             rel="noreferrer"
             href="https://facebook.com/hoxhaerind"
           >
             fb
-          </a>{' '}
+          </a>{" "}
         </span>
         <YearDate year="2022" />
       </div>
