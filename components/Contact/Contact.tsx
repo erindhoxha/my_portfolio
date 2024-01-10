@@ -56,6 +56,7 @@ const Contact = () => {
           >
             <p className="text-decoration-underline">email</p>
           </a>
+          {/* Add the links here */}
           <a className="no-underline"> / </a>
           <a
             href="https://linkedin.com/in/erindhoxha"
