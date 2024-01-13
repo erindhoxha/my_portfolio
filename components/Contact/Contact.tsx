@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
 import styles from "./Contact.module.css";
 import { useCursorContext } from "../../pages/_app";
 
@@ -23,8 +21,7 @@ const Contact = () => {
       initial = { opacity: 0, x: -30 };
       initialCards = { opacity: 0, y: 20 };
       whileInViewCards = { opacity: 1, y: 0 };
-    } //if the width >= 768px, boxVariants will be empty, resulting in no animation
-    //you need to refresh the page, it doesn't work when you resize it!
+    }
   }
 
   return (

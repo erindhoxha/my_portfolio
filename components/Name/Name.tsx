@@ -80,7 +80,18 @@ const Name = () => {
               initial={initial}
             >
               <div className={styles.innerBox}>
-                <p>London, UK</p>
+                {/* <p>London, UK</p> */}
+                {/* <p>React, React Native, Typescript</p> */}
+                <p>
+                  <a
+                    className="link line-through semibold no-underline"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://drive.google.com/file/d/1qP1prUVJttSdJOXb5Duxs5b9067kavIk/view?usp=drive_link"
+                  >
+                    View my CV
+                  </a>
+                </p>
 
                 <p className="mb-0">
                   <a
@@ -107,7 +118,7 @@ const Name = () => {
       </div>
       <div className={styles.box}>
         <span className={styles.qotd}>
-          Looking for an opportunity in the UK
+          {/* Currently looking for a new opportunity */}
           <p className={styles.lead}>social_</p>
           <a
             target="_blank"
