@@ -42,14 +42,6 @@ export const projects = [
     image: mailfomo,
   },
   {
-    title: "lobster&tap",
-    date: 2022,
-    frameworks: "js, bootstrap, umbraco, figma, ai, psd",
-    location: "auckland, nz",
-    // tools: "react, js, jest, sass, xd, bootstrap, sketch",
-    image: lobster,
-  },
-  {
     title: "99urban",
     date: 2021,
     frameworks: "react, shopify, liquid, jest, ai, psd",
@@ -74,6 +66,14 @@ export const projects = [
     href: "/work/wilsonart",
     // tools: "js, sass, xd, bootstrap, sketch, git",
     image: wa,
+  },
+  {
+    title: "lobster&tap",
+    date: 2022,
+    frameworks: "js, bootstrap, umbraco, figma, ai, psd",
+    location: "auckland, nz",
+    // tools: "react, js, jest, sass, xd, bootstrap, sketch",
+    image: lobster,
   },
   {
     title: "debugCon",
