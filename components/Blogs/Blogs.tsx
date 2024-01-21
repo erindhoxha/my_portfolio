@@ -29,9 +29,9 @@ const Blogs = () => {
   const { setCursorVariantFn, setCursorText } = useCursorContext();
 
   let boxVariants = {};
-  let initial = { opacity: 0, x: -30 };
-  let initialCards = { opacity: 0, y: 20 };
-  let whileInViewCards = { opacity: 1, y: 0 };
+  let initial = {};
+  let initialCards = {};
+  let whileInViewCards = {};
   if (typeof window !== "undefined") {
     const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
     if (!isMobile) {

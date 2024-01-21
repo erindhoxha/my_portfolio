@@ -5,9 +5,8 @@ import { motion } from "framer-motion";
 
 const NavRight = () => {
   let boxVariants = {};
-  let initialLeft = { opacity: 0, x: -40 };
-  let initialRight = { opacity: 0, x: 40 };
-
+  let initialLeft = {};
+  let initialRight = {};
   if (typeof window !== "undefined") {
     const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
     if (!isMobile) {
