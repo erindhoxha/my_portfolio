@@ -26,17 +26,25 @@ Low-Fidelity (LoFi) Wireframes: The project kicked off with designing LoFi wiref
 
 Client Review and Approval: After presenting the initial wireframes, we received valuable feedback from the client. Their insights played a pivotal role in fine-tuning our designs. Thankfully, our efforts paid off with the client signing off on the wireframes - a significant milestone!
 
+![WilsonArt Website snippet](/wilsonart/1.png)
+![WilsonArt Website snippet](/wilsonart/2.png)
+
 ---
 
 ### High-Fidelity Designs
 
 High-Fidelity (HiFi) Wireframes: With the green light from the client, we progressed to the HiFi design phase. This stage was marked by incorporating detailed design elements, aligning closely with Wilsonart's brand aesthetics. Multiple iterations and client feedback sessions culminated in another sign-off, paving the way for development.
 
+![WilsonArt Website snippet](/wilsonart/3.png)
+![WilsonArt Website snippet](/wilsonart/4.png)
+
 ---
 
 ### Development
 
 Front-End Development: Armed with approved designs, I dove into the development phase. Utilizing a combination of JavaScript, HTML, CSS, and Sass, and adhering to the BEM methodology, I transformed the HiFi designs into a fully functional website. This phase demanded a meticulous translation of design into code, ensuring a seamless user experience.
+
+![WilsonArt Website snippet](/wilsonart/5.png)
 
 ---
 

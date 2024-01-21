@@ -26,39 +26,70 @@ import { useCursorContext } from "../../pages/_app";
 
 export const projects = [
   {
-    title: "wilsonart",
-    date: 2022,
-    frameworks: "umbraco, js, html, sass, ai, psd",
-    location: "auckland, nz",
-    href: "/work/wilsonart",
-    image: wa,
-    id: 4,
-  },
-  {
     title: "Kablamo",
     date: 2024,
-    frameworks:
-      "Worked with React Native, Typescript, Jest, React Query and more.",
+    frameworks: "react, react native, typescript, rquery, jest, storybook",
     location: "sydney, au",
+    // tools: "react, ts, rquery, jest, storybook, git",
     image: kablamo,
-    id: 1,
+  },
+  {
+    title: "mailfomo",
+    date: 2023,
+    frameworks: "typescript, react, node, contentful, ai, psd, figma",
+    location: "sydney, au",
+    // href: "/work/mailfomo",
+    image: mailfomo,
   },
   {
     title: "lobster&tap",
     date: 2022,
     frameworks: "js, bootstrap, umbraco, figma, ai, psd",
     location: "auckland, nz",
+    // tools: "react, js, jest, sass, xd, bootstrap, sketch",
     image: lobster,
-    id: 12,
+  },
+  {
+    title: "99urban",
+    date: 2021,
+    frameworks: "react, shopify, liquid, jest, ai, psd",
+    location: "auckland, nz",
+    href: "/work/99urban",
+    // tools: "react, shopify, liquid2, jest, ai, psd",
+    image: urban,
+  },
+  // {
+  //   title: "fishmarkets / lobster&tap",
+  //   date: 2022,
+  //   frameworks: "react, js, redux, html, sass, ai, sketch",
+  //   location: "auckland, nz",
+  //   href: "/work/fishmarkets",
+  //   image: wa,
+  // },
+  {
+    title: "wilsonart",
+    date: 2022,
+    frameworks: "umbraco, js, html, sass, ai, psd",
+    location: "auckland, nz",
+    href: "/work/wilsonart",
+    // tools: "js, sass, xd, bootstrap, sketch, git",
+    image: wa,
   },
   {
     title: "debugCon",
     date: 2022,
     frameworks: "js, sass, html5, figma, ai, psd",
     location: "auckland, nz",
+    // tools: "js, jest, handlebars_logo, sass, bootstrap, xd, ai, psd, sketch",
     image: debugcon,
     href: "/work/debugcon",
-    id: 1,
+  },
+  {
+    title: "daruma",
+    date: 2022,
+    frameworks: "js, bootstrap, umbraco, figma, ai, psd",
+    location: "auckland, nz",
+    image: daruma,
   },
   {
     title: "airways nz",
@@ -67,7 +98,6 @@ export const projects = [
     location: "auckland, nz",
     image: airways,
     href: "/work/airways",
-    id: 2,
   },
   {
     title: "nzris",
@@ -76,15 +106,6 @@ export const projects = [
     location: "auckland, nz",
     image: nzris,
     href: "/work/nzris",
-    id: 3,
-  },
-  {
-    title: "99urban",
-    date: 2021,
-    frameworks: "js, html, tailwind, figma",
-    location: "auckland, nz",
-    image: urban,
-    id: 10,
   },
   {
     title: "scanatrax",
@@ -93,16 +114,6 @@ export const projects = [
     location: "auckland, nz",
     href: "/work/scanatrax",
     image: atrax,
-    id: 5,
-  },
-  {
-    title: "mailfomo",
-    date: 2021,
-    frameworks: "typescript, react, node, contentful, ai, psd, figma",
-    location: "sydney, au",
-    href: "/work/mailfomo",
-    image: mailfomo,
-    id: 6,
   },
   {
     title: "primepanels",
@@ -111,7 +122,6 @@ export const projects = [
     location: "auckland, nz",
     href: "/work/primepanels",
     image: primepanels,
-    id: 7,
   },
   {
     title: "lineadelplata",
@@ -119,7 +129,6 @@ export const projects = [
     frameworks: "js, html, tailwind, figma",
     location: "auckland, nz",
     image: lineadelplata,
-    id: 8,
   },
   {
     title: "flatmately",
@@ -127,7 +136,6 @@ export const projects = [
     frameworks: "js, html, tailwind, figma",
     location: "auckland, nz",
     image: flatmately,
-    id: 9,
   },
   {
     title: "tourism nz",
@@ -135,31 +143,6 @@ export const projects = [
     frameworks: "js, html, tailwind, figma",
     location: "auckland, nz",
     image: tourism,
-    id: 11,
-  },
-  {
-    title: "daruma",
-    date: 2022,
-    frameworks: "js, bootstrap, umbraco, figma, ai, psd",
-    location: "auckland, nz",
-    image: daruma,
-    id: 13,
-  },
-  {
-    title: "renkon",
-    date: 2020,
-    frameworks: "js, html, tailwind, figma",
-    location: "auckland, nz",
-    image: renkon,
-    id: 14,
-  },
-  {
-    title: "yoga with kassandra",
-    date: 2021,
-    frameworks: "js, html, sass, wordpress, ai, psd",
-    location: "auckland, nz",
-    image: yogawithkassandra,
-    id: 15,
   },
   {
     title: "nxtstep",
@@ -167,32 +150,43 @@ export const projects = [
     frameworks: "js, html, bootstrap, sketch, ai, psd",
     location: "auckland, nz",
     image: nxtstep,
-    id: 16,
+  },
+  {
+    title: "yoga with kassandra",
+    date: 2021,
+    frameworks: "js, html, sass, wordpress, ai, psd",
+    location: "auckland, nz",
+    image: yogawithkassandra,
+  },
+  {
+    title: "renkon",
+    date: 2020,
+    frameworks: "js, html, tailwind, figma",
+    location: "auckland, nz",
+    image: renkon,
   },
   {
     title: "dotapopquiz",
-    date: 2021,
+    date: 2020,
     frameworks: "js, html, tailwind, figma",
     location: "auckland, nz",
     image: dotapopquiz,
-    id: 17,
   },
   {
     title: "vidapp",
-    date: 2021,
+    date: 2019,
     frameworks: "wordpress, js, html, sass, ai, psd",
     location: "auckland, nz",
     image: vidapp,
-    id: 18,
   },
 ];
 
 const Projects = () => {
   const { setCursorVariantFn, setCursorText } = useCursorContext();
 
-  let initial = {};
-  let initialCards = {};
-  let whileInViewCards = {};
+  let initial = { opacity: 0, x: -30 };
+  let initialCards = { opacity: 0, y: 20 };
+  let whileInViewCards = { opacity: 1, y: 0 };
   let boxVariants = {};
   if (typeof window !== "undefined") {
     const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
@@ -224,9 +218,9 @@ const Projects = () => {
       </motion.div>
 
       <div className="row p-0 m-0">
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <article
-            key={project.id}
+            key={project.title}
             className={`col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 p-1 ${styles.portfolioContainer}`}
             aria-label={`Project about ${project.title} with tools used ${project.frameworks} at ${project.location}`}
           >
@@ -265,6 +259,7 @@ const Projects = () => {
                   </div>
 
                   <header className={styles.textContainer}>
+                    <h3 className={styles.h2}>{project.title}</h3>
                     <p
                       className="mb-1"
                       aria-label={`Project date is ${project.date} and tools used are ${project.frameworks} at ${project.location}`}
@@ -274,23 +269,43 @@ const Projects = () => {
                         {project.location}
                       </span>
                     </p>
-                    <h3 className={styles.h2}>{project.title}</h3>
+
+                    {project.tools
+                      ? project.tools
+                          .split(", ")
+                          .map((tool, index) => (
+                            <Image
+                              className={styles.framework}
+                              width={15}
+                              height={15}
+                              unoptimized
+                              quality={100}
+                              key={index}
+                              alt=""
+                              src={`/frameworks/${tool}.png`}
+                            />
+                          ))
+                      : null}
                   </header>
                 </Link>
               ) : (
                 <>
                   <div className={styles.imgCover}>
                     <div className={styles.overlay}></div>
-                    <Image
-                      className={styles.img}
-                      alt={`${project.title} project image, click to view more details.`}
-                      src={project.image}
-                      priority={project.image === nzpg}
-                      unoptimized
-                    />
+                    <div className="img-group">
+                      <h4 className={styles.pill}>Case study incoming</h4>
+                      <Image
+                        className={styles.img}
+                        alt={`${project.title} project image, click to view more details.`}
+                        src={project.image}
+                        priority={project.image === nzpg}
+                        unoptimized
+                      />
+                    </div>
                   </div>
 
                   <div className={styles.textContainer}>
+                    <h3 className={styles.h2}>{project.title}</h3>
                     <p
                       className="mb-1"
                       aria-label={`Project date is ${project.date} and tools used are ${project.frameworks} at ${project.location}`}
@@ -300,8 +315,22 @@ const Projects = () => {
                         {project.location}
                       </span>
                     </p>
-                    <h3 className={styles.h2}>{project.title}</h3>
-                    <h4 className="pill-outline">Case study incoming</h4>
+                    {project.tools
+                      ? project.tools
+                          .split(", ")
+                          .map((tool, index) => (
+                            <Image
+                              className={styles.framework}
+                              width={15}
+                              height={15}
+                              unoptimized
+                              quality={100}
+                              key={index}
+                              alt=""
+                              src={`/frameworks/${tool}.png`}
+                            />
+                          ))
+                      : null}
                   </div>
                 </>
               )}

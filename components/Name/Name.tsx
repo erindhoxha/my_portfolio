@@ -7,7 +7,7 @@ import YearDate from "../YearDate/YearDate";
 const Name = () => {
   const { setCursorVariantFn, setCursorText } = useCursorContext();
   let boxVariants = {};
-  let initial = {};
+  let initial = { opacity: 0, x: -30 };
   if (typeof window !== "undefined") {
     const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
     if (!isMobile) {

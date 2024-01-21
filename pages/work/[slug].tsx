@@ -155,7 +155,21 @@ export default function Post({ post, morePosts, preview }) {
             />
           </div>
         ) : null}
+
         <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
+
+        {post.video ? (
+          <div
+            style={{
+              marginTop: 24,
+            }}
+          >
+            <video width="100%" height="400" controls>
+              <source src={post.video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        ) : null}
       </div>
       <Projects />
     </>
@@ -168,6 +182,7 @@ export async function getStaticProps({ params }) {
     "tools",
     "role",
     "mockup",
+    "video",
     "cta",
     "url",
     "urlName",
