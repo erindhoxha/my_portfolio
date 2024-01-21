@@ -89,7 +89,7 @@ const Name = () => {
                     rel="noreferrer"
                     href="https://drive.google.com/file/d/1qP1prUVJttSdJOXb5Duxs5b9067kavIk/view?usp=drive_link"
                   >
-                    View my CV
+                    View my resume
                   </a>
                 </p>
 
