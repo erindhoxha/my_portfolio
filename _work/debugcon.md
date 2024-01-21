@@ -1,155 +1,89 @@
 ---
-title: 'debugCon'
-tools: 'js, sass, html5, figma, ai, psd'
-role: 'front-end, ui/ux, branding, user research, prototyping'
+title: "DebugCon"
+tools: "js, sass, html5, figma, ai, psd"
+role: "front-end, ui/ux, branding, user research, prototyping"
 mockup: /debugcon/mockup.png
-year: '2022'
+year: "2022"
 cta: true
-url: 'https://erindhoxha.github.io/debugCon'
-urlName: 'View project_'
+url: "https://erindhoxha.github.io/debugCon"
+urlName: "View Project"
 cta2: true
-url2: 'https://erindhoxha.github.io/debugCon'
-urlName2: 'View prototype_'
-location: 'auckland, nz'
+url2: "https://erindhoxha.github.io/debugCon"
+urlName2: "View Prototype"
+location: "Auckland, NZ"
 ---
 
-### Software development conference
+### Conference on Software Development
 
-I've collaborated with debugCon to create a solution for good user experience & demonstrating the conference with a new branding.
-
----
-
-_Getting started_
-
-### How it all started?
-
-Client from overseas contacted me about a conference being held in Pristina, Kosovo. I've decided to take a look within this project because it seems interesting.
-
-I've went to do some research about conferences around the world and came up with a Sitemap.
-
-We/I've didn't limit ourselves with just coding conferences, we took examples from medicine/engineering conferences too.
+In partnership with DebugCon, I embarked on a project to enhance user experience and establish a new brand identity for their international software development conference. This project was a blend of creativity, technology, and strategic planning, aimed at showcasing the conference in a fresh and engaging way.
 
 ---
 
-_Design_
+### Project Inception
 
-### Ideation
+The project began when a client from overseas reached out with a vision for a conference in Pristina, Kosovo. Intrigued by the potential of this venture, I embarked on a comprehensive research journey. This involved analyzing a variety of conferences globally, extending beyond the realm of technology to include medical and engineering events, providing a diverse perspective on conference design and execution.
 
-We've done some research for other conferences and came up with a moodboard.
+---
 
-The reason behind this was to not re-invent the wheel, create something that is original, but getting inspired by other conferences.
+_Design Phase_
 
-The logo, design & the branding I got inspired from VS Code, the brackets and the colours palette which I've used for coding.
+### Moodboard and Ideation
 
-The city's logo was "The queen on the throne" which when you searched on google about "Mbreteresha ne fron" it shows the symbol of the city, which we used for the main header / as part of the branding to symbolise peace, comfort for Prishtina's citizens.
+The design process commenced with an extensive moodboard creation, drawing inspiration from various conferences. The goal was to craft an original and captivating design that resonated with the ethos of DebugCon. The branding was influenced by the aesthetics of VS Code, incorporating elements like brackets and a coding-centric color palette.
 
 ![Moodboard](/debugcon/moodboard.png)
 
----
+### Sketching and Prototyping
 
-_Ideas_
-
-### Sketching ideas
-
-As soon as I've finalised the brand colours, which was the palette from Black & Purple, it was pretty easy to continue branding it.
-
-I've first started to make some tests with color-blind people (which I'm with green sometimes), if they can see the colour, which we've done some user testing based on the palette.
-
-I've started small with designing the logo, which I've tried many variations.
+With the brand colors set - a striking combination of black and purple - the focus shifted to branding. Initial steps included user testing for color accessibility, particularly for color-blind users. The logo design underwent several iterations, eventually leading to a clean and minimalistic final version.
 
 ---
 
 _Branding_
 
-### Eureka!
+###Finalizing the Brand Identity
 
-We came up with this logo which was minimal & clean.
-
-The purple colour symbolises 'Coding', 'Hacking' or 'Cyber', which we've chosen to use for the branding.
-
-Debugging is always a bad thing to encounter, but with these colours it will look entertaining and fun even if it's named debugCon.
+The chosen logo, featuring a purple hue symbolic of coding and cybersecurity, captured the essence of 'DebugCon' - transforming the often arduous task of debugging into an engaging and enjoyable experience.
 
 ---
 
-_Moodboard_
+_Implementation_
 
-### Queen on the throne & the color palette from the moodboard
+### Building the Website
 
-As soon as we chosen the final branding style, I've started to develop it with HTML5, CSS3, SASS, GULP.JS, JavaScript & jQuery.
-
-From here, I've decided to use a pattern from www.heropatterns.com
-
-The entire images, icons & loading screen was created with Adobe Illustrator as an SVG.
-
-SVG's were drawn into the website using JavaScript, drawing the path of the SVG when it's outlined.
+With the branding finalized, the development phase began, utilizing HTML5, CSS3, SASS, Gulp.js, and JavaScript, along with jQuery. Patterns from www.heropatterns.com were integrated into the design. All images, icons, and the loading screen were meticulously crafted using Adobe Illustrator as SVGs, and animated on the website through JavaScript.
 
 ---
 
-_Accessories_
+_Event_
 
-### Badges, posters
+### Badges, Posters, and More
 
-Badges were necessary to be used in the conference because the speakers, staff, volunteers and guests could meet each other and see their names, and what they liked about.
-
-We've decided to set them into 3 categories: Support, Speaker & Volunteer.
-
-The supporters were the guests who contributed / donated into the debugCon conference.
-
-There were 24 speakers.
+A range of event accessories including badges and posters were designed to enhance the conference experience. Badges were categorized into 'Support', 'Speaker', and 'Volunteer', each serving a unique purpose in the event. The badges were essential in fostering interaction among the different participants.
 
 ![Badges](/debugcon/badges.png)
 
 ---
 
-_Advertisement_
+_Marketing_
 
-### Sliding banner
+### Promotional Banners
 
-The banner was needed to showcase the sponsors, and the debugCon so we've created two, the banner that showcases the sponsors at the bottom and one large one with only the sponsors.
-
-There were many sponsors from:
-
-Gjirafa - www.gjirafa.com
-
-SPRIGS - www.sprigs.com
-
-Universiteti i Prishtines
-
-Inspire11 - www.inspire11.com
-
-Rrota - www.rrota.com
-
-Llatki - www.llatki.com
-
-Celonis - www.celonis.com
-
-Openresearch - www.openresearch.com
+The promotional strategy included sliding banners to highlight sponsors and the conference itself. This was an effective way to showcase support from various organizations, including Gjirafa, SPRIGS, Universiteti i Prishtines, Inspire11, Rrota, Llatki, Celonis, and Openresearch.
 
 ![Banner with our sponsors](/debugcon/banner.png)
 
 ---
 
-_Design_
+_Final outcome_
 
-### Poster design
+### Conference Success and Feedback
 
-Poster was needed to put into some universities to let them know that a coding conference is happening.
-
-The idea was to put inside the UBT University and call for volunteers, and letting the guests know that anyone could go in, so it didn't matter if you were a software developer or not.
-
----
-
-_Conference_
-
-### Attendance
-
-This is why I love working with real people, real data.
-
-The feedback from the people who attended was awesome, and we've developed it in a way that everyone could see the schedule.
+The culmination of this project was the successful hosting of DebugCon, marked by positive feedback from attendees. The website and conference materials effectively communicated the schedule and facilitated an inclusive environment for all participants, regardless of their background in software development.
 
 ![Attendance of DebugCon](/debugcon/attendance.jpeg)
 ![Speaker 1](/debugcon/speaker1.png)
 
 ---
 
-[View website](https://erindhoxha.github.io/debugCon) | [Contact me](mailto:hello@erindhoxha.dev)
+[View the DebugCon Website](https://erindhoxha.github.io/debugCon) | [Contact Me](mailto:hello@erindhoxha.dev)

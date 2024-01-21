@@ -41,7 +41,6 @@ export const projects = [
       "Worked with React Native, Typescript, Jest, React Query and more.",
     location: "sydney, au",
     image: kablamo,
-    href: "/work/kablamo",
     id: 1,
   },
   {

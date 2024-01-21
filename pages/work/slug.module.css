@@ -71,9 +71,9 @@
   padding: 112px var(--padding-left);
   padding-top: 24px;
   justify-content: flex-start;
-  width:100%;
+  width: 100%;
+  max-width: 900px;
 }
-
 
 @media screen and (orientation: landscape) and (max-width: 900px) {
   .showcaseContainer {
@@ -107,22 +107,20 @@
     padding: 24px;
   }
   .cta {
-    order:2;
+    order: 2;
   }
 }
 
-
 .showcaseContainer p {
-  max-width:800px;
+  max-width: 800px;
 }
 
-
 .showcaseContainer img {
-  width:100%;
-  max-width:500px;
-  margin-top:12px;
-  margin-bottom:12px;
-  border-radius:12px;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-radius: 12px;
 }
 
 .img {
