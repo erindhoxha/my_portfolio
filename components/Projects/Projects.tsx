@@ -269,8 +269,7 @@ const Projects = () => {
                         {project.location}
                       </span>
                     </p>
-
-                    {project.tools
+                    {/* {project.tools
                       ? project.tools
                           .split(", ")
                           .map((tool, index) => (
@@ -285,7 +284,7 @@ const Projects = () => {
                               src={`/frameworks/${tool}.png`}
                             />
                           ))
-                      : null}
+                      : null} */}
                   </header>
                 </Link>
               ) : (
@@ -315,7 +314,7 @@ const Projects = () => {
                         {project.location}
                       </span>
                     </p>
-                    {project.tools
+                    {/* {project.tools
                       ? project.tools
                           .split(", ")
                           .map((tool, index) => (
@@ -330,7 +329,7 @@ const Projects = () => {
                               src={`/frameworks/${tool}.png`}
                             />
                           ))
-                      : null}
+                      : null} */}
                   </div>
                 </>
               )}
