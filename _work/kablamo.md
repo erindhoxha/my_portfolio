@@ -24,4 +24,4 @@ Project incoming, signed an NDA that I cannot disclose in my portfolio.
 
 ---
 
-[Contact me](mailto:hello@erindhoxha.dev)
+[Contact](mailto:hello@erindhoxha.dev)

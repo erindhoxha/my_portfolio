@@ -27,9 +27,13 @@ _Design and Development_
 
 An integral part of this project was to bring the concept to life using UXPin. I created engaging and high-fidelity prototypes to demonstrate the user journey, focusing on interactive and intuitive design elements. These prototypes featured advanced animations to effectively convey the functionality and aesthetic of the proposed solution to NZRIS.
 
+---
+
 ### Development with React and React Framer
 
 The development phase involved using React to build a responsive and user-friendly interface. I integrated React Framer to incorporate smooth and visually appealing animations, enhancing the user experience significantly. These animations played a key role in showcasing the interactivity and modern feel of the website.
+
+---
 
 ### Pitching and Implementation
 

@@ -26,4 +26,4 @@ Github repo on request.
 
 ---
 
-[Contact me](mailto:hello@erindhoxha.dev)
+[Contact](mailto:hello@erindhoxha.dev)

@@ -44,4 +44,4 @@ The culmination of our efforts resulted in the creation of the NZPG Showroom –
 
 ---
 
-[Contact me](mailto:hello@erindhoxha.dev)
+[Contact](mailto:hello@erindhoxha.dev)

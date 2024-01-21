@@ -86,4 +86,4 @@ The culmination of this project was the successful hosting of DebugCon, marked b
 
 ---
 
-[View the DebugCon Website](https://erindhoxha.github.io/debugCon) | [Contact Me](mailto:hello@erindhoxha.dev)
+[View website](https://erindhoxha.github.io/debugCon) | [Contact Me](mailto:hello@erindhoxha.dev)

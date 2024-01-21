@@ -86,4 +86,4 @@ Project showcase for internal stakeholders
 
 ---
 
-[View website](https://erindhoxha.github.io/debugCon) | [Contact me](mailto:hello@erindhoxha.dev)
+[Contact](mailto:hello@erindhoxha.dev)
