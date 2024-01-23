@@ -86,6 +86,14 @@ const Name = () => {
                     target="_blank"
                     rel="noreferrer"
                     href="https://drive.google.com/file/d/1qP1prUVJttSdJOXb5Duxs5b9067kavIk/view?usp=drive_link"
+                    onMouseEnter={() => {
+                      setCursorVariantFn("text");
+                      setCursorText("my CV");
+                    }}
+                    onMouseLeave={() => {
+                      setCursorVariantFn("default");
+                      setCursorText("");
+                    }}
                   >
                     View my resume
                   </a>
