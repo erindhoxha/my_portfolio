@@ -131,7 +131,7 @@ const PortfolioLeftDescription = ({
             fb
           </a>{" "}
         </span>
-        <YearDate year="2022" />
+        <YearDate year="2024" />
       </div>
     </div>
   );

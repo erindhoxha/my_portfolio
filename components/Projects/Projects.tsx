@@ -36,9 +36,9 @@ export const projects = [
   {
     title: "mailfomo",
     date: 2023,
-    frameworks: "typescript, react, node, contentful, ai, psd, figma",
+    frameworks: "typescript, react, node, sass, tailwind, ai, psd, figma",
     location: "sydney, au",
-    // href: "/work/mailfomo",
+    href: "/work/mailfomo",
     image: mailfomo,
   },
   {
