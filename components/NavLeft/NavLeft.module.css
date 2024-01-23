@@ -28,21 +28,15 @@
 }
 .navLeftItem {
   margin-bottom: 40px;
-  padding-right: 5px;
+  padding-right: 15px;
   padding-left: 0px;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .navLeftItem {
-    padding-right: 10px;
-  }
-  .navLeftItem:first-of-type {
-    padding-right: 1vw;
-  }
-  .navLeftItem:last-of-type {
     padding-right: 5px;
   }
 }
