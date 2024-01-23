@@ -14,8 +14,8 @@
   flex-direction: column;
   min-height: 100vh;
   justify-content: space-between;
-  padding-bottom: 24px;
-  padding-top: 144px;
+  padding-bottom: 36px;
+  padding-top: 21vh;
   text-align: center;
 }
 
@@ -108,6 +108,19 @@
   }
   .cta {
     order: 2;
+  }
+}
+
+@media screen and (max-width: 1028px) {
+  .slugContainer h1 {
+    font-size: 9.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slugContainer h1 {
+    font-size: 4rem;
+    text-align: left;
   }
 }
 

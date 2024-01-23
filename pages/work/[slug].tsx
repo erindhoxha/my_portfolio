@@ -53,35 +53,39 @@ export default function Post({ post, morePosts, preview }) {
 
             <NavLeft />
             <div className={styles.slugContainerInner}>
-              <motion.div
-                variants={boxVariants}
-                animate="default"
-                transition={{ duration: 0.5, delay: 0.4 }}
-                initial={initialRight}
-              >
-                <p className={styles.fadedP}>showcase_</p>
-                <h1>{post.title}</h1>
-              </motion.div>
+              <div className="wrapper">
+                <div className="wrapper--inner">
+                  <motion.div
+                    variants={boxVariants}
+                    animate="default"
+                    transition={{ duration: 0.5, delay: 0.4 }}
+                    initial={initialRight}
+                  >
+                    <p className={styles.fadedP}>showcase_</p>
+                    <h1>{post.title}</h1>
+                  </motion.div>
 
-              <motion.div
-                variants={boxVariants}
-                animate="default"
-                transition={{ duration: 0.5, delay: 0.6 }}
-                initial={initialRight}
-              >
-                <h2 className={`mt-5`}>tools used</h2>
-                <p className={styles.fadedP}>{post.tools}</p>
-              </motion.div>
+                  <motion.div
+                    variants={boxVariants}
+                    animate="default"
+                    transition={{ duration: 0.5, delay: 0.6 }}
+                    initial={initialRight}
+                  >
+                    <h2 className={`mt-5`}>tools used</h2>
+                    <p className={styles.fadedP}>{post.tools}</p>
+                  </motion.div>
 
-              <motion.div
-                variants={boxVariants}
-                animate="default"
-                transition={{ duration: 0.5, delay: 0.8 }}
-                initial={initialRight}
-              >
-                <h2 className={`mt-5`}>year</h2>
-                <p className={styles.fadedP}>{post.year}</p>
-              </motion.div>
+                  <motion.div
+                    variants={boxVariants}
+                    animate="default"
+                    transition={{ duration: 0.5, delay: 0.8 }}
+                    initial={initialRight}
+                  >
+                    <h2 className={`mt-5`}>year</h2>
+                    <p className={styles.fadedP}>{post.year}</p>
+                  </motion.div>
+                </div>
+              </div>
 
               {post.cta && (
                 <motion.div

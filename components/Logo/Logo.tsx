@@ -18,8 +18,8 @@ const Logo = () => {
         setCursorText("");
       }}
     >
-      <div className={`${styles.logo}`}>erindhoxha.dev_</div>
-      <p className={styles.p}>front-end, ui/ux</p>
+      <div className={`${styles.logo}`}>Erind Hoxha</div>
+      <p className={styles.p}>Front-end Engineer & UI/UX</p>
     </Link>
   );
 };

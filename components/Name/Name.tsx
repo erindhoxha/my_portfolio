@@ -42,7 +42,7 @@ const Name = () => {
             >
               <div className={styles.innerBox}>
                 <h2
-                  className={`${styles.h2}`}
+                  className={`${styles.h2} mb-3`}
                   title="Did you know that Hoxha means 'mentor' in Albanian?"
                   aria-label="My name, Erind Hoxha, a Front-End developer based in Sydney, Australia."
                 >

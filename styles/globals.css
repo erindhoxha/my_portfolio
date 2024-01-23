@@ -416,3 +416,7 @@ hr {
   position: relative;
   width: 100%;
 }
+
+.line-height-normal {
+  line-height: 100%;
+}

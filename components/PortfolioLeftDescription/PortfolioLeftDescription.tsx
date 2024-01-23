@@ -51,7 +51,9 @@ const PortfolioLeftDescription = ({
             >
               <div className={styles.innerBox}>
                 <p>{role}</p>
-                <p className={`${cta && styles.hasCta} mb-0`}>
+                <p
+                  className={`${cta && styles.hasCta} mb-0 line-height-normal`}
+                >
                   <a
                     className="link line-through semibold no-underline"
                     href={href ? href : "#scrollto"}
@@ -80,7 +82,7 @@ const PortfolioLeftDescription = ({
               <div className={styles.innerBox}>
                 <p>{location}</p>
 
-                <p className="mb-0">
+                <p className="mb-0 line-height-normal">
                   <a
                     className="link line-through semibold no-underline"
                     target="_blank"

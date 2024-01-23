@@ -56,9 +56,6 @@
     flex-direction: column;
   }
 }
-.h2 {
-  margin-bottom: 6px;
-}
 .box {
   display: flex;
   gap: 48px;
@@ -75,6 +72,8 @@
   flex-direction: column;
 }
 
-.lineHeightNormal {
-  line-height: 100%;
+@media screen and (min-width: 767px) {
+  .lineHeightNormal {
+    line-height: 100%;
+  }
 }
