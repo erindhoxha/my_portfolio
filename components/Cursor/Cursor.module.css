@@ -13,12 +13,12 @@
   -ms-user-select: none;
   user-select: none;
   z-index: 999;
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size:14px !important;
-  color:rgb(var(--background-start-rgb));
-  white-space:nowrap;
+  font-size: 14px;
+  color: rgb(var(--background-start-rgb));
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 767px) {
@@ -29,7 +29,7 @@
   }
 }
 
-@media only screen and (orientation: landscape) and (max-width:900px) {
+@media only screen and (orientation: landscape) and (max-width: 900px) {
   .cursor {
     width: 0;
     height: 0;

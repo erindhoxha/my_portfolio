@@ -27,7 +27,7 @@
   background-color: rgb(var(--foreground-rgb));
   transform: rotate(90deg);
   margin-right: 40px;
-  height:0px;
+  height: 0px;
 }
 
 @media screen and (max-width: 767px) {
@@ -35,9 +35,9 @@
     display: none;
   }
   .copyright {
-    position:absolute;
+    position: absolute;
     right: -12px;
-    bottom: 34px;
+    bottom: 42px;
     margin-bottom: 0px;
   }
 }
