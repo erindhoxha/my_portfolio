@@ -9,6 +9,7 @@
   padding-left: 48px;
   position: absolute;
   width: 100%;
+  overflow: hidden;
 }
 
 @keyframes leaves {
