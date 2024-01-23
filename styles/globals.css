@@ -203,6 +203,10 @@ html body {
   transition: color 0.2s ease;
 }
 
+.home {
+  position: relative;
+}
+
 @media only screen and (orientation: landscape) and (max-width: 900px) {
   html body .home {
     animation: none !important;
