@@ -34,7 +34,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <header>
+      <header className={navbarStyles.header}>
         <nav className={`${navbarStyles.nav} container-fluid`}>
           <motion.div initial={{ x: 24 }}>
             <Logo />

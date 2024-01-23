@@ -5,6 +5,12 @@
   padding: 32px 12px 12px 0px;
 }
 
+.header {
+  padding-left: 48px;
+  position: absolute;
+  width: 100%;
+}
+
 @keyframes leaves {
   0% {
     transform: rotate(0deg) scale(1);
