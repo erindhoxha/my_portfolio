@@ -30,15 +30,7 @@ const Name = () => {
           transition={{ duration: 0.5, delay: 0.7 }}
           initial={initial}
         >
-          <div>
-            <h2
-              className={`${styles.h2} lowercase`}
-              title="Did you know that Hoxha means 'mentor' in Albanian?"
-              aria-label="My name, Erind Hoxha, a Front-End developer based in Sydney, Australia."
-            >
-              Erind Hoxha
-            </h2>
-          </div>
+          <div>{/* TODO: Add name here */}</div>
         </motion.div>
         <div>
           <div className={styles.box}>
@@ -49,14 +41,21 @@ const Name = () => {
               initial={initial}
             >
               <div className={styles.innerBox}>
-                <p aria-label="What I do: Frontend Development and UI/UX.">
-                  front-end, ui/ux
-                </p>
+                <h2
+                  className={`${styles.h2}`}
+                  title="Did you know that Hoxha means 'mentor' in Albanian?"
+                  aria-label="My name, Erind Hoxha, a Front-End developer based in Sydney, Australia."
+                >
+                  Erind Hoxha
+                </h2>
+                {/* <p aria-label="What I do: Frontend Development and UI/UX.">
+                  Front-end Engineer & UI/UX
+                </p> */}
                 <p
                   className="mb-0"
                   aria-label="Currently working at Kablamo, a consultancy company based in Sydney."
                 >
-                  Currently working at{" "}
+                  Front-end Engineer & UI/UX
                   {/* <p
                     className="link line-through semibold"
                     onMouseEnter={() => {
@@ -68,7 +67,6 @@ const Name = () => {
                       setCursorText('');
                     }}
                   > */}
-                  Kablamo
                   {/* </p> */}
                 </p>
               </div>

@@ -9,7 +9,7 @@
 
 .textContainer {
   margin-top: 12px;
-  padding-right: 4;
+  padding: 4px 8px;
 }
 
 .textContainer h1 {
@@ -23,6 +23,16 @@
 }
 
 .textContainer lead {
+  color: rgb(var(--foreground-rgb), 0.9);
+}
+
+.pSeparator {
+  margin-bottom: 12px !important;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(var(--foreground-rgb), 0.1);
+}
+
+.lead {
   color: rgb(var(--foreground-rgb), 0.9);
 }
 

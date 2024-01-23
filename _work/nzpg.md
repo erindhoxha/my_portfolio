@@ -4,7 +4,10 @@ tools: "umbraco, javascript, html5, css3, sass, ai, psd, sketch"
 role: "front-end, ui/ux"
 year: "2022"
 location: "auckland, nz"
-mockup: "/nzpg-showroom/nzpg-showroom.png"
+mockup: "/nzpg-showroom/mockup.png"
+url: "https://www.nzpanels.co.nz/"
+urlName: "View Project"
+cta: true
 ---
 
 ### Project Overview
@@ -41,7 +44,6 @@ The culmination of our efforts resulted in the creation of the NZPG Showroom –
 
 ![Final product](/nzpg-showroom/showroom.jpeg)
 ![Final product](/nzpg-showroom/showroom2.png)
-![Final product](/nzpg-showroom/showroom-mattaport.png)
 
 ---
 
