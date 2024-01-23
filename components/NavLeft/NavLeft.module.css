@@ -26,8 +26,11 @@
 .navLeftItem:hover {
   text-decoration: line-through;
 }
+.navLeftItem:first-of-type {
+  margin-bottom: 50px;
+}
 .navLeftItem {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding-right: 15px;
   padding-left: 0px;
   -webkit-transform: rotate(-90deg);
@@ -45,7 +48,7 @@
   width: 1px;
   height: 100%;
   margin-top: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
   background-color: rgb(var(--foreground-rgb));
 }
 

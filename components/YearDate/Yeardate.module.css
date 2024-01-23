@@ -1,7 +1,5 @@
 .copyright {
   margin-bottom: 40px;
-  padding-right: 15px;
-  padding-left: 20px;
   -webkit-box-flex: 0;
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
@@ -37,7 +35,9 @@
   .copyright {
     position: absolute;
     right: -12px;
-    bottom: 42px;
+    bottom: 38px;
     margin-bottom: 0px;
+    padding-right: 15px;
+    padding-left: 20px;
   }
 }

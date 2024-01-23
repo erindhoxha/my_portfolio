@@ -74,3 +74,7 @@
   display: flex;
   flex-direction: column;
 }
+
+.lineHeightNormal {
+  line-height: 100%;
+}

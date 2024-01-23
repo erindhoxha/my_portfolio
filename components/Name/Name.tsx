@@ -52,7 +52,7 @@ const Name = () => {
                   Front-end Engineer & UI/UX
                 </p> */}
                 <p
-                  className="mb-0"
+                  className={`${styles.lineHeightNormal} mb-0`}
                   aria-label="Currently working at Kablamo, a consultancy company based in Sydney."
                 >
                   Front-end Engineer & UI/UX
@@ -99,7 +99,7 @@ const Name = () => {
                   </a>
                 </p>
 
-                <p className="mb-0">
+                <p className={`${styles.lineHeightNormal} mb-0`}>
                   <a
                     className="link line-through semibold no-underline"
                     href="mailto:hello@erindhoxha.dev"

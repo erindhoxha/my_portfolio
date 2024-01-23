@@ -49,14 +49,6 @@ const NavLeft = () => {
           github
         </a>
       </div>
-
-      <motion.div
-        initial={initialLine}
-        transition={{ duration: 0.75, delay: 0.5 }}
-        animate="default"
-        className={styles.navLine}
-        variants={boxVariants}
-      ></motion.div>
       <div className={styles.navLeftItem}>
         <a
           onMouseEnter={() => {
@@ -95,6 +87,13 @@ const NavLeft = () => {
           MD
         </a>
       </div>
+      <motion.div
+        initial={initialLine}
+        transition={{ duration: 0.75, delay: 0.5 }}
+        animate="default"
+        className={styles.navLine}
+        variants={boxVariants}
+      ></motion.div>
     </div>
   );
 };
