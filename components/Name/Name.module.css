@@ -72,6 +72,16 @@
   flex-direction: column;
 }
 
+.innerBox h2 {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .innerBox h2 {
+    margin-bottom: 6px;
+  }
+}
+
 @media screen and (min-width: 767px) {
   .lineHeightNormal {
     line-height: 100%;
