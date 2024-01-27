@@ -3,12 +3,22 @@ import styles from "./Cursor.module.css";
 import { motion } from "framer-motion";
 
 const Cursor = ({ variants, cursorVariant, cursorText }) => {
-  if (typeof window !== "undefined") {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    console.log("This is rendered!");
+    setIsClient(true);
+  }, []);
+
+  if (isClient) {
     const isMobile = window.innerWidth < 768;
-    if (isMobile) {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    const isTablet = /ipad|android|tablet/.test(userAgent);
+    if (isTablet || isMobile) {
       return null;
     }
   }
+
   return (
     <motion.div
       variants={variants}
