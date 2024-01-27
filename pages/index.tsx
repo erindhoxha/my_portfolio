@@ -86,7 +86,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main}`}>
         <div className="home container-fluid">
-          <Navbar />
+          <Navbar isHomePage />
           <div className={`container-fluid p-0`}>
             <NavLeft />
             <div className={styles.navAndNameContainer}>

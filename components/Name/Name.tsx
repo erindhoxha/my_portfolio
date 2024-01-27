@@ -87,8 +87,8 @@ const Name = () => {
                     rel="noreferrer"
                     href="https://drive.google.com/file/d/1qP1prUVJttSdJOXb5Duxs5b9067kavIk/view?usp=drive_link"
                     onMouseEnter={() => {
-                      setCursorVariantFn("text");
-                      setCursorText("my CV");
+                      setCursorVariantFn("textSmall");
+                      setCursorText("View →");
                     }}
                     onMouseLeave={() => {
                       setCursorVariantFn("default");
@@ -106,7 +106,7 @@ const Name = () => {
                     target="_blank"
                     rel="noreferrer"
                     onMouseEnter={() => {
-                      setCursorVariantFn("text");
+                      setCursorVariantFn("textSmall");
                       setCursorText("email me");
                     }}
                     onMouseLeave={() => {
@@ -131,6 +131,14 @@ const Name = () => {
             rel="noreferrer"
             href="https://twitter.com/erindoxa"
             aria-label="View my twitter profile"
+            onMouseEnter={() => {
+              setCursorVariantFn("textSmall");
+              setCursorText("twitter");
+            }}
+            onMouseLeave={() => {
+              setCursorVariantFn("default");
+              setCursorText("");
+            }}
           >
             twitter
           </a>{" "}
@@ -140,8 +148,16 @@ const Name = () => {
             rel="noreferrer"
             href="https://instagram.com/erindhox"
             aria-label="View my instagram profile"
+            onMouseEnter={() => {
+              setCursorVariantFn("textSmall");
+              setCursorText("instagram");
+            }}
+            onMouseLeave={() => {
+              setCursorVariantFn("default");
+              setCursorText("");
+            }}
           >
-            insta
+            instagram
           </a>{" "}
           /{" "}
           <a
@@ -149,8 +165,16 @@ const Name = () => {
             rel="noreferrer"
             href="https://facebook.com/hoxhaerind"
             aria-label="View my facebook profile"
+            onMouseEnter={() => {
+              setCursorVariantFn("textSmall");
+              setCursorText("facebook");
+            }}
+            onMouseLeave={() => {
+              setCursorVariantFn("default");
+              setCursorText("");
+            }}
           >
-            fb
+            facebook
           </a>{" "}
         </span>
         <YearDate year="2024" />

@@ -2,9 +2,8 @@ import React, { useEffect, useState } from "react";
 import Logo from "../Logo/Logo";
 import navbarStyles from "./Navbar.module.css";
 import { motion } from "framer-motion";
-import { useCursorContext } from "../../pages/_app";
 
-const Navbar = () => {
+const Navbar = ({ isHomePage }) => {
   const [theme, setTheme] = useState("");
   useEffect(() => {
     if (
@@ -38,7 +37,7 @@ const Navbar = () => {
         <header className={navbarStyles.header}>
           <nav className={`${navbarStyles.nav} container-fluid`}>
             <motion.div initial={{ x: 24 }}>
-              <Logo />
+              <Logo isHomePage />
             </motion.div>
           </nav>
           <svg

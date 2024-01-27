@@ -1,6 +1,6 @@
 .cursor {
-  width: 5rem;
-  height: 5rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
   border: 2px solid rgb(var(--foreground-rgb));
   position: fixed;
@@ -13,6 +13,7 @@
   -ms-user-select: none;
   user-select: none;
   z-index: 999;
+  background-color: rgb(var(--foreground-rgb)) !important;
   display: flex;
   align-items: center;
   justify-content: center;

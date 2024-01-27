@@ -112,7 +112,15 @@ const PortfolioLeftDescription = ({
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/erindhoxha"
+            href="https://twitter.com/erindoxa"
+            onMouseEnter={() => {
+              setCursorVariantFn("textSmall");
+              setCursorText("twitter");
+            }}
+            onMouseLeave={() => {
+              setCursorVariantFn("default");
+              setCursorText("");
+            }}
           >
             twitter
           </a>{" "}
@@ -121,16 +129,32 @@ const PortfolioLeftDescription = ({
             target="_blank"
             rel="noreferrer"
             href="https://instagram.com/erindhox"
+            onMouseEnter={() => {
+              setCursorVariantFn("textSmall");
+              setCursorText("instagram");
+            }}
+            onMouseLeave={() => {
+              setCursorVariantFn("default");
+              setCursorText("");
+            }}
           >
-            insta
+            instagram
           </a>{" "}
           /{" "}
           <a
             target="_blank"
             rel="noreferrer"
             href="https://facebook.com/hoxhaerind"
+            onMouseEnter={() => {
+              setCursorVariantFn("textSmall");
+              setCursorText("facebook");
+            }}
+            onMouseLeave={() => {
+              setCursorVariantFn("default");
+              setCursorText("");
+            }}
           >
-            fb
+            facebook
           </a>{" "}
         </span>
         <YearDate year="2024" />

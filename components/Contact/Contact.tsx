@@ -43,7 +43,7 @@ const Contact = () => {
             className="lead mb-0 font-regular text-regular text-decoration-underline me-2"
             aria-label="Email me at hello@erindhoxha.dev, or click here."
             onMouseEnter={() => {
-              setCursorVariantFn("text");
+              setCursorVariantFn("textSmall");
               setCursorText("email me");
             }}
             onMouseLeave={() => {

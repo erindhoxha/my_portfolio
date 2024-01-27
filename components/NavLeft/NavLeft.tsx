@@ -52,8 +52,8 @@ const NavLeft = () => {
       <div className={styles.navLeftItem}>
         <a
           onMouseEnter={() => {
-            setCursorVariantFn("text");
-            setCursorText("go →");
+            setCursorVariantFn("textSmall");
+            setCursorText("linkedin →");
           }}
           onMouseLeave={() => {
             setCursorVariantFn("default");
@@ -71,8 +71,8 @@ const NavLeft = () => {
       <div className={styles.navLeftItem}>
         <a
           onMouseEnter={() => {
-            setCursorVariantFn("text");
-            setCursorText("go →");
+            setCursorVariantFn("textSmall");
+            setCursorText("medium →");
           }}
           onMouseLeave={() => {
             setCursorVariantFn("default");

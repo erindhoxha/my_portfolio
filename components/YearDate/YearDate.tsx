@@ -11,7 +11,7 @@ const YearDate = ({ year }) => {
   };
 
   if (typeof window !== "undefined") {
-    const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
+    const isMobile = window.innerWidth < 768;
     if (!isMobile) {
       initialLine = { height: "0px" };
       boxVariants = {
@@ -19,8 +19,7 @@ const YearDate = ({ year }) => {
           height: "50px",
         },
       };
-    } //if the width >= 768px, boxVariants will be empty, resulting in no animation
-    //you need to refresh the page, it doesn't work when you resize it!
+    }
   }
   return (
     <div

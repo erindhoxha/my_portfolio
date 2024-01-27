@@ -85,8 +85,8 @@ const NavRight = () => {
           <div className="nav-item">
             <a
               onMouseEnter={() => {
-                setCursorVariantFn("text");
-                setCursorText("dm ↓");
+                setCursorVariantFn("textSmall");
+                setCursorText("contact ↓");
               }}
               onMouseLeave={() => {
                 setCursorVariantFn("default");
