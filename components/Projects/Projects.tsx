@@ -112,7 +112,7 @@ export const projects = [
     href: "/work/primepanels",
     image: primepanels,
     description:
-      "Prime Panels is a leading manufacturer of melamine panels. I was tasked to design and develop their showroom website. The website was shown at the Auckland Home Show 2021.",
+      "Prime Panels is a leading manufacturer of melamine panels. I was tasked to design and develop their showroom website. The website was shown at the Auckland Home Show 2022.",
   },
   {
     title: "Linea Del Plata",

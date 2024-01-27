@@ -44,11 +44,11 @@ export default function Post({ post, morePosts, preview }) {
         <meta property="og:title" content={`${title} - Case study`} />
       </Head>
       <div className="slug container-fluid">
-        <Navbar />
+        <Navbar isHomePage={false} />
         <div className={styles.slug}>
           <div className={`${styles.slugContainer} bg`}>
             <div className={styles.navMobile}>
-              <Navbar />
+              <Navbar isHomePage={false} />
             </div>
 
             <NavLeft />

@@ -37,7 +37,7 @@ const Navbar = ({ isHomePage }) => {
         <header className={navbarStyles.header}>
           <nav className={`${navbarStyles.nav} container-fluid`}>
             <motion.div initial={{ x: 24 }}>
-              <Logo isHomePage />
+              <Logo isHomePage={isHomePage} />
             </motion.div>
           </nav>
           <svg
