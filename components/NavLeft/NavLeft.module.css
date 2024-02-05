@@ -21,6 +21,7 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: 10px;
 }
 
 .navLeftItem:hover {
@@ -72,6 +73,7 @@
     padding-top: 56px;
     position: absolute;
     height: 100%;
+    margin-left: 0px;
   }
 }
 
