@@ -88,7 +88,7 @@ const Name = () => {
                     href="https://drive.google.com/file/d/1qP1prUVJttSdJOXb5Duxs5b9067kavIk/view?usp=drive_link"
                     onMouseEnter={() => {
                       setCursorVariantFn("textSmall");
-                      setCursorText("View");
+                      setCursorText("View CV");
                     }}
                     onMouseLeave={() => {
                       setCursorVariantFn("default");
@@ -133,7 +133,7 @@ const Name = () => {
             aria-label="View my twitter profile"
             onMouseEnter={() => {
               setCursorVariantFn("textSmall");
-              setCursorText("twitter");
+              setCursorText("Twitter");
             }}
             onMouseLeave={() => {
               setCursorVariantFn("default");
@@ -150,7 +150,7 @@ const Name = () => {
             aria-label="View my instagram profile"
             onMouseEnter={() => {
               setCursorVariantFn("textSmall");
-              setCursorText("instagram");
+              setCursorText("Instagram");
             }}
             onMouseLeave={() => {
               setCursorVariantFn("default");
@@ -167,7 +167,7 @@ const Name = () => {
             aria-label="View my facebook profile"
             onMouseEnter={() => {
               setCursorVariantFn("textSmall");
-              setCursorText("facebook");
+              setCursorText("Facebook");
             }}
             onMouseLeave={() => {
               setCursorVariantFn("default");

@@ -115,7 +115,7 @@ const PortfolioLeftDescription = ({
             href="https://twitter.com/erindoxa"
             onMouseEnter={() => {
               setCursorVariantFn("textSmall");
-              setCursorText("twitter");
+              setCursorText("Twitter");
             }}
             onMouseLeave={() => {
               setCursorVariantFn("default");
@@ -131,7 +131,7 @@ const PortfolioLeftDescription = ({
             href="https://instagram.com/erindhox"
             onMouseEnter={() => {
               setCursorVariantFn("textSmall");
-              setCursorText("instagram");
+              setCursorText("Instagram");
             }}
             onMouseLeave={() => {
               setCursorVariantFn("default");
@@ -147,7 +147,7 @@ const PortfolioLeftDescription = ({
             href="https://facebook.com/hoxhaerind"
             onMouseEnter={() => {
               setCursorVariantFn("textSmall");
-              setCursorText("facebook");
+              setCursorText("Facebook");
             }}
             onMouseLeave={() => {
               setCursorVariantFn("default");
