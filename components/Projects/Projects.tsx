@@ -282,7 +282,7 @@ const Projects = () => {
                 <Link
                   onMouseEnter={() => {
                     setCursorVariantFn("text");
-                    setCursorText("view →");
+                    setCursorText("View");
                   }}
                   onMouseLeave={() => {
                     setCursorVariantFn("default");

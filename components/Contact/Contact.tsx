@@ -44,7 +44,7 @@ const Contact = () => {
             aria-label="Email me at hello@erindhoxha.dev, or click here."
             onMouseEnter={() => {
               setCursorVariantFn("textSmall");
-              setCursorText("email me");
+              setCursorText("Email");
             }}
             onMouseLeave={() => {
               setCursorVariantFn("default");
@@ -62,8 +62,8 @@ const Contact = () => {
             className="lead mb-0 font-regular text-regular text-decoration-underline mx-2"
             aria-label="Link to my LinkedIn profile."
             onMouseEnter={() => {
-              setCursorVariantFn("text");
-              setCursorText("linkedin");
+              setCursorVariantFn("textSmall");
+              setCursorText("LinkedIn");
             }}
             onMouseLeave={() => {
               setCursorVariantFn("default");

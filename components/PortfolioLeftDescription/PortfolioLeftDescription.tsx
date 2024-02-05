@@ -61,7 +61,7 @@ const PortfolioLeftDescription = ({
                     rel="noreferrer"
                     onMouseEnter={() => {
                       setCursorVariantFn("text");
-                      setCursorText("go →");
+                      setCursorText("Go");
                     }}
                     onMouseLeave={() => {
                       setCursorVariantFn("default");
@@ -90,7 +90,7 @@ const PortfolioLeftDescription = ({
                     href="mailto:hello@erindhoxha.dev"
                     onMouseEnter={() => {
                       setCursorVariantFn("text");
-                      setCursorText("email me");
+                      setCursorText("Email");
                     }}
                     onMouseLeave={() => {
                       setCursorVariantFn("default");

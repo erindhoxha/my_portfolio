@@ -36,7 +36,7 @@ const NavRight = () => {
             <a
               onMouseEnter={() => {
                 setCursorVariantFn("text");
-                setCursorText("go ↓");
+                setCursorText("Work");
               }}
               onMouseLeave={() => {
                 setCursorVariantFn("default");
@@ -61,7 +61,7 @@ const NavRight = () => {
             <a
               onMouseEnter={() => {
                 setCursorVariantFn("text");
-                setCursorText("go ↓");
+                setCursorText("Blog");
               }}
               onMouseLeave={() => {
                 setCursorVariantFn("default");
@@ -86,7 +86,7 @@ const NavRight = () => {
             <a
               onMouseEnter={() => {
                 setCursorVariantFn("textSmall");
-                setCursorText("contact ↓");
+                setCursorText("Contact");
               }}
               onMouseLeave={() => {
                 setCursorVariantFn("default");

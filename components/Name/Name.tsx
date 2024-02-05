@@ -88,14 +88,14 @@ const Name = () => {
                     href="https://drive.google.com/file/d/1qP1prUVJttSdJOXb5Duxs5b9067kavIk/view?usp=drive_link"
                     onMouseEnter={() => {
                       setCursorVariantFn("textSmall");
-                      setCursorText("View →");
+                      setCursorText("View");
                     }}
                     onMouseLeave={() => {
                       setCursorVariantFn("default");
                       setCursorText("");
                     }}
                   >
-                    View my resume
+                    View my resume →
                   </a>
                 </p>
 
@@ -107,7 +107,7 @@ const Name = () => {
                     rel="noreferrer"
                     onMouseEnter={() => {
                       setCursorVariantFn("textSmall");
-                      setCursorText("email me");
+                      setCursorText("Email");
                     }}
                     onMouseLeave={() => {
                       setCursorVariantFn("default");

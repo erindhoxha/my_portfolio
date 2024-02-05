@@ -11,7 +11,7 @@ const Email = () => {
         href="mailto:hello@erindhoxha.dev"
         onMouseEnter={() => {
           setCursorVariantFn("text");
-          setCursorText("go →");
+          setCursorText("Go");
         }}
         onMouseLeave={() => {
           setCursorVariantFn("default");

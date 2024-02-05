@@ -34,7 +34,7 @@ const NavLeft = () => {
         <a
           onMouseEnter={() => {
             setCursorVariantFn("text");
-            setCursorText("github →");
+            setCursorText("GitHub");
           }}
           onMouseLeave={() => {
             setCursorVariantFn("default");
@@ -53,7 +53,7 @@ const NavLeft = () => {
         <a
           onMouseEnter={() => {
             setCursorVariantFn("textSmall");
-            setCursorText("linkedin →");
+            setCursorText("LinkedIn");
           }}
           onMouseLeave={() => {
             setCursorVariantFn("default");
@@ -72,7 +72,7 @@ const NavLeft = () => {
         <a
           onMouseEnter={() => {
             setCursorVariantFn("textSmall");
-            setCursorText("medium →");
+            setCursorText("Medium");
           }}
           onMouseLeave={() => {
             setCursorVariantFn("default");
